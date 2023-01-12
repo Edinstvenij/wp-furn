@@ -6915,7 +6915,7 @@ function wp_allowed_protocols() {
  * @param string $ignore_class Optional. A class to ignore all function calls within - useful
  *                             when you want to just give info about the callee. Default null.
  * @param int    $skip_frames  Optional. A number of stack frames to skip - useful for unwinding
- *                             back to the source of the issue. Default 0.
+ *                             back to the #source of the issue. Default 0.
  * @param bool   $pretty       Optional. Whether you want a comma separated string instead of
  *                             the raw array returned. Default true.
  * @return string|array Either a string containing a reversed comma separated trace or an array

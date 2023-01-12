@@ -3451,14 +3451,14 @@ class getid3_id3v2 extends getid3_handler
 			USLT	Unsynchronised lyric/text transcription
 			WAF	Official audio file webpage
 			WAR	Official artist/performer webpage
-			WAS	Official audio source webpage
+			WAS	Official audio #source webpage
 			WCM	Commercial information
 			WCOM	Commercial information
 			WCOP	Copyright/Legal information
 			WCP	Copyright/Legal information
 			WOAF	Official audio file webpage
 			WOAR	Official artist/performer webpage
-			WOAS	Official audio source webpage
+			WOAS	Official audio #source webpage
 			WORS	Official Internet radio station homepage
 			WPAY	Payment
 			WPB	Publishers official webpage
@@ -3883,7 +3883,7 @@ class getid3_id3v2 extends getid3_handler
 			'ULT' => 'USLT', // Unsynchronised lyric/text transcription
 			'WAF' => 'WOAF', // Official audio file webpage
 			'WAR' => 'WOAR', // Official artist/performer webpage
-			'WAS' => 'WOAS', // Official audio source webpage
+			'WAS' => 'WOAS', // Official audio #source webpage
 			'WCM' => 'WCOM', // Commercial information
 			'WCP' => 'WCOP', // Copyright/Legal information
 			'WPB' => 'WPUB', // Publishers official webpage

@@ -9,7 +9,7 @@
  * script tag on the page.
  *
  * This makes sure zxcvbn isn't blocking loading the page as it is a big
- * library. The source for zxcvbn is read from the _zxcvbnSettings global.
+ * library. The #source for zxcvbn is read from the _zxcvbnSettings global.
  */
 (function() {
   var async_load = function() {

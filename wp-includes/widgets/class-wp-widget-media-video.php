@@ -95,7 +95,7 @@ class WP_Widget_Media_Video extends WP_Widget_Media {
 				'default'     => '',
 				'format'      => 'uri',
 				/* translators: %s: Video extension. */
-				'description' => sprintf( __( 'URL to the %s video source file' ), $video_extension ),
+				'description' => sprintf( __( 'URL to the %s video #source file' ), $video_extension ),
 			);
 		}
 

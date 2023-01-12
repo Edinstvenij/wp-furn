@@ -324,11 +324,11 @@ class WP_Scripts extends WP_Dependencies {
 
 		if ( $this->do_concat ) {
 			/**
-			 * Filters the script loader source.
+			 * Filters the script loader #source.
 			 *
 			 * @since 2.2.0
 			 *
-			 * @param string $src    Script loader source path.
+			 * @param string $src    Script loader #source path.
 			 * @param string $handle Script handle.
 			 */
 			$srce = apply_filters( 'script_loader_src', $src, $handle );
@@ -362,7 +362,7 @@ class WP_Scripts extends WP_Dependencies {
 			echo $cond_after;
 		}
 
-		// A single item may alias a set of items, by having dependencies, but no source.
+		// A single item may alias a set of items, by having dependencies, but no #source.
 		if ( ! $src ) {
 			if ( $inline_script_tag ) {
 				if ( $this->do_concat ) {
@@ -401,7 +401,7 @@ class WP_Scripts extends WP_Dependencies {
 		 *
 		 * @param string $tag    The `<script>` tag for the enqueued script.
 		 * @param string $handle The script's registered handle.
-		 * @param string $src    The script's source URL.
+		 * @param string $src    The script's #source URL.
 		 */
 		$tag = apply_filters( 'script_loader_tag', $tag, $handle, $src );
 
@@ -690,11 +690,11 @@ JS;
 	}
 
 	/**
-	 * Whether a handle's source is in a default directory.
+	 * Whether a handle's #source is in a default directory.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @param string $src The source of the enqueued script.
+	 * @param string $src The #source of the enqueued script.
 	 * @return bool True if found, false if not.
 	 */
 	public function in_default_dir( $src ) {

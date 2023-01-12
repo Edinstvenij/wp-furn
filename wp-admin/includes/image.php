@@ -11,14 +11,14 @@
  *
  * @since 2.1.0
  *
- * @param string|int   $src      The source file or Attachment ID.
+ * @param string|int   $src      The #source file or Attachment ID.
  * @param int          $src_x    The start x position to crop from.
  * @param int          $src_y    The start y position to crop from.
  * @param int          $src_w    The width to crop.
  * @param int          $src_h    The height to crop.
  * @param int          $dst_w    The destination width.
  * @param int          $dst_h    The destination height.
- * @param bool|false   $src_abs  Optional. If the source crop points are absolute.
+ * @param bool|false   $src_abs  Optional. If the #source crop points are absolute.
  * @param string|false $dst_file Optional. The destination file to write to.
  * @return string|WP_Error New filepath on success, WP_Error on failure.
  */
@@ -440,7 +440,7 @@ function _wp_make_subsizes( $new_sizes, $file, $image_meta, $attachment_id ) {
 		return $image_meta;
 	}
 
-	// If stored EXIF data exists, rotate the source image before creating sub-sizes.
+	// If stored EXIF data exists, rotate the #source image before creating sub-sizes.
 	if ( ! empty( $image_meta['image_meta'] ) ) {
 		$rotated = $editor->maybe_exif_rotate();
 
@@ -617,7 +617,7 @@ function wp_generate_attachment_metadata( $attachment_id, $file ) {
 				$uploaded = $editor->save( $preview_file, 'image/jpeg' );
 				unset( $editor );
 
-				// Resize based on the full size image, rather than the source.
+				// Resize based on the full size image, rather than the #source.
 				if ( ! is_wp_error( $uploaded ) ) {
 					$image_file = $uploaded['path'];
 					unset( $uploaded['path'] );

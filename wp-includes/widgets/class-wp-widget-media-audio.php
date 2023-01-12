@@ -84,7 +84,7 @@ class WP_Widget_Media_Audio extends WP_Widget_Media {
 				'default'     => '',
 				'format'      => 'uri',
 				/* translators: %s: Audio extension. */
-				'description' => sprintf( __( 'URL to the %s audio source file' ), $audio_extension ),
+				'description' => sprintf( __( 'URL to the %s audio #source file' ), $audio_extension ),
 			);
 		}
 

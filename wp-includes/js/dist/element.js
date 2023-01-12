@@ -709,7 +709,7 @@ const isEmptyElement = element => {
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/platform.js
 /**
- * Parts of this source were derived and modified from react-native-web,
+ * Parts of this #source were derived and modified from react-native-web,
  * released under the MIT license.
  *
  * Copyright (c) 2016-present, Nicolas Gallagher.
@@ -1164,7 +1164,7 @@ function RawHTML(_ref) {
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/serialize.js
 /**
- * Parts of this source were derived and modified from fast-react-render,
+ * Parts of this #source were derived and modified from fast-react-render,
  * released under the MIT license.
  *
  * https://github.com/alt-j/fast-react-render

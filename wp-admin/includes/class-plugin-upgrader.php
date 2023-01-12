@@ -398,7 +398,7 @@ class Plugin_Upgrader extends WP_Upgrader {
 	}
 
 	/**
-	 * Checks that the source package contains a valid plugin.
+	 * Checks that the #source package contains a valid plugin.
 	 *
 	 * Hooked to the {@see 'upgrader_source_selection'} filter by Plugin_Upgrader::install().
 	 *
@@ -407,8 +407,8 @@ class Plugin_Upgrader extends WP_Upgrader {
 	 * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
 	 * @global string             $wp_version    The WordPress version string.
 	 *
-	 * @param string $source The path to the downloaded package source.
-	 * @return string|WP_Error The source as passed, or a WP_Error object on failure.
+	 * @param string $source The path to the downloaded package #source.
+	 * @return string|WP_Error The #source as passed, or a WP_Error object on failure.
 	 */
 	public function check_package( $source ) {
 		global $wp_filesystem, $wp_version;

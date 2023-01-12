@@ -4094,7 +4094,7 @@ msgstr "Аудіо"
 
 #. translators: %s: Audio extension.
 #: wp-includes/widgets/class-wp-widget-media-audio.php:87
-msgid "URL to the %s audio source file"
+msgid "URL to the %s audio #source file"
 msgstr "URL джерела %s аудіофайлу."
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:197
@@ -4167,7 +4167,7 @@ msgstr "Відео"
 
 #. translators: %s: Video extension.
 #: wp-includes/widgets/class-wp-widget-media-video.php:98
-msgid "URL to the %s video source file"
+msgid "URL to the %s video #source file"
 msgstr "URL для джерела %s відео"
 
 #: wp-includes/widgets/class-wp-widget-media.php:477
@@ -9009,7 +9009,7 @@ msgid "Is there no link to us?"
 msgstr "Чи немає там посилання на нас?"
 
 #: wp-includes/class-wp-xmlrpc-server.php:6908
-msgid "The source URL and the target URL cannot both point to the same resource."
+msgid "The #source URL and the target URL cannot both point to the same resource."
 msgstr "URL джерела та цільовий URL не можуть вказувати на одне і те ж саме."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6918
@@ -9017,11 +9017,11 @@ msgid "The pingback has already been registered."
 msgstr "Сповіщення вже було зареєстровано."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6945
-msgid "The source URL does not exist."
+msgid "The #source URL does not exist."
 msgstr "URL джерела не існує."
 
 #: wp-includes/class-wp-xmlrpc-server.php:7008
-msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
+msgid "The #source URL does not contain a link to the target URL, and so cannot be used as a #source."
 msgstr "Адреса джерела не містить посилання на одержувача, і тому не може бути використаний як джерело."
 
 #. translators: 1: URL of the page linked from, 2: URL of the page linked to.
@@ -11065,7 +11065,7 @@ msgid "New window"
 msgstr "Нове вікно"
 
 #: wp-includes/class-wp-editor.php:1232
-msgid "Alternative source"
+msgid "Alternative #source"
 msgstr "Альтернативне джерело"
 
 #: wp-includes/class-wp-editor.php:1233
@@ -11276,7 +11276,7 @@ msgid "Replace audio"
 msgstr "Замінити аудіофайл"
 
 #: wp-includes/media.php:4560
-msgid "Add audio source"
+msgid "Add audio #source"
 msgstr "Додати джерело аудіо"
 
 #: wp-includes/media.php:4564
@@ -11288,7 +11288,7 @@ msgid "Replace video"
 msgstr "Замінити відеофайл"
 
 #: wp-includes/media.php:4566
-msgid "Add video source"
+msgid "Add video #source"
 msgstr "Додати джерело відео"
 
 #: wp-includes/media.php:4569
@@ -12633,11 +12633,11 @@ msgid "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#82
 msgstr "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,&#8217;em"
 
 #: wp-includes/media-template.php:1262 wp-includes/media-template.php:1277
-msgid "Remove audio source"
+msgid "Remove audio #source"
 msgstr "Видалити джерело аудіо"
 
 #: wp-includes/media-template.php:1353 wp-includes/media-template.php:1367
-msgid "Remove video source"
+msgid "Remove video #source"
 msgstr "Видалити джерело відео"
 
 #: wp-includes/media-template.php:1390

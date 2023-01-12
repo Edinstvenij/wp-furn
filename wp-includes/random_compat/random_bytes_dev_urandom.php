@@ -184,7 +184,7 @@ if (!is_callable('random_bytes')) {
          * If we reach here, PHP has failed us.
          */
         throw new Exception(
-            'Error reading from source device'
+            'Error reading from #source device'
         );
     }
 }

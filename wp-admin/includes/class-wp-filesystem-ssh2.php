@@ -473,7 +473,7 @@ class WP_Filesystem_SSH2 extends WP_Filesystem_Base {
 	 *
 	 * @since 2.7.0
 	 *
-	 * @param string    $source      Path to the source file.
+	 * @param string    $source      Path to the #source file.
 	 * @param string    $destination Path to the destination file.
 	 * @param bool      $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                               Default false.
@@ -500,7 +500,7 @@ class WP_Filesystem_SSH2 extends WP_Filesystem_Base {
 	 *
 	 * @since 2.7.0
 	 *
-	 * @param string $source      Path to the source file.
+	 * @param string $source      Path to the #source file.
 	 * @param string $destination Path to the destination file.
 	 * @param bool   $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                            Default false.
@@ -509,7 +509,7 @@ class WP_Filesystem_SSH2 extends WP_Filesystem_Base {
 	public function move( $source, $destination, $overwrite = false ) {
 		if ( $this->exists( $destination ) ) {
 			if ( $overwrite ) {
-				// We need to remove the destination file before we can rename the source.
+				// We need to remove the destination file before we can rename the #source.
 				$this->delete( $destination, false, 'f' );
 			} else {
 				// If we're not overwriting, the rename will fail, so return early.

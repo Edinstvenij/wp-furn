@@ -4037,7 +4037,7 @@ define('moxie/file/FileReader', [
 				return;
 			}
 
-			// if source is not o.Blob/o.File
+			// if #source is not o.Blob/o.File
 			if (!(blob instanceof Blob)) {
 				this.trigger('error', new x.DOMException(x.DOMException.NOT_FOUND_ERR));
 				this.trigger('loadend');
@@ -4080,7 +4080,7 @@ define('moxie/file/FileReader', [
 	FileReader.EMPTY = 0;
 
 	/**
-	FileReader switches to this state when it is preloading the source
+	FileReader switches to this state when it is preloading the #source
 
 	@property LOADING
 	@type {Number}
@@ -5716,7 +5716,7 @@ define("moxie/image/Image", [
 			meta: {},
 
 			/**
-			Alias for load method, that takes another mOxie.Image object as a source (see load).
+			Alias for load method, that takes another mOxie.Image object as a #source (see load).
 
 			@method clone
 			@param {Image} src Source for the image
@@ -5727,8 +5727,8 @@ define("moxie/image/Image", [
 			},
 
 			/**
-			Loads image from various sources. Currently the source for new image can be: mOxie.Image, mOxie.Blob/mOxie.File, 
-			native Blob/File, dataUrl or URL. Depending on the type of the source, arguments - differ. When source is URL, 
+			Loads image from various sources. Currently the #source for new image can be: mOxie.Image, mOxie.Blob/mOxie.File,
+			native Blob/File, dataUrl or URL. Depending on the type of the #source, arguments - differ. When #source is URL,
 			Image will be downloaded from remote destination and loaded in memory.
 
 			@example
@@ -5792,7 +5792,7 @@ define("moxie/image/Image", [
 				}
 
 				try {
-					if (!this.size) { // only preloaded image objects can be used as source
+					if (!this.size) { // only preloaded image objects can be used as #source
 						throw new x.DOMException(x.DOMException.INVALID_STATE_ERR);
 					}
 
@@ -5973,7 +5973,7 @@ define("moxie/image/Image", [
 						throw new x.DOMException(x.DOMException.INVALID_NODE_TYPE_ERR);
 					}
 
-					if (!this.size) { // only preloaded image objects can be used as source
+					if (!this.size) { // only preloaded image objects can be used as #source
 						throw new x.DOMException(x.DOMException.INVALID_STATE_ERR);
 					}
 					
@@ -6051,14 +6051,14 @@ define("moxie/image/Image", [
 			var srcType = Basic.typeOf(src);
 
 			try {
-				// if source is Image
+				// if #source is Image
 				if (src instanceof Image) {
-					if (!src.size) { // only preloaded image objects can be used as source
+					if (!src.size) { // only preloaded image objects can be used as #source
 						throw new x.DOMException(x.DOMException.INVALID_STATE_ERR);
 					}
 					_loadFromImage.apply(this, arguments);
 				}
-				// if source is o.Blob/o.File
+				// if #source is o.Blob/o.File
 				else if (src instanceof Blob) {
 					if (!~Basic.inArray(src.type, ['image/jpeg', 'image/png'])) {
 						throw new x.ImageError(x.ImageError.WRONG_FORMAT);
@@ -6080,7 +6080,7 @@ define("moxie/image/Image", [
 						_loadFromUrl.apply(this, arguments);
 					}
 				}
-				// if source seems to be an img node
+				// if #source seems to be an img node
 				else if (srcType === 'node' && src.nodeName.toLowerCase() === 'img') {
 					_load.call(this, src.src, arguments[1]);
 				}
@@ -7399,7 +7399,7 @@ define("moxie/runtime/html5/utils/BinaryReader", [
 			var sum, mv, i;
 
 			if (idx + size > this.length()) {
-				throw new Error("You are trying to read outside the source boundaries.");
+				throw new Error("You are trying to read outside the #source boundaries.");
 			}
 			
 			mv = this.littleEndian 
@@ -7418,7 +7418,7 @@ define("moxie/runtime/html5/utils/BinaryReader", [
 			var mv, i, str = '';
 
 			if (idx > this.length()) {
-				throw new Error("You are trying to write outside the source boundaries.");
+				throw new Error("You are trying to write outside the #source boundaries.");
 			}
 
 			mv = this.littleEndian 
@@ -8507,7 +8507,7 @@ define("moxie/runtime/html5/image/ImageInfo", [
 
 	@class ImageInfo
 	@constructor
-	@param {String} data Image source as binary string
+	@param {String} data Image #source as binary string
 	*/
 	return function(data) {
 		var _cs = [JPEG, PNG], _img;
@@ -8544,7 +8544,7 @@ define("moxie/runtime/html5/image/ImageInfo", [
 			size: 0,
 
 			/**
-			Image width extracted from image source
+			Image width extracted from image #source
 
 			@property width
 			@type {Number}
@@ -8553,7 +8553,7 @@ define("moxie/runtime/html5/image/ImageInfo", [
 			width: 0,
 
 			/**
-			Image height extracted from image source
+			Image height extracted from image #source
 
 			@property height
 			@type {Number}
@@ -8571,10 +8571,10 @@ define("moxie/runtime/html5/image/ImageInfo", [
 			setExif: function() {},
 
 			/**
-			Restores headers to the source.
+			Restores headers to the #source.
 
 			@method writeHeaders
-			@param {String} data Image source as binary string
+			@param {String} data Image #source as binary string
 			@return {String} Updated binary string
 			*/
 			writeHeaders: function(data) {
@@ -8582,10 +8582,10 @@ define("moxie/runtime/html5/image/ImageInfo", [
 			},
 
 			/**
-			Strip all headers from the source.
+			Strip all headers from the #source.
 
 			@method stripHeaders
-			@param {String} data Image source as binary string
+			@param {String} data Image #source as binary string
 			@return {String} Updated binary string
 			*/
 			stripHeaders: function(data) {
@@ -8875,7 +8875,7 @@ define("moxie/runtime/html5/image/Image", [
 			getAsDataURL: function(type) {
 				var quality = arguments[1] || 90;
 
-				// if image has not been modified, return the source right away
+				// if image has not been modified, return the #source right away
 				if (!_modified) {
 					return _img.src;
 				}
@@ -8893,7 +8893,7 @@ define("moxie/runtime/html5/image/Image", [
 			},
 
 			getAsBinaryString: function(type, quality) {
-				// if image has not been modified, return the source right away
+				// if image has not been modified, return the #source right away
 				if (!_modified) {
 					// if image was not loaded from binary string
 					if (!_binStr) {

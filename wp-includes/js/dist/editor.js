@@ -501,8 +501,8 @@ module.exports = lineHeight;
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -573,8 +573,8 @@ module.exports = function() {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 if (false) { var throwOnDirectAccess, ReactIs; } else {
@@ -593,8 +593,8 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -2173,7 +2173,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -2239,7 +2239,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -4880,7 +4880,7 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_
  */
 
 /**
- * Given a mapping of attribute names (meta source attributes) to their
+ * Given a mapping of attribute names (meta #source attributes) to their
  * associated meta key, returns a higher order component that overrides its
  * `attributes` and `setAttributes` props to sync any changes with the edited
  * post's meta keys.
@@ -4943,7 +4943,7 @@ function shimAttributeSource(settings) {
   return settings;
 }
 
-(0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/custom-sources-backwards-compatibility/shim-attribute-source', shimAttributeSource); // The above filter will only capture blocks registered after the filter was
+(0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/custom-sources-backwards-compatibility/shim-attribute-#source', shimAttributeSource); // The above filter will only capture blocks registered after the filter was
 // added. There may already be blocks registered by this point, and those must
 // be updated to apply the shim.
 //

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-04 16:04:56+0000\n"
+"PO-Revision-Date: 2023-01-11 02:21:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -435,7 +435,7 @@ msgstr "Разрешить клиентам фильтровать сетку п
 #: packages/woocommerce-blocks/build/filter-wrapper/block.json
 msgctxt "block title"
 msgid "Filter Block"
-msgstr "Фильтрация по наличию"
+msgstr "Блок фильтрации"
 
 #: packages/woocommerce-blocks/assets/js/blocks/price-filter/block.json
 #: packages/woocommerce-blocks/build/price-filter/block.json
@@ -1621,9 +1621,9 @@ msgstr[2] "Заказов для проверки: %1$d."
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:398
 msgid "%1$d order was verified in %2$d seconds."
 msgid_plural "%1$d orders were verified in %2$d seconds."
-msgstr[0] "%1$d заказ проверен, затрачено %2$f с"
-msgstr[1] "Проверено заказов: %1$d, затрачено %2$f с"
-msgstr[2] "Проверено заказов: %1$d, затрачено %2$f с"
+msgstr[0] "%1$d заказ проверен, затрачено %2$d с."
+msgstr[1] "Проверено заказов: %1$d, затрачено %2$d с."
+msgstr[2] "Проверено заказов: %1$d, затрачено %2$d с."
 
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:374
 msgid "Verification completed."
@@ -1647,9 +1647,9 @@ msgstr "Нет заказов для проверки, выполняется о
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:235
 msgid "%1$d order was synced in %2$d seconds."
 msgid_plural "%1$d orders were synced in %2$d seconds."
-msgstr[0] "%1$d заказ перенесён, затрачено %2$f с"
-msgstr[1] "Перенесено заказов: %1$d, затрачено %2$f с"
-msgstr[2] "Перенесено заказов: %1$d, затрачено %2$f с"
+msgstr[0] "%1$d заказ перенесён за %2$d с."
+msgstr[1] "%1$d заказа перенесено за %2$d с."
+msgstr[2] "%1$d заказов перенесено за %2$d с."
 
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:218
 msgid "Infinite loop detected, aborting."
@@ -1658,7 +1658,7 @@ msgstr "Обнаружен бесконечный цикл, выполняетс
 #. Translators: %1$d is the batch number, %2$d is time taken to process batch.
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:358
 msgid "Batch %1$d (%2$d orders) completed in %3$d seconds."
-msgstr "Выполнен пакет %1$d (заказов: %2$d), затрачено %3$f с"
+msgstr "Выполнен пакет %1$d (заказов: %2$d), затрачено %3$d с."
 
 #. Translators: %1$d is the batch number and %2$d is the batch size.
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:188
@@ -1667,15 +1667,15 @@ msgstr "Приступаем к пакету № %1$d (заказов в пак
 
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:168
 msgid "There are no orders to sync, aborting."
-msgstr "Нет заказов для переноса, выполняется отмена."
+msgstr "Нет заказов для переноса, отбой."
 
 #. Translators: %1$d is the number of orders to be synced.
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:126
 msgid "There is %1$d order to be synced."
 msgid_plural "There are %1$d orders to be synced."
 msgstr[0] "Есть %1$d заказ для переноса."
-msgstr[1] "Заказов для переноса: %1$d."
-msgstr[2] "Заказов для переноса: %1$d."
+msgstr[1] "Есть %1$d заказа для переноса."
+msgstr[2] "Есть %1$d заказов для переноса."
 
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:92
 msgid "This feature is not production ready yet. Make sure you are not running these commands in your production environment."
@@ -2300,7 +2300,7 @@ msgstr "Насколько просто было редактировать то
 #: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
 msgctxt "block description"
 msgid "Block that displays the shopping button when the Mini Cart is empty."
-msgstr "Блок, отображающий кнопку покупки миникорзины."
+msgstr "Блок, отображающий кнопку покупки, когда мини-корзина пуста."
 
 #: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/mini-cart-shopping-button-block/block.json
 #: packages/woocommerce-blocks/build/inner-blocks/mini-cart-shopping-button-block/block.json
@@ -2649,19 +2649,19 @@ msgstr "Подвал мини-корзины"
 #: packages/woocommerce-blocks/build/inner-blocks/filled-mini-cart-contents-block/block.json
 msgctxt "block title"
 msgid "Filled Mini Cart view"
-msgstr "Содержимое заполненной мини-корзины"
+msgstr "Вид заполненной мини-корзины"
 
 #: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/empty-mini-cart-contents-block/block.json
 #: packages/woocommerce-blocks/build/inner-blocks/empty-mini-cart-contents-block/block.json
 msgctxt "block description"
 msgid "Blocks that are displayed when the Mini Cart is empty."
-msgstr "Содержит блоки, которые отображаются, когда мини-корзина пуста."
+msgstr "Блоки, которые отображаются, когда мини-корзина пуста."
 
 #: packages/woocommerce-blocks/assets/js/blocks/mini-cart/mini-cart-contents/inner-blocks/empty-mini-cart-contents-block/block.json
 #: packages/woocommerce-blocks/build/inner-blocks/empty-mini-cart-contents-block/block.json
 msgctxt "block title"
 msgid "Empty Mini Cart view."
-msgstr "Содержимое пустой мини-корзины"
+msgstr "Вид пустой мини-корзины"
 
 #: src/Internal/Admin/Notes/PaymentsRemindMeLater.php:74
 msgid "Save big with WooCommerce Payments"
@@ -2698,7 +2698,7 @@ msgstr "Количество сотрудников в магазине."
 
 #: includes/class-woocommerce.php:975
 msgid "You have installed a development version of WooCommerce which requires files to be built and minified. From the plugin directory, run <code>pnpm install</code> and then <code>pnpm run build --filter=woocommerce</code> to build and minify assets."
-msgstr "Вы установили версию WooCommerce для разработчиков, которая требует сборки и минификации файлов. Из директории плагина запустите <code>pnpm install</code>, а затем <code>pnpm nx build woocommerce-legacy-assets</code> для сборки и минификации ассетов."
+msgstr "Вы установили версию WooCommerce для разработчиков, которая требует сборки и минификации файлов. Из директории плагина запустите <code>pnpm install</code>, а затем <code>pnpm run build --filter=woocommerce</code> для сборки и минификации ассетов."
 
 #: includes/admin/views/html-admin-page-status-report.php:471
 msgid "The database version for WooCommerce. This should be the same as your WooCommerce version."
@@ -3476,7 +3476,7 @@ msgstr "Итоги оформления заказа"
 #: packages/woocommerce-blocks/build/inner-blocks/checkout-terms-block/block.json
 msgctxt "block description"
 msgid "Ensure that customers agree to your Terms & Conditions and Privacy Policy."
-msgstr "Подтверждение, что клиент согласен с условиями и правилами магазина."
+msgstr "Подтверждение того, что клиент согласен с условиями и правилами магазина, а так же политикой конфиденциальности."
 
 #: packages/woocommerce-blocks/assets/js/blocks/checkout/inner-blocks/checkout-terms-block/block.json
 #: packages/woocommerce-blocks/build/inner-blocks/checkout-terms-block/block.json
@@ -3770,7 +3770,7 @@ msgstr "При значении true, рассчитывает запасы то
 
 #: src/Admin/API/OnboardingTasks.php:986
 msgid "Sorry, no task with that ID was found."
-msgstr "Отложенных задач с таким ID найдено."
+msgstr "Задач с таким ID не найдено."
 
 #: src/Admin/API/OnboardingTasks.php:867 src/Admin/API/OnboardingTasks.php:900
 msgid "Sorry, no snoozeable task with that ID was found."
@@ -4647,7 +4647,7 @@ msgstr "Указан неверный почтовый индекс"
 #. translators: %1$s given state, %2$s valid states
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/AbstractAddressSchema.php:195
 msgid "The provided state (%1$s) is not valid. Must be one of: %2$s"
-msgstr "Область указана некорректно. Должна соответствовать одной из этих: %s"
+msgstr "Указанное состояние (%1$s) недопустимо. Допустимы: %2$s"
 
 #. translators: %s valid country codes
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/AbstractAddressSchema.php:183
@@ -5251,7 +5251,7 @@ msgstr "Главная WooCommerce"
 
 #: src/Internal/Admin/CustomerEffortScoreTracks.php:340
 msgid "How easy was it to add a product?"
-msgstr "Насколько просто было редактировать товары?"
+msgstr "Насколько просто было добавить товар?"
 
 #: src/Internal/Admin/CustomerEffortScoreTracks.php:487
 msgid "How easy was it to import products?"
@@ -6946,7 +6946,7 @@ msgstr "Чтобы у вас не возникало чувство, что вы
 
 #: src/Admin/Features/OnboardingTasks/Tasks/AdditionalPayments.php:37
 msgid "Set up additional payment options"
-msgstr "Настроить дополнительные платежные сервисы"
+msgstr "Настройка дополнительных параметров оплаты"
 
 #. translators: 1: Orders URL 2: Address URL 3: Account URL.
 #: templates/myaccount/dashboard.php:45
@@ -6981,7 +6981,7 @@ msgstr "Страна/регион"
 
 #: src/Admin/Features/OnboardingTasks/Tasks/StoreDetails.php:31
 msgid "Add store details"
-msgstr "Редактировать сведения о магазине"
+msgstr "Указать информацию о магазине"
 
 #: src/Admin/Features/OnboardingTasks/Tasks/Products.php:67
 msgid "1 minute per product"
@@ -7083,7 +7083,7 @@ msgstr "Верно, если разрешается предзаказ посл�
 #. Translators: %s amount.
 #: packages/woocommerce-blocks/src/StoreApi/Utilities/QuantityLimits.php:113
 msgid "The maximum quantity that can be added to the cart is %s"
-msgstr "Максимальное количество, допустимое для единоразового добавления в корзину."
+msgstr "Максимальное количество, допустимое для единоразового добавления в корзину = %s"
 
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/V1/CartShippingRateSchema.php:208
 msgid "True if this is the rate currently selected by the customer for the cart."
@@ -7457,7 +7457,7 @@ msgstr "Уникальный идентификатор (ключ) для обн
 #. Translators: %s Payment method ID.
 #: packages/woocommerce-blocks/src/StoreApi/Routes/V1/Checkout.php:565
 msgid "The %s payment gateway is not available."
-msgstr "Этот платежный шлюз недоступен."
+msgstr "Платежный шлюз %s недоступен."
 
 #: packages/woocommerce-blocks/src/StoreApi/Routes/V1/Checkout.php:553
 msgid "No payment method provided."
@@ -8304,7 +8304,7 @@ msgstr "Принимайте дебетовые и кредитные карты
 
 #: includes/cli/class-wc-cli-com-command.php:180
 msgid "Store connected successfully."
-msgstr "Stripe успешно подключен."
+msgstr "Магазин успешно подключен."
 
 #: src/Admin/Features/OnboardingTasks/Tasks/Purchase.php:140
 msgid "Purchase & install now"
@@ -9285,7 +9285,7 @@ msgstr "Количество налоговых кодов."
 #: assets/client/admin/chunks/analytics-report-taxes.js:1
 #: assets/client/admin/chunks/dashboard-charts.js:1
 msgid "Shipping tax"
-msgstr "Транспортный налог"
+msgstr "Налог на доставку"
 
 #: src/Admin/API/Reports/Taxes/Controller.php:313
 #: assets/client/admin/chunks/analytics-report-taxes.js:1
@@ -10012,7 +10012,7 @@ msgstr "Новый рекорд продаж!"
 #. $160.00)
 #: src/Internal/Admin/Notes/NewSalesRecord.php:132
 msgid "Woohoo, %1$s was your record day for sales! Net sales was %2$s beating the previous record of %3$s set on %4$s."
-msgstr "Ого, %1$s был вашим рекордным днём по продажам! Чистая выручка %2$s побил предыдущий рекорд %3$s установленный %4$s."
+msgstr "Ого, %1$s был вашим рекордным днём по продажам! Чистая выручка %2$s побила предыдущий рекорд %3$s установленный %4$s."
 
 #: src/Internal/Admin/Notes/OrderMilestones.php:260
 msgid "Review your orders"
@@ -10129,7 +10129,7 @@ msgstr "Импорт уже в процессе выполнения. Пожал
 
 #: src/Admin/ReportsSync.php:49
 msgid "Report sync schedulers should be derived from the Automattic\\WooCommerce\\Internal\\Admin\\Schedulers\\ImportScheduler class."
-msgstr "Планировщики синхронизации отчетов должны быть получены из класса Automattic\\WooCommerce\\Admin\\Schedulers\\ImportScheduler."
+msgstr "Планировщики синхронизации отчетов должны быть получены из класса Automattic\\WooCommerce\\Internal\\Admin\\Schedulers\\ImportScheduler."
 
 #: src/Internal/Admin/Loader.php:502 src/Internal/Admin/Loader.php:503
 #: src/Internal/Admin/Settings.php:286 src/Internal/Admin/Settings.php:287
@@ -10666,7 +10666,7 @@ msgstr "Подсчитывает оценки товаров в коллекци
 
 #: packages/woocommerce-blocks/src/StoreApi/Routes/V1/ProductCollectionData.php:196
 msgid "Filter condition\t being performed which may affect counts. Valid values include \"and\" and \"or\"."
-msgstr "Выполняется запрос, который может повлиять на значение числа. Допустимые значения включают «И» и «ИЛИ»."
+msgstr "Состояние фильтра\t выполняется, что может повлиять на подсчёт. Допустимые значения включают «и» и «или»."
 
 #: packages/woocommerce-blocks/src/StoreApi/Routes/V1/ProductCollectionData.php:190
 msgid "Taxonomy name."
@@ -10925,7 +10925,7 @@ msgstr "При попытке применить купон %s произошл�
 #. translators: %s: decimal
 #: includes/admin/class-wc-admin-assets.php:198
 msgid "Please enter a value with one decimal point (%s) without thousand separators."
-msgstr "Укажите число без разделителя с одной цифрой в дробной части (%s)."
+msgstr "Укажите число без разделителя с одной цифрой в дробной части (%s) без тысячного разделителя."
 
 #. translators: %1$s: usage tracking help link
 #: includes/admin/class-wc-admin-setup-wizard.php:625
@@ -25502,7 +25502,7 @@ msgstr "Возникли проблемы с товарами в вашей ко
 #: templates/cart/shipping-calculator.php:56
 #: templates/cart/shipping-calculator.php:69
 msgid "State / County:"
-msgstr "Область/регион"
+msgstr "Область/регион:"
 
 #: templates/cart/shipping-calculator.php:24
 msgid "Calculate shipping"
@@ -25685,7 +25685,7 @@ msgid "Only show children of the current category"
 msgstr "Показывать только дочерние элементы категории"
 
 #: includes/widgets/class-wc-widget-product-categories.php:68
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:124
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:122
 #: packages/woocommerce-blocks/build/product-categories.js:1
 msgid "Show hierarchy"
 msgstr "Показывать иерархию"
@@ -25755,14 +25755,14 @@ msgid "Query type"
 msgstr "Тип запроса"
 
 #: includes/widgets/class-wc-widget-layered-nav.php:91
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:79
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:70
 #: packages/woocommerce-blocks/build/attribute-filter.js:28
 #: packages/woocommerce-blocks/build/product-categories.js:1
 msgid "Dropdown"
 msgstr "Выпадающее меню"
 
 #: includes/widgets/class-wc-widget-layered-nav.php:90
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:72
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:63
 #: packages/woocommerce-blocks/build/active-filters.js:15
 #: packages/woocommerce-blocks/build/attribute-filter.js:28
 #: packages/woocommerce-blocks/build/product-categories.js:1
@@ -25793,7 +25793,7 @@ msgstr "Очистить фильтр"
 #: includes/admin/reports/class-wc-report-downloads.php:123
 #: includes/widgets/class-wc-widget-layered-nav-filters.php:27
 #: packages/woocommerce-blocks/patterns/filters.php:12
-#: packages/woocommerce-blocks/build/active-filters.js:15
+#: packages/woocommerce-blocks/build/active-filters.js:17
 #: packages/woocommerce-blocks/build/filter-wrapper.js:1
 msgid "Active filters"
 msgstr "Активные фильтры"
@@ -27354,8 +27354,8 @@ msgstr "Добавить товар"
 #: assets/client/admin/chunks/homescreen.js:1
 #: packages/woocommerce-blocks/assets/js/editor-components/product-attribute-term-control/index.js:101
 #: packages/woocommerce-blocks/assets/js/editor-components/product-category-control/index.js:89
-#: packages/woocommerce-blocks/build/featured-category.js:17
-#: packages/woocommerce-blocks/build/featured-product.js:17
+#: packages/woocommerce-blocks/build/featured-category.js:18
+#: packages/woocommerce-blocks/build/featured-product.js:18
 #: packages/woocommerce-blocks/build/product-best-sellers.js:16
 #: packages/woocommerce-blocks/build/product-category.js:16
 #: packages/woocommerce-blocks/build/product-new.js:16
@@ -28180,7 +28180,7 @@ msgstr "Неправильная сумма возврата"
 
 #: i18n/states.php:690
 msgid "Valle"
-msgstr "Значение"
+msgstr "Валье"
 
 #. translators: 1: product ID 2: old stock level 3: new stock level
 #: includes/wc-order-functions.php:744
@@ -30399,8 +30399,8 @@ msgstr "Поиск товаров"
 #: packages/woocommerce-blocks/build/attribute-filter-frontend.js:5
 #: packages/woocommerce-blocks/build/attribute-filter-wrapper-frontend.js:15
 #: packages/woocommerce-blocks/build/attribute-filter.js:6
-#: packages/woocommerce-blocks/build/featured-category.js:7
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-category.js:8
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/price-filter-frontend.js:3
 #: packages/woocommerce-blocks/build/price-filter-wrapper-frontend.js:3
 #: packages/woocommerce-blocks/build/price-filter.js:3
@@ -31021,7 +31021,7 @@ msgstr "Сохранить"
 
 #: src/Admin/Features/OnboardingTasks/Tasks/Shipping.php:50
 msgid "Add shipping costs"
-msgstr "Добавить расходы на доставку"
+msgstr "Добавьте стоимость доставки"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:310
 msgid "Add fee"
@@ -32253,7 +32253,7 @@ msgstr "Вебзацеп создан %s"
 #: src/Internal/Admin/Orders/ListTable.php:472
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1321
 msgid "Empty Trash"
-msgstr "Очистить корзину"
+msgstr "Очистить мусорку"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:66
 #: src/Internal/Admin/Orders/ListTable.php:227
@@ -32346,8 +32346,8 @@ msgstr "Подкатегории"
 #: packages/woocommerce-blocks/assets/js/editor-components/product-control/index.js:27
 #: packages/woocommerce-blocks/assets/js/editor-components/products-control/index.js:36
 #: packages/woocommerce-blocks/build/all-products.js:9
-#: packages/woocommerce-blocks/build/featured-category.js:17
-#: packages/woocommerce-blocks/build/featured-product.js:17
+#: packages/woocommerce-blocks/build/featured-category.js:18
+#: packages/woocommerce-blocks/build/featured-product.js:18
 #: packages/woocommerce-blocks/build/handpicked-products.js:6
 #: packages/woocommerce-blocks/build/handpicked-products.js:8
 #: packages/woocommerce-blocks/build/reviews-by-product.js:20
@@ -32536,13 +32536,13 @@ msgid "Left with space"
 msgstr "Слева с пробелом"
 
 #: includes/admin/settings/class-wc-settings-general.php:247
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:114
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:103
 #: packages/woocommerce-blocks/build/all-products.js:28
 msgid "Right"
 msgstr "Справа"
 
 #: includes/admin/settings/class-wc-settings-general.php:246
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:100
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:89
 #: packages/woocommerce-blocks/build/all-products.js:28
 msgid "Left"
 msgstr "Слева"
@@ -33011,7 +33011,7 @@ msgstr "Удалить навсегда"
 
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:520
 msgid "Delete this review permanently"
-msgstr "Удалить эту позицию навсегда"
+msgstr "Удалить этот отзыв навсегда"
 
 #: includes/admin/class-wc-admin-duplicate-product.php:60
 msgid "Trash"
@@ -33019,7 +33019,7 @@ msgstr "В мусорку"
 
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:528
 msgid "Move this review to the Trash"
-msgstr "Переместить эту позицию в урну"
+msgstr "Выбросить этот отзыв в мусорку"
 
 #: src/Internal/Admin/Orders/ListTable.php:218
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:511
@@ -33029,7 +33029,7 @@ msgstr "Восстановить"
 
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:510
 msgid "Restore this review from the Trash"
-msgstr "Восстановить эту позицию из урны"
+msgstr "Восстановить этот отзыв из мусорки"
 
 #. Translators: %s Payment gateway name.
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:262
@@ -33276,7 +33276,7 @@ msgstr "Артикул"
 
 #: includes/admin/class-wc-admin-taxonomies.php:383
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:116
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:84
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:81
 #: packages/woocommerce-blocks/build/all-reviews.js:1
 #: packages/woocommerce-blocks/build/reviews-by-category.js:2
 #: packages/woocommerce-blocks/build/reviews-by-product.js:2
@@ -33502,8 +33502,8 @@ msgstr "Товар обновлён. <a href=\"%s\">Перейти к нему</
 
 #: includes/widgets/class-wc-widget-product-categories.php:39
 #: packages/woocommerce-blocks/assets/js/editor-components/product-category-control/index.js:119
-#: packages/woocommerce-blocks/build/featured-category.js:7
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-category.js:8
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/product-best-sellers.js:6
 #: packages/woocommerce-blocks/build/product-category.js:6
 #: packages/woocommerce-blocks/build/product-new.js:6
@@ -33561,7 +33561,7 @@ msgstr "База магазина"
 #: assets/client/admin/chunks/analytics-report-products.js:1
 #: assets/client/admin/chunks/analytics-report-stock.js:1
 #: assets/client/admin/chunks/dashboard-charts.js:1
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:131
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:124
 #: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-product/edit.js:78
 #: packages/woocommerce-blocks/assets/js/blocks/single-product/edit/index.js:101
 #: packages/woocommerce-blocks/build/all-reviews.js:1
@@ -33726,7 +33726,7 @@ msgstr "Официальная тема"
 
 #: includes/admin/class-wc-admin-help.php:78
 msgid "GitHub project"
-msgstr "Проект Github"
+msgstr "Проект GitHub"
 
 #: includes/admin/class-wc-admin-help.php:77
 msgid "WordPress.org project"
@@ -33952,7 +33952,7 @@ msgstr "Значения"
 #: includes/widgets/class-wc-widget-product-categories.php:49
 #: includes/widgets/class-wc-widget-products.php:51
 #: packages/woocommerce-blocks/assets/js/base/components/reviews/review-sort-select/index.js:17
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:175
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:173
 #: packages/woocommerce-blocks/build/all-reviews.js:1
 #: packages/woocommerce-blocks/build/all-reviews.js:5
 #: packages/woocommerce-blocks/build/reviews-by-category.js:2
@@ -34321,7 +34321,7 @@ msgstr "Пожалуйста, введите код страны в виде д�
 #. translators: %s: price decimal separator
 #: includes/admin/class-wc-admin-assets.php:200
 msgid "Please enter a value with one monetary decimal point (%s) without thousand separators and currency symbols."
-msgstr "Пожалуйста, введите число в денежном десятичном формате (%s), без тысячного разделителя и символов валюты."
+msgstr "Введите число в денежном десятичном формате (%s), без тысячного разделителя и символов валюты."
 
 #: includes/admin/class-wc-admin-assets.php:154
 #: includes/class-wc-frontend-scripts.php:608
@@ -34588,7 +34588,7 @@ msgstr "Подробнее"
 #: packages/woocommerce-blocks/build/cart-blocks/cart-cross-sells-products-frontend.js:11
 #: packages/woocommerce-blocks/build/cart.js:9
 #: packages/woocommerce-blocks/build/cart.js:15
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/product-add-to-cart.js:3
 #: packages/woocommerce-blocks/build/product-button-frontend.js:3
 #: packages/woocommerce-blocks/build/product-button.js:3

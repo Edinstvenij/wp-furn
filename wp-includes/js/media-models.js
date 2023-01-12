@@ -315,8 +315,8 @@ var Attachments = Backbone.Collection.extend(/** @lends wp.media.model.Attachmen
 			return;
 		}
 
-		// If no `Attachments` model is provided to source the searches from,
-		// then automatically generate a source from the existing models.
+		// If no `Attachments` model is provided to #source the searches from,
+		// then automatically generate a #source from the existing models.
 		if ( ! this._source ) {
 			this._source = new Attachments( this.models );
 		}

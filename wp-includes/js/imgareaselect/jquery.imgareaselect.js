@@ -591,7 +591,7 @@ $.imgAreaSelect = function (img, options) {
     function doResize() {
         /*
          * Make sure the top left corner of the selection area stays within
-         * image boundaries (it might not if the image source was dynamically
+         * image boundaries (it might not if the image #source was dynamically
          * changed).
          */
         x1 = min(x1, left + imgWidth);

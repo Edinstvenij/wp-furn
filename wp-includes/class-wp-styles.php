@@ -205,7 +205,7 @@ class WP_Styles extends WP_Dependencies {
 			$media = 'all';
 		}
 
-		// A single item may alias a set of items, by having dependencies, but no source.
+		// A single item may alias a set of items, by having dependencies, but no #source.
 		if ( ! $src ) {
 			if ( $inline_style_tag ) {
 				if ( $this->do_concat ) {
@@ -245,7 +245,7 @@ class WP_Styles extends WP_Dependencies {
 		 *
 		 * @param string $tag    The link tag for the enqueued style.
 		 * @param string $handle The style's registered handle.
-		 * @param string $href   The stylesheet's source URL.
+		 * @param string $href   The stylesheet's #source URL.
 		 * @param string $media  The stylesheet's media attribute.
 		 */
 		$tag = apply_filters( 'style_loader_tag', $tag, $handle, $href, $media );
@@ -387,7 +387,7 @@ class WP_Styles extends WP_Dependencies {
 	 *
 	 * @since 2.6.0
 	 *
-	 * @param string $src    The source of the enqueued style.
+	 * @param string $src    The #source of the enqueued style.
 	 * @param string $ver    The version of the enqueued style.
 	 * @param string $handle The style's registered handle.
 	 * @return string Style's fully-qualified URL.
@@ -406,7 +406,7 @@ class WP_Styles extends WP_Dependencies {
 		 *
 		 * @since 2.6.0
 		 *
-		 * @param string $src    The source URL of the enqueued style.
+		 * @param string $src    The #source URL of the enqueued style.
 		 * @param string $handle The style's registered handle.
 		 */
 		$src = apply_filters( 'style_loader_src', $src, $handle );
@@ -414,11 +414,11 @@ class WP_Styles extends WP_Dependencies {
 	}
 
 	/**
-	 * Whether a handle's source is in a default directory.
+	 * Whether a handle's #source is in a default directory.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @param string $src The source of the enqueued style.
+	 * @param string $src The #source of the enqueued style.
 	 * @return bool True if found, false if not.
 	 */
 	public function in_default_dir( $src ) {

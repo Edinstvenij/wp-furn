@@ -48,30 +48,28 @@ new Swiper('.product-preview__slider', {
 // END Slider
 
 // script filter product
-const filterItem = document.querySelectorAll('.grid__item');
+const products = document.querySelectorAll('.grid__item');
+if ($('.catalog__ul').length) {
+    document.querySelector('.catalog__ul').addEventListener('click', event => {
+        if (event.target.tagName !== 'LI') return false;
+        let filterClass = event.target.dataset['filter'];
+        let catalogItems = document.querySelectorAll('.catalog__li');
+        catalogItems.forEach(elem => {
+            elem.classList.remove('active');
+        });
+        event.target.classList.add('active');
 
-document.querySelector('.catalog__ul').addEventListener('click', event => {
-    if (event.target.tagName !== 'LI') return false;
-    let filterClass = event.target.dataset['filter'];
-
-    let catalogItems = document.querySelectorAll('.catalog__li');
-    catalogItems.forEach(elem => {
-        elem.classList.remove('active');
+        products.forEach(elem => {
+            elem.classList.remove('hide');
+            if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+                elem.classList.add('hide');
+            }
+        });
     });
-    event.target.classList.add('active');
-
-
-    filterItem.forEach(elem => {
-        elem.classList.remove('hide');
-        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-            elem.classList.add('hide');
-        }
-    });
-});
+}
 // END filter product
 
 //  script Products item backgraund
-
 $(document).ready(function () {
     // all bg(0.5)
     $('.grid__item').mouseenter(function (event) {
@@ -83,7 +81,7 @@ $(document).ready(function () {
 
     //item bg(1)
     $('.grid__item').mouseenter(function (event) {
-        $(event.target.parentNode.parentNode.parentNode.parentNode).css('opacity', '1');
+        $(event.target.parentNode.parentNode.parentNode).css('opacity', '1');
     });
 });
 //  END Products item backgraund
@@ -114,21 +112,20 @@ $('.popup-order__form').on('submit', function (event) {
     let form = this,
         submit = $('.submit', form),
         data = new FormData(),
-        files = $('input[type=file]')
-
+        files = $('input[type=file]'),
+        action = $('.popup-order__form').attr('action')
 
     $('.submit', form).val('Отправка...');
     $('input, textarea', form).attr('disabled', '');
 
     data.append('Form name', $('[name="form-name"]', form).val());
-    data.append('Page', $('[name="page"]', form).val());
+    data.append('Product', $('[name="product"]', form).val());
     data.append('User name', $('[name="name"]', form).val());
     data.append('User email', $('[name="email"]', form).val());
     data.append('User tel', $('[name="tel"]', form).val());
     data.append('User country', $('[name="country"]', form).val());
     data.append('User address', $('[name="address"]', form).val());
     data.append('User massege', $('[name="massege"]', form).val());
-
 
     files.each(function (key, file) {
         let cont = file.files;
@@ -140,7 +137,7 @@ $('.popup-order__form').on('submit', function (event) {
     });
 
     $.ajax({
-        url: 'telegram.php',
+        url: action,
         type: 'POST',
         data: data,
         cache: false,
@@ -186,71 +183,72 @@ $('.popup-order__form').on('submit', function (event) {
 // END POPUP-order SMS
 
 
-// CONTACT form
-// // script Telegram SMS
-// $('.form').on('submit', function (event) {
+// CONTACT
+// script Telegram SMS
+$('.form').on('submit', function (event) {
 
-//   event.stopPropagation();
-//   event.preventDefault();
+    event.preventDefault();
+    event.stopPropagation();
 
-//   let form = this,
-//     submit = $('.submit', form),
-//     data = new FormData(),
-//     files = $('input[type=file]')
-
-
-//   $('.submit', form).val('Отправка...');
-//   $('input, textarea', form).attr('disabled', '');
-
-//   data.append('Form name', $('[name="form-name"]', form).val());
-//   data.append('User name', $('[name="name"]', form).val());
-//   data.append('User email', $('[name="email"]', form).val());
+    let form = this,
+        submit = $('.submit', form),
+        data = new FormData(),
+        files = $('input[type=file]'),
+        action = $('.form').attr('action')
 
 
-//   files.each(function (key, file) {
-//     let cont = file.files;
-//     if (cont) {
-//       $.each(cont, function (key, value) {
-//         data.append(key, value);
-//       });
-//     }
-//   });
+    $(form).find('input[type=submit], button[type=submit]').prop('disabled', true);
+    $('.submit', form).val('Отправка...');
+    $('input, textarea', form).attr('disabled', '');
 
-//   $.ajax({
-//     url: 'telegram.php',
-//     type: 'POST',
-//     data: data,
-//     cache: false,
-//     dataType: 'json',
-//     processData: false,
-//     contentType: false,
-//     xhr: function () {
-//       let myXhr = $.ajaxSettings.xhr();
+    data.append('Form name', $('[name="form-name"]', form).val());
+    data.append('User name', $('[name="name"]', form).val());
+    data.append('User email', $('[name="email"]', form).val());
 
-//       if (myXhr.upload) {
-//         myXhr.upload.addEventListener('progress', function (e) {
-//           if (e.lengthComputable) {
-//             let percentage = (e.loaded / e.total) * 100;
-//             percentage = percentage.toFixed(0);
-//             $('.submit', form)
-//               .html(percentage + '%');
-//           }
-//         }, false);
-//       }
+    files.each(function (key, file) {
+        let cont = file.files;
+        if (cont) {
+            $.each(cont, function (key, value) {
+                data.append(key, value);
+            });
+        }
+    });
 
-//       return myXhr;
-//     },
-//     error: function (jqXHR, textStatus) {
-//       // Тут выводим ошибку
-//       $('#tg-form-btn').text('ERROR').css('background', 'red')
-//     },
-//     complete: function () {
-//       // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-//       form.reset()
-//       $('#tg-form-btn').text('Thank you!').css('background', '#b7ff00')
-//     }
-//   });
+    $.ajax({
+        url: action,
+        type: 'POST',
+        data: data,
+        cache: false,
+        dataType: 'json',
+        processData: false,
+        contentType: false,
+        xhr: function () {
+            let myXhr = $.ajaxSettings.xhr();
 
-//   return false;
-// });
-// // END Telegram SMS
+            if (myXhr.upload) {
+                myXhr.upload.addEventListener('progress', function (e) {
+                    if (e.lengthComputable) {
+                        let percentage = (e.loaded / e.total) * 100;
+                        percentage = percentage.toFixed(0);
+                        $('.submit', form)
+                            .html(percentage + '%');
+                    }
+                }, false);
+            }
+
+            return myXhr;
+        },
+        error: function (jqXHR, textStatus) {
+            // Тут выводим ошибку
+            $('#tg-form-btn').text('ERROR')    //.css('background', 'red')
+        },
+        complete: function () {
+            // Тут можем что-то делать ПОСЛЕ успешной отправки формы
+            form.reset()
+            $('#tg-form-btn').text('Thank you!')    //.css('background', '#416700')
+        }
+    });
+
+    return false;
+});
+// END Telegram SMS

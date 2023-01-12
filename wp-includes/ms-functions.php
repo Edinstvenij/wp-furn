@@ -305,7 +305,7 @@ function remove_user_from_blog( $user_id, $blog_id = 0, $reassign = 0 ) {
  *
  * @since MU (3.0.0) 1.0
  *
- * @param int $blog_id ID of the source blog.
+ * @param int $blog_id ID of the #source blog.
  * @param int $post_id ID of the desired post.
  * @return string The post's permalink
  */

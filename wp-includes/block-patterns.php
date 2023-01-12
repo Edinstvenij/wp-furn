@@ -176,7 +176,7 @@ function _register_remote_theme_patterns() {
  *      * Slug: my-theme/my-pattern
  *      *
  *
- * The output of the PHP source corresponds to the content of the pattern, e.g.:
+ * The output of the PHP #source corresponds to the content of the pattern, e.g.:
  *
  *     <main><p><?php echo "Hello"; ?></p></main>
  *

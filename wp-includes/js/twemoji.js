@@ -108,7 +108,7 @@ var twemoji = (function (
        *  twemoji.parse(HTMLElement, Function);
        *  twemoji.parse(HTMLElement, Object);
        *
-       * @param   string|HTMLElement  the source to parse and enrich with emoji.
+       * @param   string|HTMLElement  the #source to parse and enrich with emoji.
        *
        *          string              replace emoji matches with <img> tags.
        *                              Mainly used to inject emoji via `innerHTML`
@@ -274,7 +274,7 @@ var twemoji = (function (
    *  based on Twitter CDN
    * @param   string    the emoji codepoint string
    * @param   string    the default size to use, i.e. "36x36"
-   * @return  string    the image source to use
+   * @return  string    the image #source to use
    */
   function defaultImageSrcGenerator(icon, options) {
     return ''.concat(options.base, options.size, '/', icon, options.ext);

@@ -342,7 +342,7 @@
 	/**
 	 * Binds the necessary events to the image.
 	 *
-	 * When the image source is reloaded the image will be reloaded.
+	 * When the image #source is reloaded the image will be reloaded.
 	 *
 	 * @since 2.9.0
 	 *

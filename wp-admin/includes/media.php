@@ -159,7 +159,7 @@ function get_image_send_to_editor( $id, $caption, $title, $align, $url = '', $re
 	 * @param string       $caption The image caption.
 	 * @param string       $title   The image title.
 	 * @param string       $align   The image alignment.
-	 * @param string       $url     The image source URL.
+	 * @param string       $url     The image #source URL.
 	 * @param string|int[] $size    Requested image size. Can be any registered image size name, or
 	 *                              an array of width and height values in pixels (in that order).
 	 * @param string       $alt     The image alternative, or alt, text.
@@ -180,7 +180,7 @@ function get_image_send_to_editor( $id, $caption, $title, $align, $url = '', $re
  * @param string  $caption Image caption.
  * @param string  $title   Image title attribute (not used).
  * @param string  $align   Image CSS alignment property.
- * @param string  $url     Image source URL (not used).
+ * @param string  $url     Image #source URL (not used).
  * @param string  $size    Image size (not used).
  * @param string  $alt     Image `alt` attribute (not used).
  * @return string The image HTML markup with caption shortcode.
@@ -674,7 +674,7 @@ function media_buttons( $editor_id = 'content' ) {
 }
 
 /**
- * Retrieves the upload iframe source URL.
+ * Retrieves the upload iframe #source URL.
  *
  * @since 3.0.0
  *
@@ -683,7 +683,7 @@ function media_buttons( $editor_id = 'content' ) {
  * @param string $type    Media type.
  * @param int    $post_id Post ID.
  * @param string $tab     Media upload tab.
- * @return string Upload iframe source URL.
+ * @return string Upload iframe #source URL.
  */
 function get_upload_iframe_src( $type = null, $post_id = null, $tab = null ) {
 	global $post_ID;
@@ -703,7 +703,7 @@ function get_upload_iframe_src( $type = null, $post_id = null, $tab = null ) {
 	}
 
 	/**
-	 * Filters the upload iframe source URL for a specific media type.
+	 * Filters the upload iframe #source URL for a specific media type.
 	 *
 	 * The dynamic portion of the hook name, `$type`, refers to the type
 	 * of media uploaded.
@@ -715,7 +715,7 @@ function get_upload_iframe_src( $type = null, $post_id = null, $tab = null ) {
 	 *
 	 * @since 3.0.0
 	 *
-	 * @param string $upload_iframe_src The upload iframe source URL.
+	 * @param string $upload_iframe_src The upload iframe #source URL.
 	 */
 	$upload_iframe_src = apply_filters( "{$type}_upload_iframe_src", $upload_iframe_src );
 
@@ -919,7 +919,7 @@ function wp_media_upload_handler() {
 			 * @since 3.3.0
 			 *
 			 * @param string $html  HTML markup sent to the editor.
-			 * @param string $src   Media source URL.
+			 * @param string $src   Media #source URL.
 			 * @param string $title Media title.
 			 */
 			$html = apply_filters( "{$type}_send_to_editor_url", $html, sanitize_url( $src ), $title );
@@ -942,7 +942,7 @@ function wp_media_upload_handler() {
 			 * @since 2.8.0
 			 *
 			 * @param string $html  HTML markup sent to the editor for an image.
-			 * @param string $src   Image source URL.
+			 * @param string $src   Image #source URL.
 			 * @param string $alt   Image alternate, or alt, text.
 			 * @param string $align The image alignment. Default 'alignnone'. Possible values include
 			 *                      'alignleft', 'aligncenter', 'alignright', 'alignnone'.
@@ -999,7 +999,7 @@ function wp_media_upload_handler() {
  * @param string $desc        Optional. Description of the image.
  * @param string $return_type Optional. Accepts 'html' (image tag html) or 'src' (URL),
  *                            or 'id' (attachment ID). Default 'html'.
- * @return string|int|WP_Error Populated HTML img tag, attachment ID, or attachment source
+ * @return string|int|WP_Error Populated HTML img tag, attachment ID, or attachment #source
  *                             on success, WP_Error object otherwise.
  */
 function media_sideload_image( $file, $post_id = 0, $desc = null, $return_type = 'html' ) {
@@ -1053,7 +1053,7 @@ function media_sideload_image( $file, $post_id = 0, $desc = null, $return_type =
 			return $id;
 		}
 
-		// Store the original attachment source in meta.
+		// Store the original attachment #source in meta.
 		add_post_meta( $id, '_source_url', $file );
 
 		// If attachment ID was requested, return it.

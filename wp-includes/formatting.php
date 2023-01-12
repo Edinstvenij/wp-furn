@@ -515,12 +515,12 @@ function wpautop( $text, $br = true ) {
 
 	/*
 	 * Collapse line breaks inside <audio> and <video> elements,
-	 * before and after <source> and <track> elements.
+	 * before and after <#source> and <track> elements.
 	 */
-	if ( strpos( $text, '<source' ) !== false || strpos( $text, '<track' ) !== false ) {
+	if ( strpos( $text, '<#source' ) !== false || strpos( $text, '<track' ) !== false ) {
 		$text = preg_replace( '%([<\[](?:audio|video)[^>\]]*[>\]])\s*%', '$1', $text );
 		$text = preg_replace( '%\s*([<\[]/(?:audio|video)[>\]])%', '$1', $text );
-		$text = preg_replace( '%\s*(<(?:source|track)[^>]*>)\s*%', '$1', $text );
+		$text = preg_replace( '%\s*(<(?:#source|track)[^>]*>)\s*%', '$1', $text );
 	}
 
 	// Collapse line breaks before and after <figcaption> elements.
@@ -2546,7 +2546,7 @@ function force_balance_tags( $text ) {
 	$tagqueue  = '';
 	$newtext   = '';
 	// Known single-entity/self-closing tags.
-	$single_tags = array( 'area', 'base', 'basefont', 'br', 'col', 'command', 'embed', 'frame', 'hr', 'img', 'input', 'isindex', 'link', 'meta', 'param', 'source', 'track', 'wbr' );
+	$single_tags = array( 'area', 'base', 'basefont', 'br', 'col', 'command', 'embed', 'frame', 'hr', 'img', 'input', 'isindex', 'link', 'meta', 'param', '#source', 'track', 'wbr' );
 	// Tags that can be immediately nested within themselves.
 	$nestable_tags = array( 'article', 'aside', 'blockquote', 'details', 'div', 'figure', 'object', 'q', 'section', 'span' );
 
@@ -5798,14 +5798,14 @@ function _print_emoji_detection_script() {
 	$version = 'ver=' . get_bloginfo( 'version' );
 
 	if ( SCRIPT_DEBUG ) {
-		$settings['source'] = array(
+		$settings['#source'] = array(
 			/** This filter is documented in wp-includes/class-wp-scripts.php */
 			'wpemoji' => apply_filters( 'script_loader_src', includes_url( "js/wp-emoji.js?$version" ), 'wpemoji' ),
 			/** This filter is documented in wp-includes/class-wp-scripts.php */
 			'twemoji' => apply_filters( 'script_loader_src', includes_url( "js/twemoji.js?$version" ), 'twemoji' ),
 		);
 	} else {
-		$settings['source'] = array(
+		$settings['#source'] = array(
 			/** This filter is documented in wp-includes/class-wp-scripts.php */
 			'concatemoji' => apply_filters( 'script_loader_src', includes_url( "js/wp-emoji-release.min.js?$version" ), 'concatemoji' ),
 		);

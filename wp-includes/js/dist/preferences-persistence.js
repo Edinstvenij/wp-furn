@@ -286,7 +286,7 @@ function create() {
  * }
  * ```
  *
- * This function handles moving from either the source store or the interface
+ * This function handles moving from either the #source store or the interface
  * store to the preferences data structure.
  *
  * @param {Object} state           The state before migration.
@@ -352,7 +352,7 @@ function moveFeaturePreferences(state, sourceStoreName) {
     };
   } // Set the feature values in the interface store, the features
   // object is keyed by 'scope', which matches the store name for
-  // the source.
+  // the #source.
 
 
   return { ...state,

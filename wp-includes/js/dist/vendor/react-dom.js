@@ -3,8 +3,8 @@
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react')) :
@@ -2233,7 +2233,7 @@
     node.textContent = text;
   };
 
-  // List derived from Gecko source code:
+  // List derived from Gecko #source code:
   // https://github.com/mozilla/gecko-dev/blob/4e638efc71/layout/style/test/property_database.js
   var shorthandToLonghand = {
     animation: ['animationDelay', 'animationDirection', 'animationDuration', 'animationFillMode', 'animationIterationCount', 'animationName', 'animationPlayState', 'animationTimingFunction'],
@@ -3797,7 +3797,7 @@
     }
   }
   /**
-   * @param {object} inst The instance, which is the source of events.
+   * @param {object} inst The instance, which is the #source of events.
    * @param {string} registrationName Name of listener (e.g. `onClick`).
    * @return {?function} The stored callback.
    */
@@ -5461,8 +5461,8 @@
     //
     // A lane is said to be entangled with another when it's not allowed to render
     // in a batch that does not also include the other lane. Typically we do this
-    // when multiple updates have the same source, and we only want to respond to
-    // the most recent event from that source.
+    // when multiple updates have the same #source, and we only want to respond to
+    // the most recent event from that #source.
     //
     // Note that we apply entanglements *after* checking for partial work above.
     // This means that if a lane is entangled during an interleaved event while
@@ -10095,7 +10095,7 @@
           tagDisplayName = 'Text nodes';
         } else {
           tagDisplayName = 'Whitespace text nodes';
-          whitespaceInfo = " Make sure you don't have any extra whitespace between tags on " + 'each line of your source code.';
+          whitespaceInfo = " Make sure you don't have any extra whitespace between tags on " + 'each line of your #source code.';
         }
       } else {
         tagDisplayName = '<' + childTag + '>';
@@ -11551,19 +11551,19 @@
       if (componentWillMountUniqueNames.size > 0) {
         var _sortedNames3 = setToSortedString(componentWillMountUniqueNames);
 
-        warn('componentWillMount has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move code with side effects to componentDidMount, and set initial state in the constructor.\n' + '* Rename componentWillMount to UNSAFE_componentWillMount to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project source folder.\n' + '\nPlease update the following components: %s', _sortedNames3);
+        warn('componentWillMount has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move code with side effects to componentDidMount, and set initial state in the constructor.\n' + '* Rename componentWillMount to UNSAFE_componentWillMount to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project #source folder.\n' + '\nPlease update the following components: %s', _sortedNames3);
       }
 
       if (componentWillReceivePropsUniqueNames.size > 0) {
         var _sortedNames4 = setToSortedString(componentWillReceivePropsUniqueNames);
 
-        warn('componentWillReceiveProps has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move data fetching code or side effects to componentDidUpdate.\n' + "* If you're updating state whenever props change, refactor your " + 'code to use memoization techniques or move it to ' + 'static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state\n' + '* Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project source folder.\n' + '\nPlease update the following components: %s', _sortedNames4);
+        warn('componentWillReceiveProps has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move data fetching code or side effects to componentDidUpdate.\n' + "* If you're updating state whenever props change, refactor your " + 'code to use memoization techniques or move it to ' + 'static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state\n' + '* Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project #source folder.\n' + '\nPlease update the following components: %s', _sortedNames4);
       }
 
       if (componentWillUpdateUniqueNames.size > 0) {
         var _sortedNames5 = setToSortedString(componentWillUpdateUniqueNames);
 
-        warn('componentWillUpdate has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move data fetching code or side effects to componentDidUpdate.\n' + '* Rename componentWillUpdate to UNSAFE_componentWillUpdate to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project source folder.\n' + '\nPlease update the following components: %s', _sortedNames5);
+        warn('componentWillUpdate has been renamed, and is not recommended for use. ' + 'See https://reactjs.org/link/unsafe-component-lifecycles for details.\n\n' + '* Move data fetching code or side effects to componentDidUpdate.\n' + '* Rename componentWillUpdate to UNSAFE_componentWillUpdate to suppress ' + 'this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. ' + 'To rename all deprecated lifecycles to their new names, you can run ' + '`npx react-codemod rename-unsafe-lifecycles` in your project #source folder.\n' + '\nPlease update the following components: %s', _sortedNames5);
       }
     };
 
@@ -13183,7 +13183,7 @@
 
           if (!didWarnAboutStringRefs[componentName]) {
             {
-              error('A string ref, "%s", has been found within a strict mode tree. ' + 'String refs are a source of potential bugs and should be avoided. ' + 'We recommend using useRef() or createRef() instead. ' + 'Learn more about using refs safely here: ' + 'https://reactjs.org/link/strict-mode-string-ref', mixedRef);
+              error('A string ref, "%s", has been found within a strict mode tree. ' + 'String refs are a #source of potential bugs and should be avoided. ' + 'We recommend using useRef() or createRef() instead. ' + 'Learn more about using refs safely here: ' + 'https://reactjs.org/link/strict-mode-string-ref', mixedRef);
             }
 
             didWarnAboutStringRefs[componentName] = true;
@@ -14777,7 +14777,7 @@
   var rendererSigil$1;
 
   {
-    // Used to detect multiple renderers using the same mutable source.
+    // Used to detect multiple renderers using the same mutable #source.
     rendererSigil$1 = {};
   }
 
@@ -14813,11 +14813,11 @@
         if (mutableSource._currentPrimaryRenderer == null) {
           mutableSource._currentPrimaryRenderer = rendererSigil$1;
         } else if (mutableSource._currentPrimaryRenderer !== rendererSigil$1) {
-          error('Detected multiple renderers concurrently rendering the ' + 'same mutable source. This is currently unsupported.');
+          error('Detected multiple renderers concurrently rendering the ' + 'same mutable #source. This is currently unsupported.');
         }
       }
     }
-  } // Eager reads the version of a mutable source and stores it on the root.
+  } // Eager reads the version of a mutable #source and stores it on the root.
 
   var ReactCurrentDispatcher$1 = ReactSharedInternals.ReactCurrentDispatcher,
       ReactCurrentBatchConfig$1 = ReactSharedInternals.ReactCurrentBatchConfig;
@@ -15433,11 +15433,11 @@
     }
 
     var getVersion = source._getVersion;
-    var version = getVersion(source._source); // Is it safe for this component to read from this source during the current render?
+    var version = getVersion(source._source); // Is it safe for this component to read from this #source during the current render?
 
     var isSafeToReadFromSource = false; // Check the version first.
     // If this render has already been started with a specific version,
-    // we can use it alone to determine if we can safely read from the source.
+    // we can use it alone to determine if we can safely read from the #source.
 
     var currentRenderVersion = getWorkInProgressVersion(source);
 
@@ -15447,9 +15447,9 @@
       isSafeToReadFromSource = currentRenderVersion === version;
     } else {
       // If there's no version, then this is the first time we've read from the
-      // source during the current render pass, so we need to do a bit more work.
+      // #source during the current render pass, so we need to do a bit more work.
       // What we need to determine is if there are any hooks that already
-      // subscribed to the source, and if so, whether there are any pending
+      // subscribed to the #source, and if so, whether there are any pending
       // mutations that haven't been synchronized yet.
       //
       // If there are no pending mutations, then `root.mutableReadLanes` will be
@@ -15458,12 +15458,12 @@
       // If there *are* pending mutations, we may still be able to safely read
       // if the currently rendering lanes are inclusive of the pending mutation
       // lanes, since that guarantees that the value we're about to read from
-      // the source is consistent with the values that we read during the most
+      // the #source is consistent with the values that we read during the most
       // recent mutation.
       isSafeToReadFromSource = isSubsetOfLanes(renderLanes, root.mutableReadLanes);
 
       if (isSafeToReadFromSource) {
-        // If it's safe to read from this source during the current render,
+        // If it's safe to read from this #source during the current render,
         // store the version in case other components read from it.
         // A changed version number will let those components know to throw and restart the render.
         setWorkInProgressVersion(source, version);
@@ -15475,18 +15475,18 @@
 
       {
         if (typeof snapshot === 'function') {
-          error('Mutable source should not return a function as the snapshot value. ' + 'Functions may close over mutable values and cause tearing.');
+          error('Mutable #source should not return a function as the snapshot value. ' + 'Functions may close over mutable values and cause tearing.');
         }
       }
 
       return snapshot;
     } else {
-      // This handles the special case of a mutable source being shared between renderers.
-      // In that case, if the source is mutated between the first and second renderer,
+      // This handles the special case of a mutable #source being shared between renderers.
+      // In that case, if the #source is mutated between the first and second renderer,
       // The second renderer don't know that it needs to reset the WIP version during unwind,
       // (because the hook only marks sources as dirty if it's written to their WIP version).
       // That would cause this tear check to throw again and eventually be visible to the user.
-      // We can avoid this infinite loop by explicitly marking the source as dirty.
+      // We can avoid this infinite loop by explicitly marking the #source as dirty.
       //
       // This can lead to tearing in the first renderer when it resumes,
       // but there's nothing we can do about that (short of throwing here and refusing to continue the render).
@@ -15494,7 +15494,7 @@
 
       {
         {
-          throw Error( "Cannot read from mutable source during the current render without tearing. This is a bug in React. Please file an issue." );
+          throw Error( "Cannot read from mutable #source during the current render without tearing. This is a bug in React. Please file an issue." );
         }
       }
     }
@@ -15520,7 +15520,7 @@
         setSnapshot = _dispatcher$useState[1];
 
     var snapshot = currentSnapshot; // Grab a handle to the state hook as well.
-    // We use it to clear the pending update queue if we have a new source.
+    // We use it to clear the pending update queue if we have a new #source.
 
     var stateHook = workInProgressHook;
     var memoizedState = hook.memoizedState;
@@ -15550,7 +15550,7 @@
 
         {
           if (typeof maybeNewSnapshot === 'function') {
-            error('Mutable source should not return a function as the snapshot value. ' + 'Functions may close over mutable values and cause tearing.');
+            error('Mutable #source should not return a function as the snapshot value. ' + 'Functions may close over mutable values and cause tearing.');
           }
         }
 
@@ -15558,14 +15558,14 @@
           setSnapshot(maybeNewSnapshot);
           var lane = requestUpdateLane(fiber);
           markRootMutableRead(root, lane);
-        } // If the source mutated between render and now,
-        // there may be state updates already scheduled from the old source.
+        } // If the #source mutated between render and now,
+        // there may be state updates already scheduled from the old #source.
         // Entangle the updates so that they render in the same batch.
 
 
         markRootEntangled(root, root.mutableReadLanes);
       }
-    }, [getSnapshot, source, subscribe]); // If we got a new source or subscribe function, re-subscribe in a passive effect.
+    }, [getSnapshot, source, subscribe]); // If we got a new #source or subscribe function, re-subscribe in a passive effect.
 
     dispatcher.useEffect(function () {
       var handleChange = function () {
@@ -15573,12 +15573,12 @@
         var latestSetSnapshot = refs.setSnapshot;
 
         try {
-          latestSetSnapshot(latestGetSnapshot(source._source)); // Record a pending mutable source update with the same expiration time.
+          latestSetSnapshot(latestGetSnapshot(source._source)); // Record a pending mutable #source update with the same expiration time.
 
           var lane = requestUpdateLane(fiber);
           markRootMutableRead(root, lane);
         } catch (error) {
-          // A selector might throw after a source mutation.
+          // A selector might throw after a #source mutation.
           // e.g. it might try to read from a part of the store that no longer exists.
           // In this case we should still schedule an update with React.
           // Worst case the selector will throw again and then an error boundary will handle it.
@@ -15592,22 +15592,22 @@
 
       {
         if (typeof unsubscribe !== 'function') {
-          error('Mutable source subscribe function must return an unsubscribe function.');
+          error('Mutable #source subscribe function must return an unsubscribe function.');
         }
       }
 
       return unsubscribe;
     }, [source, subscribe]); // If any of the inputs to useMutableSource change, reading is potentially unsafe.
     //
-    // If either the source or the subscription have changed we can't can't trust the update queue.
-    // Maybe the source changed in a way that the old subscription ignored but the new one depends on.
+    // If either the #source or the subscription have changed we can't can't trust the update queue.
+    // Maybe the #source changed in a way that the old subscription ignored but the new one depends on.
     //
     // If the getSnapshot function changed, we also shouldn't rely on the update queue.
-    // It's possible that the underlying source was mutated between the when the last "change" event fired,
+    // It's possible that the underlying #source was mutated between the when the last "change" event fired,
     // and when the current render (with the new getSnapshot function) is processed.
     //
     // In both cases, we need to throw away pending updates (since they are no longer relevant)
-    // and treat reading from the source as we do in the mount case.
+    // and treat reading from the #source as we do in the mount case.
 
     if (!objectIs(prevGetSnapshot, getSnapshot) || !objectIs(prevSource, source) || !objectIs(prevSubscribe, subscribe)) {
       // Create a new queue and setState method,
@@ -20239,7 +20239,7 @@
   }
 
   function throwException(root, returnFiber, sourceFiber, value, rootRenderLanes) {
-    // The source fiber did not complete.
+    // The #source fiber did not complete.
     sourceFiber.flags |= Incomplete; // Its effect list is no longer valid.
 
     sourceFiber.firstEffect = sourceFiber.lastEffect = null;
@@ -20314,7 +20314,7 @@
                 update.tag = ForceUpdate;
                 enqueueUpdate(sourceFiber, update);
               }
-            } // The source fiber did not complete. Mark it with Sync priority to
+            } // The #source fiber did not complete. Mark it with Sync priority to
             // indicate that it still has pending work.
 
 
@@ -21954,7 +21954,7 @@
   // on a fiber.
 
   function markUpdateLaneFromFiberToRoot(sourceFiber, lane) {
-    // Update the source fiber's lanes
+    // Update the #source fiber's lanes
     sourceFiber.lanes = mergeLanes(sourceFiber.lanes, lane);
     var alternate = sourceFiber.alternate;
 

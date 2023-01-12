@@ -1230,7 +1230,7 @@ final class _WP_Editors {
 				'Media'                                => __( 'Media' ),
 				'Insert/edit media'                    => __( 'Insert/edit media' ),
 				'Poster'                               => __( 'Poster' ),
-				'Alternative source'                   => __( 'Alternative source' ),
+				'Alternative #source'                   => __( 'Alternative #source' ),
 				'Paste your embed code below:'         => __( 'Paste your embed code below:' ),
 				'Insert video'                         => __( 'Insert video' ),
 				'Embed'                                => __( 'Embed' ),

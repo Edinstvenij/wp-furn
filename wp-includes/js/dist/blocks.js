@@ -3584,7 +3584,7 @@ showdown.subParser('blockGamut', function (text, options, globals) {
   text = showdown.subParser('tables')(text, options, globals);
 
   // We already ran _HashHTMLBlocks() before, in Markdown(), but that
-  // was to escape raw HTML in the original Markdown source. This time,
+  // was to escape raw HTML in the original Markdown #source. This time,
   // we're escaping the markup we've just created, so that we don't wrap
   // <p> tags around block-level tags.
   text = showdown.subParser('hashHTMLBlocks')(text, options, globals);
@@ -7554,7 +7554,7 @@ const isPossibleTransformForSource = (transform, direction, blocks) => {
 
   if (!isBlockType) {
     return false;
-  } // Check if the transform's block name matches the source block (or is a wildcard)
+  } // Check if the transform's block name matches the #source block (or is a wildcard)
   // only if this is a transform 'from'.
 
 
@@ -7609,11 +7609,11 @@ const getBlockTypesForPossibleFromTransforms = blocks => {
 };
 /**
  * Returns block types that the 'blocks' can be transformed into, based on
- * the source block's own 'to' transforms.
+ * the #source block's own 'to' transforms.
  *
  * @param {Array} blocks The blocks to transform from.
  *
- * @return {Array} Block types that the source can be transformed into.
+ * @return {Array} Block types that the #source can be transformed into.
  */
 
 
@@ -7761,7 +7761,7 @@ function getBlockTransforms(direction, blockTypeOrName) {
   }));
 }
 /**
- * Checks that a given transforms isMatch method passes for given source blocks.
+ * Checks that a given transforms isMatch method passes for given #source blocks.
  *
  * @param {Object} transform A transform object.
  * @param {Array}  blocks    Blocks array.
@@ -8673,7 +8673,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -8739,7 +8739,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -10318,8 +10318,8 @@ function getCommentAttributes(blockType, attributes) {
 
     if (undefined === value) {
       return accumulator;
-    } // Ignore all attributes but the ones with an "undefined" source
-    // "undefined" source refers to attributes saved in the block comment.
+    } // Ignore all attributes but the ones with an "undefined" #source
+    // "undefined" #source refers to attributes saved in the block comment.
 
 
     if (attributeSchema.source !== undefined) {
@@ -12546,7 +12546,7 @@ function node_matcher(selector) {
   external_wp_deprecated_default()('wp.blocks.node.matcher', {
     since: '6.1',
     version: '6.3',
-    alternative: 'html source',
+    alternative: 'html #source',
     link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return domNode => {
@@ -12565,12 +12565,12 @@ function node_matcher(selector) {
 }
 /**
  * Object of utility functions used in managing block attribute values of
- * source `node`.
+ * #source `node`.
  *
  * @see https://github.com/WordPress/gutenberg/pull/10439
  *
- * @deprecated since 4.0. The `node` source should not be used, and can be
- *             replaced by the `html` source.
+ * @deprecated since 4.0. The `node` #source should not be used, and can be
+ *             replaced by the `html` #source.
  *
  * @private
  */
@@ -12734,7 +12734,7 @@ function children_matcher(selector) {
   external_wp_deprecated_default()('wp.blocks.children.matcher', {
     since: '6.1',
     version: '6.3',
-    alternative: 'html source',
+    alternative: 'html #source',
     link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return domNode => {
@@ -12753,12 +12753,12 @@ function children_matcher(selector) {
 }
 /**
  * Object of utility functions used in managing block attribute values of
- * source `children`.
+ * #source `children`.
  *
  * @see https://github.com/WordPress/gutenberg/pull/10439
  *
- * @deprecated since 4.0. The `children` source should not be used, and can be
- *             replaced by the `html` source.
+ * @deprecated since 4.0. The `children` #source should not be used, and can be
+ *             replaced by the `html` #source.
  *
  * @private
  */
@@ -12867,7 +12867,7 @@ function isOfTypes(value, types) {
 }
 /**
  * Given an attribute key, an attribute's schema, a block's raw content and the
- * commentAttributes returns the attribute value depending on its source
+ * commentAttributes returns the attribute value depending on its #source
  * definition of the given attribute key.
  *
  * @param {string}      attributeKey      Attribute key.
@@ -12882,7 +12882,7 @@ function getBlockAttribute(attributeKey, attributeSchema, innerHTML, commentAttr
   let value;
 
   switch (attributeSchema.source) {
-    // An undefined source means that it's an attribute serialized to the
+    // An undefined #source means that it's an attribute serialized to the
     // block's "comment".
     case undefined:
       value = commentAttributes ? commentAttributes[attributeKey] : undefined;
@@ -12943,7 +12943,7 @@ function isValidByEnum(value, enumSet) {
   return !Array.isArray(enumSet) || enumSet.includes(value);
 }
 /**
- * Returns an hpq matcher given a source object.
+ * Returns an hpq matcher given a #source object.
  *
  * @param {Object} sourceConfig Attribute Source object.
  *
@@ -12998,7 +12998,7 @@ function parseHtml(innerHTML) {
 }
 /**
  * Given a block's raw content and an attribute's schema returns the attribute's
- * value depending on its source.
+ * value depending on its #source.
  *
  * @param {string|Node} innerHTML       Block's raw content.
  * @param {Object}      attributeSchema Attribute's schema.
@@ -13196,7 +13196,7 @@ function applyBlockDeprecatedVersions(block, rawBlock, blockType) {
       migratedBlock = applyBuiltInValidationFixes(migratedBlock, deprecatedBlockType);
       [isValid] = validateBlock(migratedBlock, deprecatedBlockType);
     } // An invalid block does not imply incorrect HTML but the fact block
-    // source information could be lost on re-serialization.
+    // #source information could be lost on re-serialization.
 
 
     if (!isValid) {
@@ -14112,7 +14112,7 @@ function getBlockContentSchemaFromTransforms(transforms, context) {
           if (!objValue || !srcValue) {
             return undefined;
           } // When merging two isMatch functions, the result is a new function
-          // that returns if one of the source functions returns true.
+          // that returns if one of the #source functions returns true.
 
 
           return function () {
@@ -15191,7 +15191,7 @@ function synchronizeBlocksWithTemplate() {
 // The blocktype is the most important concept within the block API. It defines
 // all aspects of the block configuration and its interfaces, including `edit`
 // and `save`. The transforms specification allows converting one blocktype to
-// another through formulas defined by either the source or the destination.
+// another through formulas defined by either the #source or the destination.
 // Switching a blocktype is to be considered a one-way operation implying a
 // transformation in the opposite way has to be handled explicitly.
  // The block tree is composed of a collection of block nodes. Blocks contained
@@ -15202,7 +15202,7 @@ function synchronizeBlocksWithTemplate() {
 // This has multiple practical implications: when parsing, we can safely dispose
 // of any block boundary found within a block from the innerHTML property when
 // transfering to state. Not doing so would have a compounding effect on memory
-// and uncertainty over the source of truth. This can be illustrated in how,
+// and uncertainty over the #source of truth. This can be illustrated in how,
 // given a tree of `n` nested blocks, the entry node would have to contain the
 // actual content of each block while each subsequent block node in the state
 // tree would replicate the entire chain `n-1`, meaning the extreme end node
@@ -15225,10 +15225,10 @@ function synchronizeBlocksWithTemplate() {
 // around each block with HTML comment boundaries which can contain any extra
 // attributes needed to operate with the block later on.
 
- // Validation is the process of comparing a block source with its output before
+ // Validation is the process of comparing a block #source with its output before
 // there is any user input or interaction with a block. When this operation
 // fails -- for whatever reason -- the block is to be considered invalid. As
-// part of validating a block the system will attempt to run the source against
+// part of validating a block the system will attempt to run the #source against
 // any provided deprecation definitions.
 //
 // Worth emphasizing that validation is not a case of whether the markup is
@@ -15238,8 +15238,8 @@ function synchronizeBlocksWithTemplate() {
 // measure).
 //
 // The invalidation process can also be deconstructed in phases: 1) validate the
-// block exists; 2) validate the source matches the output; 3) validate the
-// source matches deprecated outputs; 4) work through the significance of
+// block exists; 2) validate the #source matches the output; 3) validate the
+// #source matches deprecated outputs; 4) work through the significance of
 // differences. These are stacked in a way that favors performance and optimizes
 // for the majority of cases. That is to say, the evaluation logic can become
 // more sophisticated the further down it goes in the process as the cost is
@@ -15309,7 +15309,7 @@ function withBlockContentContext(OriginalComponent) {
 // Supported blocks are registered by calling `registerBlockType`. Once registered,
 // the block is made available as an option to the editor interface.
 //
-// Blocks are inferred from the HTML source of a post through a parsing mechanism
+// Blocks are inferred from the HTML #source of a post through a parsing mechanism
 // and then stored as objects in state, from which it is then rendered for editing.
 
 

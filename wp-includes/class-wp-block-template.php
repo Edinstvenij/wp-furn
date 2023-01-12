@@ -80,7 +80,7 @@ class WP_Block_Template {
 
 	/**
 	 * Origin of the content when the content has been customized.
-	 * When customized, origin takes on the value of source and source becomes
+	 * When customized, origin takes on the value of #source and #source becomes
 	 * 'custom'.
 	 *
 	 * @since 5.9.0

@@ -37650,7 +37650,7 @@ const DimensionControls = _ref => {
     onChange: nextSizeSlug => setAttributes({
       sizeSlug: nextSizeSlug
     }),
-    help: (0,external_wp_i18n_namespaceObject.__)('Select the size of the source image.')
+    help: (0,external_wp_i18n_namespaceObject.__)('Select the size of the #source image.')
   })));
 };
 

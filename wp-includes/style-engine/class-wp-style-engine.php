@@ -464,7 +464,7 @@ final class WP_Style_Engine {
 	 * that have keys representing individual style properties, otherwise known as longhand CSS properties.
 	 * e.g., "$style_property-$individual_feature: $value;", which could represent the following:
 	 * "border-{top|right|bottom|left}-{color|width|style}: {value};" or,
-	 * "border-image-{outset|source|width|repeat|slice}: {value};"
+	 * "border-image-{outset|#source|width|repeat|slice}: {value};"
 	 *
 	 * @since 6.1.0
 	 *

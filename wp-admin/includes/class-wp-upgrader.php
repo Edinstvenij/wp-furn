@@ -78,8 +78,8 @@ class WP_Upgrader {
 	 * @since 2.8.0
 	 *
 	 * @var array|WP_Error $result {
-	 *     @type string $source             The full path to the source the files were installed from.
-	 *     @type string $source_files       List of all the files in the source directory.
+	 *     @type string $#source             The full path to the #source the files were installed from.
+	 *     @type string $source_files       List of all the files in the #source directory.
 	 *     @type string $destination        The full path to the installation destination folder.
 	 *     @type string $destination_name   The name of the destination folder, or empty if `$destination`
 	 *                                      and `$local_destination` are the same.
@@ -424,8 +424,8 @@ class WP_Upgrader {
 	/**
 	 * Install a package.
 	 *
-	 * Copies the contents of a package from a source directory, and installs them in
-	 * a destination directory. Optionally removes the source. It can also optionally
+	 * Copies the contents of a package from a #source directory, and installs them in
+	 * a destination directory. Optionally removes the #source. It can also optionally
 	 * clear out the destination folder if it already exists.
 	 *
 	 * @since 2.8.0
@@ -436,7 +436,7 @@ class WP_Upgrader {
 	 * @param array|string $args {
 	 *     Optional. Array or string of arguments for installing a package. Default empty array.
 	 *
-	 *     @type string $source                      Required path to the package source. Default empty.
+	 *     @type string $#source                      Required path to the package #source. Default empty.
 	 *     @type string $destination                 Required path to a folder to install the package in.
 	 *                                               Default empty.
 	 *     @type bool   $clear_destination           Whether to delete any files already in the destination
@@ -455,7 +455,7 @@ class WP_Upgrader {
 		global $wp_filesystem, $wp_theme_directories;
 
 		$defaults = array(
-			'source'                      => '', // Please always pass this.
+			'#source'                      => '', // Please always pass this.
 			'destination'                 => '', // ...and this.
 			'clear_destination'           => false,
 			'clear_working'               => false,
@@ -466,7 +466,7 @@ class WP_Upgrader {
 		$args = wp_parse_args( $args, $defaults );
 
 		// These were previously extract()'d.
-		$source            = $args['source'];
+		$source            = $args['#source'];
 		$destination       = $args['destination'];
 		$clear_destination = $args['clear_destination'];
 
@@ -494,34 +494,34 @@ class WP_Upgrader {
 			return $res;
 		}
 
-		// Retain the original source and destinations.
-		$remote_source     = $args['source'];
+		// Retain the original #source and destinations.
+		$remote_source     = $args['#source'];
 		$local_destination = $destination;
 
 		$source_files       = array_keys( $wp_filesystem->dirlist( $remote_source ) );
 		$remote_destination = $wp_filesystem->find_folder( $local_destination );
 
 		// Locate which directory to copy to the new folder. This is based on the actual folder holding the files.
-		if ( 1 === count( $source_files ) && $wp_filesystem->is_dir( trailingslashit( $args['source'] ) . $source_files[0] . '/' ) ) {
+		if ( 1 === count( $source_files ) && $wp_filesystem->is_dir( trailingslashit( $args['#source'] ) . $source_files[0] . '/' ) ) {
 			// Only one folder? Then we want its contents.
-			$source = trailingslashit( $args['source'] ) . trailingslashit( $source_files[0] );
+			$source = trailingslashit( $args['#source'] ) . trailingslashit( $source_files[0] );
 		} elseif ( 0 === count( $source_files ) ) {
 			// There are no files?
 			return new WP_Error( 'incompatible_archive_empty', $this->strings['incompatible_archive'], $this->strings['no_files'] );
 		} else {
 			// It's only a single file, the upgrader will use the folder name of this file as the destination folder.
 			// Folder name is based on zip filename.
-			$source = trailingslashit( $args['source'] );
+			$source = trailingslashit( $args['#source'] );
 		}
 
 		/**
-		 * Filters the source file location for the upgrade package.
+		 * Filters the #source file location for the upgrade package.
 		 *
 		 * @since 2.8.0
 		 * @since 4.4.0 The $hook_extra parameter became available.
 		 *
-		 * @param string      $source        File source location.
-		 * @param string      $remote_source Remote file source location.
+		 * @param string      $source        File #source location.
+		 * @param string      $remote_source Remote file #source location.
 		 * @param WP_Upgrader $upgrader      WP_Upgrader instance.
 		 * @param array       $hook_extra    Extra arguments passed to hooked filters.
 		 */
@@ -531,7 +531,7 @@ class WP_Upgrader {
 			return $source;
 		}
 
-		// Has the source location changed? If so, we need a new source_files list.
+		// Has the #source location changed? If so, we need a new source_files list.
 		if ( $source !== $remote_source ) {
 			$source_files = array_keys( $wp_filesystem->dirlist( $source ) );
 		}
@@ -540,7 +540,7 @@ class WP_Upgrader {
 		 * Protection against deleting files in any important base directories.
 		 * Theme_Upgrader & Plugin_Upgrader also trigger this, as they pass the
 		 * destination directory (WP_PLUGIN_DIR / wp-content/themes) intending
-		 * to copy the directory into the directory, whilst they pass the source
+		 * to copy the directory into the directory, whilst they pass the #source
 		 * as the actual files to copy.
 		 */
 		$protected_directories = array( ABSPATH, WP_CONTENT_DIR, WP_PLUGIN_DIR, WP_CONTENT_DIR . '/themes' );
@@ -581,7 +581,7 @@ class WP_Upgrader {
 			// But first check to see if there are actually any files in the folder.
 			$_files = $wp_filesystem->dirlist( $remote_destination );
 			if ( ! empty( $_files ) ) {
-				$wp_filesystem->delete( $remote_source, true ); // Clear out the source files.
+				$wp_filesystem->delete( $remote_source, true ); // Clear out the #source files.
 				return new WP_Error( 'folder_exists', $this->strings['folder_exists'], $remote_destination );
 			}
 		}
@@ -791,7 +791,7 @@ class WP_Upgrader {
 		// With the given options, this installs it to the destination directory.
 		$result = $this->install_package(
 			array(
-				'source'                      => $working_dir,
+				'#source'                      => $working_dir,
 				'destination'                 => $options['destination'],
 				'clear_destination'           => $options['clear_destination'],
 				'abort_if_destination_exists' => $options['abort_if_destination_exists'],

@@ -8,10 +8,10 @@
  * Copyright (c) 2004-2016, Ryan Parman, Sam Sneddon, Ryan McCue, and contributors
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without modification, are
+ * Redistribution and use in #source and binary forms, with or without modification, are
  * permitted provided that the following conditions are met:
  *
- * 	* Redistributions of source code must retain the above copyright notice, this list of
+ * 	* Redistributions of #source code must retain the above copyright notice, this list of
  * 	  conditions and the following disclaimer.
  *
  * 	* Redistributions in binary form must reproduce the above copyright notice, this list
@@ -2950,14 +2950,14 @@ class SimplePie_Item
 	}
 
 	/**
-	 * Get the `<atom:source>` for the item
+	 * Get the `<atom:#source>` for the item
 	 *
 	 * @since 1.1
 	 * @return SimplePie_Source|null
 	 */
 	public function get_source()
 	{
-		if ($return = $this->get_item_tags(SIMPLEPIE_NAMESPACE_ATOM_10, 'source'))
+		if ($return = $this->get_item_tags(SIMPLEPIE_NAMESPACE_ATOM_10, '#source'))
 		{
 			return $this->registry->create('Source', array($this, $return[0]));
 		}

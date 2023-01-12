@@ -1015,7 +1015,7 @@ function render_block( $parsed_block ) {
 	 * @since 5.9.0 The `$parent_block` parameter was added.
 	 *
 	 * @param array         $parsed_block The block being rendered.
-	 * @param array         $source_block An un-modified copy of $parsed_block, as it appeared in the source content.
+	 * @param array         $source_block An un-modified copy of $parsed_block, as it appeared in the #source content.
 	 * @param WP_Block|null $parent_block If this is a nested block, a reference to the parent block.
 	 */
 	$parsed_block = apply_filters( 'render_block_data', $parsed_block, $source_block, $parent_block );

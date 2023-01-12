@@ -1145,11 +1145,11 @@ function load_script_textdomain( $handle, $domain = 'default', $path = '' ) {
 	 * @since 5.0.2
 	 *
 	 * @param string|false $relative The relative path of the script. False if it could not be determined.
-	 * @param string       $src      The full source URL of the script.
+	 * @param string       $src      The full #source URL of the script.
 	 */
 	$relative = apply_filters( 'load_script_textdomain_relative_path', $relative, $src );
 
-	// If the source is not from WP.
+	// If the #source is not from WP.
 	if ( false === $relative ) {
 		return load_script_translations( false, $handle, $domain );
 	}
@@ -1330,7 +1330,7 @@ function is_textdomain_loaded( $domain ) {
 /**
  * Translates role name.
  *
- * Since the role names are in the database and not in the source there
+ * Since the role names are in the database and not in the #source there
  * are dummy gettext calls to get them into the POT file and this function
  * properly translates them back.
  *

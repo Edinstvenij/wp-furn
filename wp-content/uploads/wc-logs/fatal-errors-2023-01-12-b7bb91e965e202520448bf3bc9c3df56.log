@@ -1,0 +1,95 @@
+2023-01-12T12:34:17+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php:6
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#8 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 6
+
+2023-01-12T12:34:28+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php:6
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#8 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 6
+
+2023-01-12T12:34:43+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php:6
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#8 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 6
+
+2023-01-12T12:34:46+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php:6
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#8 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 6
+
+2023-01-12T13:18:41+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php:6
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#8 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 6
+
+2023-01-12T13:19:23+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 9
+
+2023-01-12T13:22:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_page_by_path(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php on line 7 and at least 1 expected in C:\Users\yurav\www\web\wp-furn\wp-includes\post.php:5673
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php(7): get_page_by_path()
+#1 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#5 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#6 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php( в C:\Users\yurav\www\web\wp-furn\wp-includes\post.php на строке 5673
+
+2023-01-12T13:22:28+00:00 CRITICAL syntax error, unexpected ')' в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 7
+
+2023-01-12T13:22:32+00:00 CRITICAL syntax error, unexpected ')' в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 7
+
+2023-01-12T13:22:36+00:00 CRITICAL syntax error, unexpected ')' в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php на строке 7
+
+2023-01-12T13:22:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_page_by_path(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php on line 11 and at least 1 expected in C:\Users\yurav\www\web\wp-furn\wp-includes\post.php:5673
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\assets\blocks\catalog.php(11): get_page_by_path()
+#1 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(8): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#5 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\archive.php(5): get_header()
+#6 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\wp-blog-header.ph в C:\Users\yurav\www\web\wp-furn\wp-includes\post.php на строке 5673
+

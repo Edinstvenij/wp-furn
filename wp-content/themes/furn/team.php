@@ -7,8 +7,7 @@ get_header( 'team' ); ?>
     <main id="top" class="wrapper-container-designer">
         <section class="about">
             <div class="about__text">
-                <h1 class="designer__title designer__title-about"><?= the_field( 'team-titile' ) ?></h1>
-                <div class="designer__subtitle designer__subtitle-descpription"><?= the_field( 'team-subtitle' ) ?></div>
+                <div class="designer__subtitle designer__subtitle-descpription"><?= the_content(); ?></div>
             </div>
         </section>
         <section class="designer">

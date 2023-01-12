@@ -6840,7 +6840,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		$pagelinkedto   = str_replace( '&', '&amp;', $pagelinkedto );
 
 		/**
-		 * Filters the pingback source URI.
+		 * Filters the pingback #source URI.
 		 *
 		 * @since 3.6.0
 		 *
@@ -6907,7 +6907,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		}
 
 		if ( url_to_postid( $pagelinkedfrom ) == $post_ID ) {
-			return $this->pingback_error( 0, __( 'The source URL and the target URL cannot both point to the same resource.' ) );
+			return $this->pingback_error( 0, __( 'The #source URL and the target URL cannot both point to the same resource.' ) );
 		}
 
 		// Check if pings are on.
@@ -6944,15 +6944,15 @@ class wp_xmlrpc_server extends IXR_Server {
 		$remote_source_original = $remote_source;
 
 		if ( ! $remote_source ) {
-			return $this->pingback_error( 16, __( 'The source URL does not exist.' ) );
+			return $this->pingback_error( 16, __( 'The #source URL does not exist.' ) );
 		}
 
 		/**
-		 * Filters the pingback remote source.
+		 * Filters the pingback remote #source.
 		 *
 		 * @since 2.5.0
 		 *
-		 * @param string $remote_source Response source for the page linked from.
+		 * @param string $remote_source Response #source for the page linked from.
 		 * @param string $pagelinkedto  URL of the page linked to.
 		 */
 		$remote_source = apply_filters( 'pre_remote_source', $remote_source, $pagelinkedto );
@@ -7007,7 +7007,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		}
 
 		if ( empty( $context ) ) { // Link to target not found.
-			return $this->pingback_error( 17, __( 'The source URL does not contain a link to the target URL, and so cannot be used as a source.' ) );
+			return $this->pingback_error( 17, __( 'The #source URL does not contain a link to the target URL, and so cannot be used as a #source.' ) );
 		}
 
 		$pagelinkedfrom = str_replace( '&', '&amp;', $pagelinkedfrom );

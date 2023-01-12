@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-12-30 23:16:29+0000\n"
+"PO-Revision-Date: 2023-01-11 02:22:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20806,12 +20806,12 @@ msgstr "Загальна кількість продажів."
 #. translators: %s: date format
 #: includes/rest-api/Controllers/Version1/class-wc-rest-report-sales-v1-controller.php:389
 msgid "Return sales for a specific end date, the date need to be in the %s format."
-msgstr "Повернення продажів для певної кінцевої дати, дата має бути у форматі %s."
+msgstr "Return sales for a specific end date, the date need to be in the %s format."
 
 #. translators: %s: date format
 #: includes/rest-api/Controllers/Version1/class-wc-rest-report-sales-v1-controller.php:381
 msgid "Return sales for a specific start date, the date need to be in the %s format."
-msgstr "Повернення продажів для певної початкової дати, дата має бути у форматі %s."
+msgstr "Return sales for a specific start date, the date need to be in the %s format."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-report-sales-v1-controller.php:373
 msgid "Report period."
@@ -25026,7 +25026,7 @@ msgid "Only show children of the current category"
 msgstr "Показувати тільки нащадків поточної категорії"
 
 #: includes/widgets/class-wc-widget-product-categories.php:68
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:124
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:122
 #: packages/woocommerce-blocks/build/product-categories.js:1
 msgid "Show hierarchy"
 msgstr "Показати ієрархію"
@@ -25096,14 +25096,14 @@ msgid "Query type"
 msgstr "Тип запиту"
 
 #: includes/widgets/class-wc-widget-layered-nav.php:91
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:79
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:70
 #: packages/woocommerce-blocks/build/attribute-filter.js:28
 #: packages/woocommerce-blocks/build/product-categories.js:1
 msgid "Dropdown"
 msgstr "Виринаючий перелік"
 
 #: includes/widgets/class-wc-widget-layered-nav.php:90
-#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:72
+#: packages/woocommerce-blocks/assets/js/blocks/product-categories/block.js:63
 #: packages/woocommerce-blocks/build/active-filters.js:15
 #: packages/woocommerce-blocks/build/attribute-filter.js:28
 #: packages/woocommerce-blocks/build/product-categories.js:1
@@ -25134,7 +25134,7 @@ msgstr "Видалити фільтр"
 #: includes/admin/reports/class-wc-report-downloads.php:123
 #: includes/widgets/class-wc-widget-layered-nav-filters.php:27
 #: packages/woocommerce-blocks/patterns/filters.php:12
-#: packages/woocommerce-blocks/build/active-filters.js:15
+#: packages/woocommerce-blocks/build/active-filters.js:17
 #: packages/woocommerce-blocks/build/filter-wrapper.js:1
 msgid "Active filters"
 msgstr "Активні фільтри"
@@ -26695,8 +26695,8 @@ msgstr "Додати новий товар"
 #: assets/client/admin/chunks/homescreen.js:1
 #: packages/woocommerce-blocks/assets/js/editor-components/product-attribute-term-control/index.js:101
 #: packages/woocommerce-blocks/assets/js/editor-components/product-category-control/index.js:89
-#: packages/woocommerce-blocks/build/featured-category.js:17
-#: packages/woocommerce-blocks/build/featured-product.js:17
+#: packages/woocommerce-blocks/build/featured-category.js:18
+#: packages/woocommerce-blocks/build/featured-product.js:18
 #: packages/woocommerce-blocks/build/product-best-sellers.js:16
 #: packages/woocommerce-blocks/build/product-category.js:16
 #: packages/woocommerce-blocks/build/product-new.js:16
@@ -29740,8 +29740,8 @@ msgstr "Пошук товарів"
 #: packages/woocommerce-blocks/build/attribute-filter-frontend.js:5
 #: packages/woocommerce-blocks/build/attribute-filter-wrapper-frontend.js:15
 #: packages/woocommerce-blocks/build/attribute-filter.js:6
-#: packages/woocommerce-blocks/build/featured-category.js:7
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-category.js:8
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/price-filter-frontend.js:3
 #: packages/woocommerce-blocks/build/price-filter-wrapper-frontend.js:3
 #: packages/woocommerce-blocks/build/price-filter.js:3
@@ -31687,8 +31687,8 @@ msgstr "Підкатегорії"
 #: packages/woocommerce-blocks/assets/js/editor-components/product-control/index.js:27
 #: packages/woocommerce-blocks/assets/js/editor-components/products-control/index.js:36
 #: packages/woocommerce-blocks/build/all-products.js:9
-#: packages/woocommerce-blocks/build/featured-category.js:17
-#: packages/woocommerce-blocks/build/featured-product.js:17
+#: packages/woocommerce-blocks/build/featured-category.js:18
+#: packages/woocommerce-blocks/build/featured-product.js:18
 #: packages/woocommerce-blocks/build/handpicked-products.js:6
 #: packages/woocommerce-blocks/build/handpicked-products.js:8
 #: packages/woocommerce-blocks/build/reviews-by-product.js:20
@@ -31877,13 +31877,13 @@ msgid "Left with space"
 msgstr "Зліва з пробілом"
 
 #: includes/admin/settings/class-wc-settings-general.php:247
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:114
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:103
 #: packages/woocommerce-blocks/build/all-products.js:28
 msgid "Right"
 msgstr "Праворуч"
 
 #: includes/admin/settings/class-wc-settings-general.php:246
-#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:100
+#: packages/woocommerce-blocks/assets/js/atomic/blocks/product-elements/image/edit.js:89
 #: packages/woocommerce-blocks/build/all-products.js:28
 msgid "Left"
 msgstr "Ліворуч"
@@ -32617,7 +32617,7 @@ msgstr "Артикул"
 
 #: includes/admin/class-wc-admin-taxonomies.php:383
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:116
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:84
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:81
 #: packages/woocommerce-blocks/build/all-reviews.js:1
 #: packages/woocommerce-blocks/build/reviews-by-category.js:2
 #: packages/woocommerce-blocks/build/reviews-by-product.js:2
@@ -32843,8 +32843,8 @@ msgstr "Товар оновлено. <a href=\"%s\">Переглянути то�
 
 #: includes/widgets/class-wc-widget-product-categories.php:39
 #: packages/woocommerce-blocks/assets/js/editor-components/product-category-control/index.js:119
-#: packages/woocommerce-blocks/build/featured-category.js:7
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-category.js:8
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/product-best-sellers.js:6
 #: packages/woocommerce-blocks/build/product-category.js:6
 #: packages/woocommerce-blocks/build/product-new.js:6
@@ -32902,7 +32902,7 @@ msgstr "Використати \\’shop\\’"
 #: assets/client/admin/chunks/analytics-report-products.js:1
 #: assets/client/admin/chunks/analytics-report-stock.js:1
 #: assets/client/admin/chunks/dashboard-charts.js:1
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:131
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:124
 #: packages/woocommerce-blocks/assets/js/blocks/reviews/reviews-by-product/edit.js:78
 #: packages/woocommerce-blocks/assets/js/blocks/single-product/edit/index.js:101
 #: packages/woocommerce-blocks/build/all-reviews.js:1
@@ -33293,7 +33293,7 @@ msgstr "Значення"
 #: includes/widgets/class-wc-widget-product-categories.php:49
 #: includes/widgets/class-wc-widget-products.php:51
 #: packages/woocommerce-blocks/assets/js/base/components/reviews/review-sort-select/index.js:17
-#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:175
+#: packages/woocommerce-blocks/assets/js/blocks/reviews/edit-utils.js:173
 #: packages/woocommerce-blocks/build/all-reviews.js:1
 #: packages/woocommerce-blocks/build/all-reviews.js:5
 #: packages/woocommerce-blocks/build/reviews-by-category.js:2
@@ -33924,7 +33924,7 @@ msgstr "Читати далі"
 #: packages/woocommerce-blocks/build/cart-blocks/cart-cross-sells-products-frontend.js:11
 #: packages/woocommerce-blocks/build/cart.js:9
 #: packages/woocommerce-blocks/build/cart.js:15
-#: packages/woocommerce-blocks/build/featured-product.js:7
+#: packages/woocommerce-blocks/build/featured-product.js:8
 #: packages/woocommerce-blocks/build/product-add-to-cart.js:3
 #: packages/woocommerce-blocks/build/product-button-frontend.js:3
 #: packages/woocommerce-blocks/build/product-button.js:3

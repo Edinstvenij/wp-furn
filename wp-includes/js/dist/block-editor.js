@@ -1492,8 +1492,8 @@ module.exports = __webpack_require__(195);
  * Copyright (c) 2015, Facebook, Inc.
  * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * This #source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this #source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ExecutionEnvironment
@@ -1832,8 +1832,8 @@ module.exports = UserAgent_DEPRECATED;
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * This #source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this #source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule isEventSupported
@@ -1903,8 +1903,8 @@ module.exports = isEventSupported;
  * Copyright (c) 2015, Facebook, Inc.
  * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * This #source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this #source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule normalizeWheel
@@ -2091,8 +2091,8 @@ module.exports = normalizeWheel;
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -2163,8 +2163,8 @@ module.exports = function() {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 if (false) { var throwOnDirectAccess, ReactIs; } else {
@@ -2183,8 +2183,8 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -5429,7 +5429,7 @@ function automaticChangeStatus(state, action) {
     case 'STOP_TYPING':
     case 'UPDATE_BLOCK_LIST_SETTINGS':
       return state;
-  } // TODO: This is a source of bug, as each time there's a change in timing,
+  } // TODO: This is a #source of bug, as each time there's a change in timing,
   // or a new action is added, this could break.
   // Reset the state by default (for any action not handled).
 
@@ -5751,7 +5751,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -5817,7 +5817,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -8318,8 +8318,8 @@ const __experimentalGetActiveBlockIdByBlockNames = rememo((state, validBlockName
  *
  * @param {Object}  state    Global application state.
  * @param {Object}  clientId Client Id of the block.
- * @param {?string} source   Optional insertion source of the block.
- * @return {boolean} True if the block matches the last block inserted from the specified source.
+ * @param {?string} source   Optional insertion #source of the block.
+ * @return {boolean} True if the block matches the last block inserted from the specified #source.
  */
 
 function wasBlockJustInserted(state, clientId, source) {
@@ -8902,7 +8902,7 @@ const moveBlocksUp = createOnMove('MOVE_BLOCKS_UP');
  * Action that moves given blocks to a new position.
  *
  * @param {?string} clientIds        The client IDs of the blocks.
- * @param {?string} fromRootClientId Root client ID source.
+ * @param {?string} fromRootClientId Root client ID #source.
  * @param {?string} toRootClientId   Root client ID destination.
  * @param {number}  index            The index to move the blocks to.
  */
@@ -8951,7 +8951,7 @@ const moveBlocksToPosition = function (clientIds) {
  * Action that moves given block to a new position.
  *
  * @param {?string} clientId         The client ID of the block.
- * @param {?string} fromRootClientId Root client ID source.
+ * @param {?string} fromRootClientId Root client ID #source.
  * @param {?string} toRootClientId   Root client ID destination.
  * @param {number}  index            The index to move the block to.
  */
@@ -11567,14 +11567,14 @@ function transformStyles(activeSupports, migrationPaths, result, source, index, 
   if (results.length === 1 && result.innerBlocks.length === source.length) {
     return result;
   } // For cases where we have a transform from one block to multiple blocks
-  // or multiple blocks to one block we apply the styles of the first source block
+  // or multiple blocks to one block we apply the styles of the first #source block
   // to the result(s).
 
 
-  let referenceBlockAttributes = (_source$ = source[0]) === null || _source$ === void 0 ? void 0 : _source$.attributes; // If we are in presence of transform between more than one block in the source
+  let referenceBlockAttributes = (_source$ = source[0]) === null || _source$ === void 0 ? void 0 : _source$.attributes; // If we are in presence of transform between more than one block in the #source
   // that has more than one block in the result
-  // we apply the styles on source N to the result N,
-  // if source N does not exists we do nothing.
+  // we apply the styles on #source N to the result N,
+  // if #source N does not exists we do nothing.
 
   if (results.length > 1 && source.length > 1) {
     if (source[index]) {
@@ -14705,10 +14705,10 @@ function addTransforms(result, source, index, results) {
 
   if (results.length === 1 && source.length > 1 || results.length > 1 && source.length === 1) {
     return result;
-  } // If we are in presence of transform between one or more block in the source
+  } // If we are in presence of transform between one or more block in the #source
   // that have one or more blocks in the result
-  // we apply the class on source N to the result N,
-  // if source N does not exists we do nothing.
+  // we apply the class on #source N to the result N,
+  // if #source N does not exists we do nothing.
 
 
   if (source[index]) {
@@ -21207,12 +21207,12 @@ const use_block_sync_noop = () => {};
 
 /**
  * useBlockSync is a side effect which handles bidirectional sync between the
- * block-editor store and a controlling data source which provides blocks. This
+ * block-editor store and a controlling data #source which provides blocks. This
  * is most commonly used by the BlockEditorProvider to synchronize the contents
  * of the block-editor store with the root entity, like a post.
  *
  * Another example would be the template part block, which provides blocks from
- * a separate entity data source than a root entity. This hook syncs edits to
+ * a separate entity data #source than a root entity. This hook syncs edits to
  * the template part in the block editor back to the entity and vice-versa.
  *
  * Here are some of its basic functions:
@@ -21312,7 +21312,7 @@ function useBlockSync(_ref) {
       resetBlocks(controlledBlocks);
     }
   }; // Add a subscription to the block-editor registry to detect when changes
-  // have been made. This lets us inform the data source of changes. This
+  // have been made. This lets us inform the data #source of changes. This
   // is an effect so that the subscriber can run synchronously without
   // waiting for React renders for changes.
 
@@ -23039,7 +23039,7 @@ var traverse_default = /*#__PURE__*/__webpack_require__.n(traverse);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/ast/parse.js
 /* eslint-disable @wordpress/no-unused-vars-before-return */
 // Adapted from https://github.com/reworkcss/css
-// because we needed to remove source map support.
+// because we needed to remove #source map support.
 // http://www.w3.org/TR/CSS21/grammar.htm
 // https://github.com/visionmedia/css-parse/pull/49#issuecomment-30088027
 const commentre = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g;
@@ -23096,7 +23096,7 @@ const commentre = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g;
     this.source = options.source;
   }
   /**
-   * Non-enumerable source string
+   * Non-enumerable #source string
    */
 
 
@@ -23735,7 +23735,7 @@ var inherits_browser = __webpack_require__(8575);
 var inherits_browser_default = /*#__PURE__*/__webpack_require__.n(inherits_browser);
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/ast/stringify/compiler.js
 // Adapted from https://github.com/reworkcss/css
-// because we needed to remove source map support.
+// because we needed to remove #source map support.
 
 /**
  * Expose `Compiler`.
@@ -23786,7 +23786,7 @@ Compiler.prototype.mapVisit = function (nodes, delim) {
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/ast/stringify/compress.js
 // Adapted from https://github.com/reworkcss/css
-// because we needed to remove source map support.
+// because we needed to remove #source map support.
 
 /**
  * External dependencies
@@ -23955,7 +23955,7 @@ compress_Compiler.prototype.declaration = function (node) {
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/ast/stringify/identity.js
 /* eslint-disable @wordpress/no-unused-vars-before-return */
 // Adapted from https://github.com/reworkcss/css
-// because we needed to remove source map support.
+// because we needed to remove #source map support.
 
 /**
  * External dependencies
@@ -24152,7 +24152,7 @@ identity_Compiler.prototype.indent = function (level) {
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/ast/stringify/index.js
 // Adapted from https://github.com/reworkcss/css
-// because we needed to remove source map support.
+// because we needed to remove #source map support.
 
 /**
  * Internal dependencies
@@ -31139,13 +31139,13 @@ function shouldDismissPastedFiles(files, html
   if (html && (files === null || files === void 0 ? void 0 : files.length) === 1 && files[0].type.indexOf('image/') === 0) {
     var _html$match;
 
-    // A single <img> tag found in the HTML source suggests that the
+    // A single <img> tag found in the HTML #source suggests that the
     // content being pasted revolves around an image. Sometimes there are
     // other elements found, like <figure>, but we assume that the user's
     // intention is to paste the actual image file.
     const IMAGE_TAG = /<\s*img\b/gi;
     if (((_html$match = html.match(IMAGE_TAG)) === null || _html$match === void 0 ? void 0 : _html$match.length) !== 1) return true; // Even when there is exactly one <img> tag in the HTML payload, we
-    // choose to weed out local images, i.e. those whose source starts with
+    // choose to weed out local images, i.e. those whose #source starts with
     // "file://". These payloads occur in specific configurations, such as
     // when copying an entire document from Microsoft Word, that contains
     // text and exactly one image, and pasting that content using Google
@@ -34137,7 +34137,7 @@ function UncontrolledInnerBlocks(props) {
  * component with the blockSync hook. This keeps the innerBlocks of the block in
  * the block-editor store in sync with the blocks of the controlling entity. An
  * example of an inner block controller is a template part block, which provides
- * its own blocks from the template part entity data source.
+ * its own blocks from the template part entity data #source.
  *
  * @param {Object} props The component props.
  */

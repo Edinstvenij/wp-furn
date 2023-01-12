@@ -223,7 +223,7 @@ AudioDetails = MediaDetails.extend(/** @lends wp.media.view.MediaFrame.AudioDeta
 		MediaDetails.prototype.bindHandlers.apply( this, arguments );
 
 		this.on( 'toolbar:render:replace-audio', this.renderReplaceToolbar, this );
-		this.on( 'toolbar:render:add-audio-source', this.renderAddSourceToolbar, this );
+		this.on( 'toolbar:render:add-audio-#source', this.renderAddSourceToolbar, this );
 	},
 
 	createStates: function() {
@@ -243,9 +243,9 @@ AudioDetails = MediaDetails.extend(/** @lends wp.media.view.MediaFrame.AudioDeta
 
 			new MediaLibrary( {
 				type: 'audio',
-				id: 'add-audio-source',
+				id: 'add-audio-#source',
 				title: l10n.audioAddSourceTitle,
-				toolbar: 'add-audio-source',
+				toolbar: 'add-audio-#source',
 				media: this.media,
 				menu: false
 			} )
@@ -385,7 +385,7 @@ MediaDetails = Select.extend(/** @lends wp.media.view.MediaFrame.MediaDetails.pr
 		this.setPrimaryButton( this.addText, function( controller, state ) {
 			var attachment = state.get( 'selection' ).single();
 			controller.media.setSource( attachment );
-			state.trigger( 'add-source', controller.media.toJSON() );
+			state.trigger( 'add-#source', controller.media.toJSON() );
 		} );
 	}
 });
@@ -442,7 +442,7 @@ VideoDetails = MediaDetails.extend(/** @lends wp.media.view.MediaFrame.VideoDeta
 		MediaDetails.prototype.bindHandlers.apply( this, arguments );
 
 		this.on( 'toolbar:render:replace-video', this.renderReplaceToolbar, this );
-		this.on( 'toolbar:render:add-video-source', this.renderAddSourceToolbar, this );
+		this.on( 'toolbar:render:add-video-#source', this.renderAddSourceToolbar, this );
 		this.on( 'toolbar:render:select-poster-image', this.renderSelectPosterImageToolbar, this );
 		this.on( 'toolbar:render:add-track', this.renderAddTrackToolbar, this );
 	},
@@ -464,9 +464,9 @@ VideoDetails = MediaDetails.extend(/** @lends wp.media.view.MediaFrame.VideoDeta
 
 			new MediaLibrary( {
 				type: 'video',
-				id: 'add-video-source',
+				id: 'add-video-#source',
 				title: l10n.videoAddSourceTitle,
-				toolbar: 'add-video-source',
+				toolbar: 'add-video-#source',
 				media: this.media,
 				menu: false
 			} ),
@@ -621,7 +621,7 @@ MediaDetails = AttachmentDisplay.extend(/** @lends wp.media.view.MediaDetails.pr
 
 	addSource : function( e ) {
 		this.controller.lastMime = $( e.currentTarget ).data( 'mime' );
-		this.controller.setState( 'add-' + this.controller.defaults.id + '-source' );
+		this.controller.setState( 'add-' + this.controller.defaults.id + '-#source' );
 	},
 
 	loadPlayer: function () {
@@ -694,7 +694,7 @@ MediaDetails = AttachmentDisplay.extend(/** @lends wp.media.view.MediaDetails.pr
 	 */
 	prepareSrc : function( elem ) {
 		var i = MediaDetails.instances++;
-		_.each( $( elem ).find( 'source' ), function( source ) {
+		_.each( $( elem ).find( '#source' ), function( source ) {
 			source.src = [
 				source.src,
 				source.src.indexOf('?') > -1 ? '&' : '?',

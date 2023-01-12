@@ -4633,7 +4633,7 @@ function getFirstItemsPresentInState(list, state) {
   return firstItems;
 }
 /**
- * React hook returns an array which items get asynchronously appended from a source array.
+ * React hook returns an array which items get asynchronously appended from a #source array.
  * This behavior is useful if we want to render a list of items asynchronously for performance reasons.
  *
  * @param  list   Source array.

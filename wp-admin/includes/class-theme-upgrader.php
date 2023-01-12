@@ -501,7 +501,7 @@ class Theme_Upgrader extends WP_Upgrader {
 	}
 
 	/**
-	 * Checks that the package source contains a valid theme.
+	 * Checks that the package #source contains a valid theme.
 	 *
 	 * Hooked to the {@see 'upgrader_source_selection'} filter by Theme_Upgrader::install().
 	 *
@@ -510,8 +510,8 @@ class Theme_Upgrader extends WP_Upgrader {
 	 * @global WP_Filesystem_Base $wp_filesystem WordPress filesystem subclass.
 	 * @global string             $wp_version    The WordPress version string.
 	 *
-	 * @param string $source The path to the downloaded package source.
-	 * @return string|WP_Error The source as passed, or a WP_Error object on failure.
+	 * @param string $source The path to the downloaded package #source.
+	 * @return string|WP_Error The #source as passed, or a WP_Error object on failure.
 	 */
 	public function check_package( $source ) {
 		global $wp_filesystem, $wp_version;

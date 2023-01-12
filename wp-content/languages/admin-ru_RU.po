@@ -1591,7 +1591,7 @@ msgstr "Как только вы получили список тем, любу�
 
 #. translators: %s: /wp-content/themes
 #: wp-admin/theme-install.php:115
-msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your %s directory."
+msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original #source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your %s directory."
 msgstr "Можно загрузить тему вручную, если вы уже скачали ZIP-архив на свой компьютер (убедитесь, что её источник заслуживает доверия). Также можно выбрать старомодный способ и скопировать каталог скачанной темы в директорию %s по FTP."
 
 #: wp-admin/theme-install.php:112
@@ -13597,7 +13597,7 @@ msgstr "На этом экране приведены ссылки на плаг
 #. translators: 1: URL to Plugins screen, 2: URL to Themes screen, 3:
 #. https://wordpress.org/about/license
 #: wp-admin/freedoms.php:99
-msgid "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they do not respect the WordPress license, it is not recommended to use them."
+msgid "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another #source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they do not respect the WordPress license, it is not recommended to use them."
 msgstr "Каждый плагин и тема в каталоге WordPress.org на 100%% соответствуют GPL или аналогичной свободной лицензии, поэтому <a href=\"%1$s\">плагины</a> и <a href=\"%2$s\">темы</a> оттуда можно использовать без опасений. Если вы получили плагин или тему из другого источника, первым делом <a href=\"%3$s\">поинтересуйтесь, соответствуют ли они лицензии GPL</a>. Если они несовместимы с лицензией WordPress, мы не рекомендуем их использовать."
 
 #: wp-admin/freedoms.php:96 wp-admin/theme-install.php:109
@@ -13658,7 +13658,7 @@ msgid "WordPress comes with some awesome, worldview-changing rights courtesy of 
 msgstr "WordPress поставляется с потрясающими правами, меняющими мировоззрение, благодаря своей <a href=\"%s\">лицензии</a> GPL."
 
 #: wp-admin/freedoms.php:35
-msgid "WordPress is free and open source software"
+msgid "WordPress is free and open #source software"
 msgstr "WordPress - свободное программное обеспечение с открытым исходным кодом"
 
 #: wp-admin/freedoms.php:30

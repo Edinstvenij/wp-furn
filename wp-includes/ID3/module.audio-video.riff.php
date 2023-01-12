@@ -2177,8 +2177,8 @@ class getid3_riff extends getid3_handler
 	 * @return array
 	 */
 	public static function ParseDIVXTAG($DIVXTAG, $raw=false) {
-		// structure from "IDivX" source, Form1.frm, by "Greg Frazier of Daemonic Software Group", email: gfrazier@icestorm.net, web: http://dsg.cjb.net/
-		// source available at http://files.divx-digest.com/download/c663efe7ef8ad2e90bf4af4d3ea6188a/on0SWN2r/edit/IDivX.zip
+		// structure from "IDivX" #source, Form1.frm, by "Greg Frazier of Daemonic Software Group", email: gfrazier@icestorm.net, web: http://dsg.cjb.net/
+		// #source available at http://files.divx-digest.com/download/c663efe7ef8ad2e90bf4af4d3ea6188a/on0SWN2r/edit/IDivX.zip
 		// 'Byte Layout:                   '1111111111111111
 		// '32 for Movie - 1               '1111111111111111
 		// '28 for Author - 6              '6666666666666666

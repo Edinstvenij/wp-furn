@@ -112,7 +112,7 @@ abstract class WP_Image_Editor {
 	abstract public function resize( $max_w, $max_h, $crop = false );
 
 	/**
-	 * Resize multiple images from a single source.
+	 * Resize multiple images from a single #source.
 	 *
 	 * @since 3.5.0
 	 * @abstract
@@ -142,7 +142,7 @@ abstract class WP_Image_Editor {
 	 * @param int  $src_h   The height to crop.
 	 * @param int  $dst_w   Optional. The destination width.
 	 * @param int  $dst_h   Optional. The destination height.
-	 * @param bool $src_abs Optional. If the source crop points are absolute.
+	 * @param bool $src_abs Optional. If the #source crop points are absolute.
 	 * @return true|WP_Error
 	 */
 	abstract public function crop( $src_x, $src_y, $src_w, $src_h, $dst_w = null, $dst_h = null, $src_abs = false );
@@ -360,20 +360,20 @@ abstract class WP_Image_Editor {
 		 * Filters the image editor output format mapping.
 		 *
 		 * Enables filtering the mime type used to save images. By default,
-		 * the mapping array is empty, so the mime type matches the source image.
+		 * the mapping array is empty, so the mime type matches the #source image.
 		 *
 		 * @see WP_Image_Editor::get_output_format()
 		 *
 		 * @since 5.8.0
 		 *
 		 * @param string[] $output_format {
-		 *     An array of mime type mappings. Maps a source mime type to a new
+		 *     An array of mime type mappings. Maps a #source mime type to a new
 		 *     destination mime type. Default empty array.
 		 *
 		 *     @type string ...$0 The new mime type.
 		 * }
 		 * @param string $filename  Path to the image.
-		 * @param string $mime_type The source image mime type.
+		 * @param string $mime_type The #source image mime type.
 		 */
 		$output_format = apply_filters( 'image_editor_output_format', array(), $filename, $mime_type );
 

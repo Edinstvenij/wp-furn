@@ -648,7 +648,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -714,7 +714,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -926,7 +926,7 @@ function v4(options, buf, offset) {
  *
  * The `block` attribute refers to a block ID that needs to be annotated.
  * `isBlockAnnotation` controls whether or not the annotation is a block
- * annotation. The `source` is the source of the annotation, this will be used
+ * annotation. The `#source` is the #source of the annotation, this will be used
  * to identity groups of annotations.
  *
  * The `range` property is only relevant if the selector is 'range'.
@@ -936,7 +936,7 @@ function v4(options, buf, offset) {
  * @param {string}            annotation.richTextIdentifier Identifier for the RichText instance the annotation applies to.
  * @param {WPAnnotationRange} annotation.range              The range at which to apply this annotation.
  * @param {string}            [annotation.selector="range"] The way to apply this annotation.
- * @param {string}            [annotation.source="default"] The source that added the annotation.
+ * @param {string}            [annotation.#source="default"] The #source that added the annotation.
  * @param {string}            [annotation.id]               The ID the annotation should have. Generates a UUID by default.
  *
  * @return {Object} Action object.
@@ -999,9 +999,9 @@ function __experimentalUpdateAnnotationRange(annotationId, start, end) {
   };
 }
 /**
- * Removes all annotations of a specific source.
+ * Removes all annotations of a specific #source.
  *
- * @param {string} source The source to remove.
+ * @param {string} source The #source to remove.
  *
  * @return {Object} Action object.
  */

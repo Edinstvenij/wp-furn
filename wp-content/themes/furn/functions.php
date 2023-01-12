@@ -113,42 +113,6 @@ function register_post_types() {
 		'rewrite'             => true,
 		'query_var'           => true,
 	] );
-
-	register_post_type( 'shop', [
-		'label'               => null,
-		'labels'              => [
-			'name'               => 'Товары', // основное название для типа записи
-			'singular_name'      => 'Товар', // название для одной записи этого типа
-			'add_new'            => 'Добавить новый товар', // для добавления новой записи
-			'add_new_item'       => 'Добавить новый товар', // заголовка у вновь создаваемой записи в админ-панели.
-			'edit_item'          => 'Редактировать товар', // для редактирования типа записи
-			'new_item'           => 'Новый товар', // текст новой записи
-			'view_item'          => 'Смотреть товар', // для просмотра записи этого типа.
-			'search_items'       => 'Искать товар', // для поиска по этим типам записи
-			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-			'parent_item_colon'  => '', // для родителей (у древовидных типов)
-			'menu_name'          => 'Товары', // название меню
-		],
-		'description'         => 'Ваши товары (Столы, стулья...)',
-		'public'              => true,
-		'publicly_queryable'  => true,
-		'exclude_from_search' => true,
-		'show_ui'             => true,
-		'show_in_nav_menus'   => true,
-		'show_in_menu'        => true,
-		'show_in_rest'        => true,
-		'rest_base'           => null,
-		'menu_position'       => 4,
-		'menu_icon'           => 'dashicons-store',
-		'hierarchical'        => false,
-		'supports'            => [ 'title', 'editor', 'thumbnail' ],
-		'taxonomies'          => [],
-		'has_archive'         => false,
-		'rewrite'             => true,
-		'query_var'           => true,
-	] );
-
 }
 
 add_filter( 'nav_menu_link_attributes', 'wp_kama_nav_menu_link_attributes_filter', 10, 4 );
@@ -172,6 +136,70 @@ function wp_kama_nav_menu_link_attributes_filter( $atts, $menu_item, $args, $dep
 	return $atts;
 }
 
+
+add_action( 'wp_ajax_send_message', 'send_message_contact' );
+add_action( 'wp_ajax_nopriv_send_message', 'send_message_contact' );
+function send_message_contact() {
+
+	if ( empty( $_POST ) ) {
+		wp_die( 'No' );
+	}
+
+	// Токен телеграм бота
+	$tg_bot_token = '5496993998:AAE2ZHHMi_3aqY3hp1nrF-ae9yLcsxsWqAE';
+	// ID Чата
+	$chat_id = '-1001569814825';
+
+	$text = '';
+
+	foreach ( $_POST as $key => $val ) {
+		if ( empty( $val ) ) {
+			wp_die();
+		}
+
+		$text .= $key . ": " . $val . "\n";
+	}
+
+	$text .= "\n" . $_SERVER['REMOTE_ADDR'];
+	$text .= "\n" . date( 'd.m.y H:i:s' );
+
+	$param = [
+		"chat_id" => $chat_id,
+		"text"    => $text
+	];
+
+	$url = "https://api.telegram.org/bot" . $tg_bot_token . "/sendMessage?" . http_build_query( $param );
+
+	file_get_contents( $url );
+
+	foreach ( $_FILES as $file ) {
+		echo 1;
+		$url = "https://api.telegram.org/bot" . $tg_bot_token . "/sendDocument";
+
+		move_uploaded_file( $file['tmp_name'], $file['name'] );
+
+		$document = new \CURLFile( $file['name'] );
+
+		$ch = curl_init();
+
+		curl_setopt( $ch, CURLOPT_URL, $url );
+		curl_setopt( $ch, CURLOPT_POST, 1 );
+		curl_setopt( $ch, CURLOPT_POSTFIELDS, [ "chat_id" => $chat_id, "document" => $document ] );
+		curl_setopt( $ch, CURLOPT_HTTPHEADER, [ "Content-Type:multipart/form-data" ] );
+		curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+
+		$out = curl_exec( $ch );
+
+		curl_close( $ch );
+
+		unlink( $file['name'] );
+	}
+	wp_die();
+}
+
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
+
+add_filter( 'wpcf7_autop_or_not', '__return_false' );

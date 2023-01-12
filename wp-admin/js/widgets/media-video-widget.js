@@ -31,9 +31,9 @@
 
 				new wp.media.controller.MediaLibrary({
 					type: 'video',
-					id: 'add-video-source',
+					id: 'add-video-#source',
 					title: wp.media.view.l10n.videoAddSourceTitle,
-					toolbar: 'add-video-source',
+					toolbar: 'add-video-#source',
 					media: this.media,
 					menu: false
 				}),

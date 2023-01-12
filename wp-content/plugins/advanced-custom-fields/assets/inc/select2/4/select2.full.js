@@ -5990,7 +5990,7 @@
 								prefix.length
 							);
 
-							// Get the data contents from the consistent source
+							// Get the data contents from the consistent #source
 							// This is more than likely the jQuery data helper
 							var dataValue = Utils.GetData( $e[ 0 ], dataName );
 

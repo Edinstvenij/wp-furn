@@ -988,7 +988,7 @@
 				});
 			},
 			/**
-			 * Called when 'Insert From URL' source is not an image. Example: YouTube url.
+			 * Called when 'Insert From URL' #source is not an image. Example: YouTube url.
 			 *
 			 * @param {Object} embed
 			 * @return {Promise}

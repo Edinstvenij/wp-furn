@@ -2,7 +2,7 @@
 /**
  * Duotone block support flag.
  *
- * Parts of this source were derived and modified from TinyColor,
+ * Parts of this #source were derived and modified from TinyColor,
  * released under the MIT license.
  *
  * https://github.com/bgrins/TinyColor

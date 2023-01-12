@@ -5928,7 +5928,7 @@ final class WP_Customize_Manager {
 		/**
 		 * Filters the theme data loaded in the customizer.
 		 *
-		 * This allows theme data to be loading from an external source,
+		 * This allows theme data to be loading from an external #source,
 		 * or modification of data loaded from `wp_prepare_themes_for_js()`
 		 * or WordPress.org via `themes_api()`.
 		 *

@@ -335,7 +335,7 @@ class WP_Filesystem_FTPext extends WP_Filesystem_Base {
 	 *
 	 * @since 2.5.0
 	 *
-	 * @param string    $source      Path to the source file.
+	 * @param string    $source      Path to the #source file.
 	 * @param string    $destination Path to the destination file.
 	 * @param bool      $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                               Default false.
@@ -362,7 +362,7 @@ class WP_Filesystem_FTPext extends WP_Filesystem_Base {
 	 *
 	 * @since 2.5.0
 	 *
-	 * @param string $source      Path to the source file.
+	 * @param string $source      Path to the #source file.
 	 * @param string $destination Path to the destination file.
 	 * @param bool   $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                            Default false.
@@ -675,7 +675,7 @@ class WP_Filesystem_FTPext extends WP_Filesystem_Base {
 			}
 		}
 
-		// Replace symlinks formatted as "source -> target" with just the source name.
+		// Replace symlinks formatted as "#source -> target" with just the #source name.
 		if ( isset( $b['islink'] ) && $b['islink'] ) {
 			$b['name'] = preg_replace( '/(\s*->\s*.*)$/', '', $b['name'] );
 		}

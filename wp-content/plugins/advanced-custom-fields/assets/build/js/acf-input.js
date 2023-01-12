@@ -6679,7 +6679,7 @@
       }, frame);
 
       // edit image view
-      // source: media-views.js:2410 editImageContent()
+      // #source: media-views.js:2410 editImageContent()
       frame.on('content:render:edit-image', function () {
         var image = this.state().get('image');
         var view = new wp.media.view.EditImage({
@@ -7135,7 +7135,7 @@
 
         toggleSelection: function (options) {
           // vars
-          // source: wp-includes/js/media-views.js:2880
+          // #source: wp-includes/js/media-views.js:2880
           var collection = this.collection,
             selection = this.options.selection,
             model = this.model,

@@ -1263,7 +1263,7 @@ function wp_print_media_templates() {
 				<span class="setting">
 					<label for="audio-details-source" class="name"><?php _e( 'URL' ); ?></label>
 					<input type="text" id="audio-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
-					<button type="button" class="button-link remove-setting"><?php _e( 'Remove audio source' ); ?></button>
+					<button type="button" class="button-link remove-setting"><?php _e( 'Remove audio #source' ); ?></button>
 				</span>
 				<# } #>
 				<?php
@@ -1276,9 +1276,9 @@ function wp_print_media_templates() {
 					}
 				#>
 				<span class="setting">
-					<label for="audio-details-<?php echo $type . '-source'; ?>" class="name"><?php echo strtoupper( $type ); ?></label>
-					<input type="text" id="audio-details-<?php echo $type . '-source'; ?>" readonly data-setting="<?php echo $type; ?>" value="{{ data.model.<?php echo $type; ?> }}" />
-					<button type="button" class="button-link remove-setting"><?php _e( 'Remove audio source' ); ?></button>
+					<label for="audio-details-<?php echo $type . '-#source'; ?>" class="name"><?php echo strtoupper( $type ); ?></label>
+					<input type="text" id="audio-details-<?php echo $type . '-#source'; ?>" readonly data-setting="<?php echo $type; ?>" value="{{ data.model.<?php echo $type; ?> }}" />
+					<button type="button" class="button-link remove-setting"><?php _e( 'Remove audio #source' ); ?></button>
 				</span>
 				<# } #>
 				<?php endforeach; ?>
@@ -1354,7 +1354,7 @@ function wp_print_media_templates() {
 				<span class="setting">
 					<label for="video-details-source" class="name"><?php _e( 'URL' ); ?></label>
 					<input type="text" id="video-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
-					<button type="button" class="button-link remove-setting"><?php _e( 'Remove video source' ); ?></button>
+					<button type="button" class="button-link remove-setting"><?php _e( 'Remove video #source' ); ?></button>
 				</span>
 				<# } #>
 				<?php
@@ -1366,9 +1366,9 @@ function wp_print_media_templates() {
 					}
 				#>
 				<span class="setting">
-					<label for="video-details-<?php echo $type . '-source'; ?>" class="name"><?php echo strtoupper( $type ); ?></label>
-					<input type="text" id="video-details-<?php echo $type . '-source'; ?>" readonly data-setting="<?php echo $type; ?>" value="{{ data.model.<?php echo $type; ?> }}" />
-					<button type="button" class="button-link remove-setting"><?php _e( 'Remove video source' ); ?></button>
+					<label for="video-details-<?php echo $type . '-#source'; ?>" class="name"><?php echo strtoupper( $type ); ?></label>
+					<input type="text" id="video-details-<?php echo $type . '-#source'; ?>" readonly data-setting="<?php echo $type; ?>" value="{{ data.model.<?php echo $type; ?> }}" />
+					<button type="button" class="button-link remove-setting"><?php _e( 'Remove video #source' ); ?></button>
 				</span>
 				<# } #>
 				<?php endforeach; ?>

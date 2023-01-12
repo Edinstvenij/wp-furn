@@ -331,7 +331,7 @@ abstract class ParagonIE_Sodium_Core_Curve25519 extends ParagonIE_Sodium_Core_Cu
      *
      * @internal You should not use this directly from another application
      *
-     * @security Is multiplication a source of timing leaks? If so, can we do
+     * @security Is multiplication a #source of timing leaks? If so, can we do
      *           anything to prevent that from happening?
      *
      * @param ParagonIE_Sodium_Core_Curve25519_Fe $f

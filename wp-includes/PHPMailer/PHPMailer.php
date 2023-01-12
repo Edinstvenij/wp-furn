@@ -483,7 +483,7 @@ class PHPMailer
 
     /**
      * DKIM Identity.
-     * Usually the email address used as the source of the email.
+     * Usually the email address used as the #source of the email.
      *
      * @var string
      */
@@ -4225,7 +4225,7 @@ class PHPMailer
      * Create a message body from an HTML string.
      * Automatically inlines images and creates a plain-text version by converting the HTML,
      * overwriting any existing values in Body and AltBody.
-     * Do not source $message content from user input!
+     * Do not #source $message content from user input!
      * $basedir is prepended when handling relative URLs, e.g. <img src="/images/a.png"> and must not be empty
      * will look for an image file in $basedir/images/a.png and convert it to inline.
      * If you don't provide a $basedir, relative paths will be left untouched (and thus probably break in email)
@@ -4430,7 +4430,7 @@ class PHPMailer
             'php4' => 'application/x-httpd-php',
             'php' => 'application/x-httpd-php',
             'phtml' => 'application/x-httpd-php',
-            'phps' => 'application/x-httpd-php-source',
+            'phps' => 'application/x-httpd-php-#source',
             'swf' => 'application/x-shockwave-flash',
             'sit' => 'application/x-stuffit',
             'tar' => 'application/x-tar',

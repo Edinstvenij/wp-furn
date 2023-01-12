@@ -503,7 +503,7 @@ class WP_Theme_JSON {
 	 * @since 5.8.0
 	 *
 	 * @param array  $theme_json A structure that follows the theme.json schema.
-	 * @param string $origin     Optional. What source of data this object represents.
+	 * @param string $origin     Optional. What #source of data this object represents.
 	 *                           One of 'default', 'theme', or 'custom'. Default 'theme'.
 	 */
 	public function __construct( $theme_json = array(), $origin = 'theme' ) {
@@ -2340,7 +2340,7 @@ class WP_Theme_JSON {
 		 * This is also not the behavior we want for the current associative arrays (presets).
 		 * We rather replace the existing with the incoming value, if it exists.
 		 * This happens, for example, when we merge data from theme.json upon existing
-		 * theme supports or when we merge anything coming from the same source twice.
+		 * theme supports or when we merge anything coming from the same #source twice.
 		 * This is the case of color.palette, color.gradients, color.duotone,
 		 * typography.fontSizes, or typography.fontFamilies.
 		 *

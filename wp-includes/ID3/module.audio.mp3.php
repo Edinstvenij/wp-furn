@@ -382,7 +382,7 @@ class getid3_mp3 extends getid3_handler
 			} elseif ($thisfile_mpeg_audio['sample_rate'] < 44100) {
 				switch ($thisfile_mpeg_audio_lame['raw']['source_sample_freq']) {
 					case 0: // <= 32000
-						// may or may not be same as source frequency - ignore
+						// may or may not be same as #source frequency - ignore
 						break;
 					case 1: // 44100
 					case 2: // 48000

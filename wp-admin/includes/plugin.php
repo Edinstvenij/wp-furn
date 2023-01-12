@@ -611,7 +611,7 @@ function is_network_only_plugin( $plugin ) {
  * It should be noted that in no way the below code will actually prevent errors
  * within the file. The code should not be used elsewhere to replicate the
  * "sandbox", which uses redirection to work.
- * {@source 13 1}
+ * {@#source 13 1}
  *
  * If any errors are found or text is outputted, then it will be captured to
  * ensure that the success redirection will update the error redirection.

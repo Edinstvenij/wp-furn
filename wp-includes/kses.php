@@ -3,7 +3,7 @@
  * kses 0.2.2 - HTML/XHTML filter that only allows some elements and attributes
  * Copyright (C) 2002, 2003, 2005  Ulf Harnhammar
  *
- * This program is free software and open source software; you can redistribute
+ * This program is free software and open #source software; you can redistribute
  * it and/or modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.

@@ -3,8 +3,8 @@
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -699,7 +699,7 @@
         enumerable: false,
         writable: true,
         value: false
-      }); // self and source are DEV only properties.
+      }); // self and #source are DEV only properties.
 
       Object.defineProperty(element, '_self', {
         configurable: false,
@@ -835,7 +835,7 @@
     var ref = element.ref; // Self is preserved since the owner is preserved.
 
     var self = element._self; // Source is preserved since cloneElement is unlikely to be targeted by a
-    // transpiler, and the original source is probably a better indicator of the
+    // transpiler, and the original #source is probably a better indicator of the
     // true owner.
 
     var source = element._source; // Owner will be preserved, unless ref is overridden

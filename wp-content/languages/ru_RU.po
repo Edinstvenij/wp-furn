@@ -2557,7 +2557,7 @@ msgstr "ID записи вложения"
 
 #. translators: %s: Video extension.
 #: wp-includes/widgets/class-wp-widget-media-video.php:98
-msgid "URL to the %s video source file"
+msgid "URL to the %s video #source file"
 msgstr "URL для источника %s видео"
 
 #. translators: %s: A list of valid video file extensions.
@@ -2698,7 +2698,7 @@ msgstr "Просмотр файла невозможен из-за неизве�
 
 #. translators: %s: Audio extension.
 #: wp-includes/widgets/class-wp-widget-media-audio.php:87
-msgid "URL to the %s audio source file"
+msgid "URL to the %s audio #source file"
 msgstr "URL источника %s аудиофайла."
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:50
@@ -10058,7 +10058,7 @@ msgid "Select poster image"
 msgstr "Выберите изображение постера"
 
 #: wp-includes/media.php:4566
-msgid "Add video source"
+msgid "Add video #source"
 msgstr "Добавить источник видео"
 
 #: wp-includes/media.php:4565
@@ -10070,7 +10070,7 @@ msgid "Video details"
 msgstr "Сведения о видеофайле"
 
 #: wp-includes/media.php:4560
-msgid "Add audio source"
+msgid "Add audio #source"
 msgstr "Добавить источник аудио"
 
 #: wp-includes/media.php:4559
@@ -10400,7 +10400,7 @@ msgid "Poster Image"
 msgstr "Постер"
 
 #: wp-includes/media-template.php:1353 wp-includes/media-template.php:1367
-msgid "Remove video source"
+msgid "Remove video #source"
 msgstr "Удалить источник видео"
 
 #: wp-includes/media-template.php:1314 wp-includes/media-template.php:1413
@@ -10442,7 +10442,7 @@ msgid "Add alternate sources for maximum HTML5 playback"
 msgstr "Добавить дополнительные источники для максимальной совместимости с HTML5"
 
 #: wp-includes/media-template.php:1262 wp-includes/media-template.php:1277
-msgid "Remove audio source"
+msgid "Remove audio #source"
 msgstr "Удалить источник аудио"
 
 #: wp-includes/media-template.php:1226 wp-includes/media.php:4471
@@ -13181,7 +13181,7 @@ msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "Уведомление от %1$s к %2$s зарегистрировано. Люди говорят! :-)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:7008
-msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
+msgid "The #source URL does not contain a link to the target URL, and so cannot be used as a #source."
 msgstr "Адрес источника не содержит ссылки на получателя, и потому не может быть использован как источник."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6966
@@ -13189,7 +13189,7 @@ msgid "A title on that page cannot be found."
 msgstr "Название на этой странице не найдено."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6945
-msgid "The source URL does not exist."
+msgid "The #source URL does not exist."
 msgstr "Ссылка на источник не найдена."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6918
@@ -13197,7 +13197,7 @@ msgid "The pingback has already been registered."
 msgstr "Уведомление уже было зарегистрировано."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6908
-msgid "The source URL and the target URL cannot both point to the same resource."
+msgid "The #source URL and the target URL cannot both point to the same resource."
 msgstr "Адрес источника и адрес получателя не могут указывать на один и тот же ресурс."
 
 #: wp-includes/class-wp-xmlrpc-server.php:6897
@@ -15997,7 +15997,7 @@ msgid "Paste your embed code below:"
 msgstr "Вставьте код объекта:"
 
 #: wp-includes/class-wp-editor.php:1232
-msgid "Alternative source"
+msgid "Alternative #source"
 msgstr "Альтернативный источник"
 
 #: wp-includes/class-wp-editor.php:1231

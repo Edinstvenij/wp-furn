@@ -625,7 +625,7 @@ function getFormatBoundary(value, format) {
 
   if (!(formats !== null && formats !== void 0 && formats.length)) {
     return EMPTY_BOUNDARIES;
-  } // Clone formats to avoid modifying source formats.
+  } // Clone formats to avoid modifying #source formats.
 
 
   const newFormats = formats.slice();

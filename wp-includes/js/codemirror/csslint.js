@@ -213,8 +213,8 @@ var Colors = module.exports = {
     appworkspace        :"Background color of multiple document interface.",
     background          :"Desktop background.",
     buttonface          :"The face background color for 3-D elements that appear 3-D due to one layer of surrounding border.",
-    buttonhighlight     :"The color of the border facing the light source for 3-D elements that appear 3-D due to one layer of surrounding border.",
-    buttonshadow        :"The color of the border away from the light source for 3-D elements that appear 3-D due to one layer of surrounding border.",
+    buttonhighlight     :"The color of the border facing the light #source for 3-D elements that appear 3-D due to one layer of surrounding border.",
+    buttonshadow        :"The color of the border away from the light #source for 3-D elements that appear 3-D due to one layer of surrounding border.",
     buttontext          :"Text on push buttons.",
     captiontext         :"Text in caption, size box, and scrollbar arrow box.",
     graytext            :"Grayed (disabled) text. This color is set to #000 if the current display driver does not support a solid gray color.",
@@ -229,11 +229,11 @@ var Colors = module.exports = {
     menu                :"Menu background.",
     menutext            :"Text in menus.",
     scrollbar           :"Scroll bar gray area.",
-    threeddarkshadow    :"The color of the darker (generally outer) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
+    threeddarkshadow    :"The color of the darker (generally outer) of the two borders away from the light #source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
     threedface          :"The face background color for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
-    threedhighlight     :"The color of the lighter (generally outer) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
-    threedlightshadow   :"The color of the darker (generally inner) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
-    threedshadow        :"The color of the lighter (generally inner) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
+    threedhighlight     :"The color of the lighter (generally outer) of the two borders facing the light #source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
+    threedlightshadow   :"The color of the darker (generally inner) of the two borders facing the light #source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
+    threedshadow        :"The color of the lighter (generally inner) of the two borders away from the light #source for 3-D elements that appear 3-D due to two concentric layers of surrounding border.",
     window              :"Window background.",
     windowframe         :"Window frame.",
     windowtext          :"Text in windows."
@@ -3439,8 +3439,8 @@ var Properties = module.exports = {
     "caption-side"                  : "top | bottom",
     "clear"                         : "none | right | left | both",
     "clip"                          : "<shape> | auto",
-    "-webkit-clip-path"             : "<clip-source> | <clip-path> | none",
-    "clip-path"                     : "<clip-source> | <clip-path> | none",
+    "-webkit-clip-path"             : "<clip-#source> | <clip-path> | none",
+    "clip-path"                     : "<clip-#source> | <clip-path> | none",
     "clip-rule"                     : "nonzero | evenodd",
     "color"                         : "<color>",
     "color-interpolation"           : "auto | sRGB | linearRGB",
@@ -4602,7 +4602,7 @@ function mix(receiver, supplier) {
 
 /**
  * A token stream that produces CSS tokens.
- * @param {String|Reader} input The source of text to tokenize.
+ * @param {String|Reader} input The #source of text to tokenize.
  * @constructor
  * @class TokenStream
  * @namespace parserlib.css
@@ -7882,7 +7882,7 @@ var CSSLint = (function() {
  * verification back to the main API.
  * @class Reporter
  * @constructor
- * @param {String[]} lines The text lines of the source.
+ * @param {String[]} lines The text lines of the #source.
  * @param {Object} ruleset The set of rules to work with, including if
  *      they are errors or warnings.
  * @param {Object} explicitly allowed lines
@@ -10379,11 +10379,11 @@ CSSLint.addRule({
                 output = [];
 
             /**
-             * Generate a source string for a rule.
-             * Checkstyle source strings usually resemble Java class names e.g
+             * Generate a #source string for a rule.
+             * Checkstyle #source strings usually resemble Java class names e.g
              * net.csslint.SomeRuleName
              * @param {Object} rule
-             * @return rule source as {String}
+             * @return rule #source as {String}
              */
             var generateSource = function(rule) {
                 if (!rule || !("name" in rule)) {
@@ -10399,7 +10399,7 @@ CSSLint.addRule({
                     // ignore rollups for now
                     if (!message.rollup) {
                         output.push("<error line=\"" + message.line + "\" column=\"" + message.col + "\" severity=\"" + message.type + "\"" +
-                          " message=\"" + xmlEscape(message.message) + "\" source=\"" + generateSource(message.rule) +"\"/>");
+                          " message=\"" + xmlEscape(message.message) + "\" #source=\"" + generateSource(message.rule) +"\"/>");
                     }
                 });
                 output.push("</file>");
@@ -10638,11 +10638,11 @@ CSSLint.addFormatter({
             };
 
         /**
-         * Generate a source string for a rule.
-         * JUNIT source strings usually resemble Java class names e.g
+         * Generate a #source string for a rule.
+         * JUNIT #source strings usually resemble Java class names e.g
          * net.csslint.SomeRuleName
          * @param {Object} rule
-         * @return rule source as {String}
+         * @return rule #source as {String}
          */
         var generateSource = function(rule) {
             if (!rule || !("name" in rule)) {

@@ -1,0 +1,100 @@
+2023-01-11T11:15:57+00:00 CRITICAL syntax error, unexpected '?>' в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php на строке 28
+
+2023-01-11T11:18:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_product_category_list(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php on line 27 and at least 1 expected in C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\wc-product-functions.php:1180
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php(27): wc_get_product_category_list()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#3 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#4 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\wc-product-functions.php на строке 1180
+
+2023-01-11T11:50:49+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_categories() in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php:23
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#3 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php на строке 23
+
+2023-01-11T11:54:13+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php:29
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#3 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php на строке 29
+
+2023-01-11T11:54:21+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php:29
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#3 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php на строке 29
+
+2023-01-11T12:02:15+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Term::get_name() in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php:18
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php(5): get_header()
+#4 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#5 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#7 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php на строке 18
+
+2023-01-11T12:04:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_object_terms(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php on line 13 and at least 2 expected in C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\wc-term-functions.php:131
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\header-shop-static.php(13): wc_get_object_terms()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(783): require_once('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-includes\template.php(718): load_template()
+#3 C:\Users\yurav\www\web\wp-furn\wp-includes\general-template.php(48): locate_template()
+#4 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\shop.php(5): get_header()
+#5 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#6 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#7 C:\Users\yurav\www\web\wp-furn\index. в C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\wc-term-functions.php на строке 131
+
+2023-01-11T12:30:19+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:30:48+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:34:12+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:44:43+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:46:02+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:58:07+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:58:50+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn/assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T12:59:28+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn/assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T13:00:12+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn\assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T13:00:42+00:00 CRITICAL require_once(): Failed opening required 'http://wp-furn/wp-content/themes/furn/assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T13:00:51+00:00 CRITICAL require(): Failed opening required 'http://wp-furn/wp-content/themes/furn/assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T13:02:06+00:00 CRITICAL require_once(): Failed opening required '/assets/blocks/popup-order.php' (include_path='.') в C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php на строке 64
+
+2023-01-11T13:28:02+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Product::get_attribute(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php on line 48 and exactly 1 expected in C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php:1996
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php(48): WC_Product->get_attribute()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#3 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#4 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php на строке 1996
+
+2023-01-11T13:28:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Product::get_attribute(), 0 passed in C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php on line 52 and exactly 1 expected in C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php:1996
+Stack trace:
+#0 C:\Users\yurav\www\web\wp-furn\wp-content\themes\furn\single-product.php(52): WC_Product->get_attribute()
+#1 C:\Users\yurav\www\web\wp-furn\wp-includes\template-loader.php(106): include('C:\\Users\\yurav\\...')
+#2 C:\Users\yurav\www\web\wp-furn\wp-blog-header.php(19): require_once('C:\\Users\\yurav\\...')
+#3 C:\Users\yurav\www\web\wp-furn\index.php(17): require('C:\\Users\\yurav\\...')
+#4 {main}
+  thrown в C:\Users\yurav\www\web\wp-furn\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php на строке 1996
+

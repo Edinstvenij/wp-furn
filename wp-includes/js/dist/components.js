@@ -669,8 +669,8 @@ var __webpack_unused_export__;
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 var b=60103,c=60106,d=60107,e=60108,f=60114,g=60109,h=60110,k=60112,l=60113,m=60120,n=60115,p=60116,q=60121,r=60122,u=60117,v=60129,w=60131;
 if("function"===typeof Symbol&&Symbol.for){var x=Symbol.for;b=x("react.element");c=x("react.portal");d=x("react.fragment");e=x("react.strict_mode");f=x("react.profiler");g=x("react.provider");h=x("react.context");k=x("react.forward_ref");l=x("react.suspense");m=x("react.suspense_list");n=x("react.memo");p=x("react.lazy");q=x("react.block");r=x("react.server.block");u=x("react.fundamental");v=x("react.debug_trace_mode");w=x("react.legacy_hidden")}
@@ -699,7 +699,7 @@ if (true) {
 /***/ (function(__unused_webpack_module, exports) {
 
 // Copyright (c) 2014 Rafael Caricio. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
+// Use of this #source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
 var GradientParser = {};
@@ -1589,8 +1589,8 @@ module.exports = memize;
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -1661,8 +1661,8 @@ module.exports = function() {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 if (false) { var throwOnDirectAccess, ReactIs; } else {
@@ -1681,8 +1681,8 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -1703,8 +1703,8 @@ module.exports = ReactPropTypesSecret;
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?
@@ -10986,8 +10986,8 @@ function calcViewportConstraints(layoutBox, constraintsBox) {
     };
 }
 /**
- * Calculate a transform origin relative to the source axis, between 0-1, that results
- * in an asthetically pleasing scale/transform needed to project from source to target.
+ * Calculate a transform origin relative to the #source axis, between 0-1, that results
+ * in an asthetically pleasing scale/transform needed to project from #source to target.
  */
 function constraints_calcOrigin(source, target) {
     var origin = 0.5;
@@ -11931,7 +11931,7 @@ var visualElement = function (_a) {
         var lifecycles = createLifecycles();
         /**
          * A map of all motion values attached to this visual element. Motion
-         * values are source of truth for any given animated value. A motion
+         * values are #source of truth for any given animated value. A motion
          * value might be provided externally by the component via props.
          */
         var values = new Map();
@@ -15212,8 +15212,8 @@ var StyleSheet = /*#__PURE__*/function () {
 
   _proto.insert = function insert(rule) {
     // the max length is how many rules we have per style tag, it's 65000 in speedy mode
-    // it's 1 in dev because we insert source maps that map a single rule to a location
-    // and you can only have one source map per style tag
+    // it's 1 in dev because we insert #source maps that map a single rule to a location
+    // and you can only have one #source map per style tag
     if (this.ctr % (this.isSpeedy ? 65000 : 1) === 0) {
       this._insertTag(createStyleElement(this));
     }
@@ -19263,7 +19263,7 @@ const getReferenceElement = _ref2 => {
  */
 
 /**
- * Parts of this source were derived and modified from `floating-ui`,
+ * Parts of this #source were derived and modified from `floating-ui`,
  * released under the MIT license.
  *
  * https://github.com/floating-ui/floating-ui
@@ -31461,7 +31461,7 @@ var write = 'write';
 var afterWrite = 'afterWrite';
 var modifierPhases = [beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite];
 ;// CONCATENATED MODULE: ./node_modules/@popperjs/core/lib/utils/orderModifiers.js
- // source: https://stackoverflow.com/questions/49875255
+ // #source: https://stackoverflow.com/questions/49875255
 
 function orderModifiers_order(modifiers) {
   var map = new Map();
@@ -60935,7 +60935,7 @@ function Sandbox(_ref) {
     }
 
     function checkMessageForResize(event) {
-      const iframe = ref.current; // Verify that the mounted element is the source of the message.
+      const iframe = ref.current; // Verify that the mounted element is the #source of the message.
 
       if (!iframe || iframe.contentWindow !== event.source) {
         return;

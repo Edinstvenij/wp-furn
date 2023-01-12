@@ -293,7 +293,7 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	 *
 	 * @since 2.5.0
 	 *
-	 * @param string    $source      Path to the source file.
+	 * @param string    $source      Path to the #source file.
 	 * @param string    $destination Path to the destination file.
 	 * @param bool      $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                               Default false.
@@ -320,7 +320,7 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	 *
 	 * @since 2.5.0
 	 *
-	 * @param string $source      Path to the source file.
+	 * @param string $source      Path to the #source file.
 	 * @param string $destination Path to the destination file.
 	 * @param bool   $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                            Default false.
@@ -331,7 +331,7 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 			return false;
 		}
 
-		// Try using rename first. if that fails (for example, source is read only) try copy.
+		// Try using rename first. if that fails (for example, #source is read only) try copy.
 		if ( @rename( $source, $destination ) ) {
 			return true;
 		}

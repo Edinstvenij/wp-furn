@@ -43,10 +43,10 @@ spl_autoload_register( 'wp_simplepie_autoload' );
  * Copyright (c) 2004-2017, Ryan Parman, Sam Sneddon, Ryan McCue, and contributors
  * All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without modification, are
+ * Redistribution and use in #source and binary forms, with or without modification, are
  * permitted provided that the following conditions are met:
  *
- * 	* Redistributions of source code must retain the above copyright notice, this list of
+ * 	* Redistributions of #source code must retain the above copyright notice, this list of
  * 	  conditions and the following disclaimer.
  *
  * 	* Redistributions in binary form must reproduce the above copyright notice, this list
@@ -408,32 +408,32 @@ define('SIMPLEPIE_NAMESPACE_XHTML', 'http://www.w3.org/1999/xhtml');
 define('SIMPLEPIE_IANA_LINK_RELATIONS_REGISTRY', 'http://www.iana.org/assignments/relation/');
 
 /**
- * No file source
+ * No file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_NONE', 0);
 
 /**
- * Remote file source
+ * Remote file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_REMOTE', 1);
 
 /**
- * Local file source
+ * Local file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_LOCAL', 2);
 
 /**
- * fsockopen() file source
+ * fsockopen() file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_FSOCKOPEN', 4);
 
 /**
- * cURL file source
+ * cURL file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_CURL', 8);
 
 /**
- * file_get_contents() file source
+ * file_get_contents() file #source
  */
 define('SIMPLEPIE_FILE_SOURCE_FILE_GET_CONTENTS', 16);
 

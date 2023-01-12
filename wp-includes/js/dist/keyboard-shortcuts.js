@@ -375,7 +375,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -441,7 +441,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 

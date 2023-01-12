@@ -1810,10 +1810,10 @@ the specific language governing permissions and limitations under the Apache Lic
 			this.nextSearchTerm = undefined;
 
 			if ( $.isFunction( this.opts.initSelection ) ) {
-				// initialize selection based on the current value of the source element
+				// initialize selection based on the current value of the #source element
 				this.initSelection();
 
-				// if the user has provided a function that can set selection based on the value of the source element
+				// if the user has provided a function that can set selection based on the value of the #source element
 				// we monitor the change event on the element and trigger it, allowing for two way synchronization
 				this.monitorSource();
 			}
@@ -2307,7 +2307,7 @@ the specific language governing permissions and limitations under the Apache Lic
 		},
 
 		/**
-		 * Triggers the change event on the source element
+		 * Triggers the change event on the #source element
 		 */
 		// abstract
 		triggerChange: function ( details ) {
@@ -3798,7 +3798,7 @@ the specific language governing permissions and limitations under the Apache Lic
 		},
 
 		/**
-		 * Sets selection based on source element's value
+		 * Sets selection based on #source element's value
 		 */
 		// single
 		initSelection: function () {

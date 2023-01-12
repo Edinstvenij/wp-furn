@@ -344,7 +344,7 @@ class getid3_ac3 extends getid3_handler
 						$thisfile_ac3_raw_bsi['mixdatafill'] =        $this->readHeaderBSI($mixdata_fill);
 						unset($mixdefbitsread, $mixdata_bits, $mixdata_fill);
 					}
-					if ($thisfile_ac3_raw_bsi['acmod'] < 2) { // if mono or dual mono source
+					if ($thisfile_ac3_raw_bsi['acmod'] < 2) { // if mono or dual mono #source
 						$thisfile_ac3_raw_bsi['flags']['paninfo'] = (bool) $this->readHeaderBSI(1);
 						if ($thisfile_ac3_raw_bsi['flags']['paninfo']) {
 							$thisfile_ac3_raw_bsi['panmean']   =        $this->readHeaderBSI(8);

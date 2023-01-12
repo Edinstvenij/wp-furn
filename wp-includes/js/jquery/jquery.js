@@ -301,7 +301,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 					( copyIsArray = Array.isArray( copy ) ) ) ) {
 					src = target[ name ];
 
-					// Ensure proper type for the source value
+					// Ensure proper type for the #source value
 					if ( copyIsArray && !Array.isArray( src ) ) {
 						clone = [];
 					} else if ( !copyIsArray && !jQuery.isPlainObject( src ) ) {
@@ -6514,7 +6514,7 @@ var rtrimCSS = new RegExp(
 	}
 
 	// Support: IE <=9 - 11 only
-	// Style of cloned element affects source element cloned (trac-8908)
+	// Style of cloned element affects #source element cloned (trac-8908)
 	div.style.backgroundClip = "content-box";
 	div.cloneNode( true ).style.backgroundClip = "";
 	support.clearCloneStyle = div.style.backgroundClip === "content-box";
@@ -9358,7 +9358,7 @@ jQuery.extend( {
 		},
 
 		// Data converters
-		// Keys separate source (or catchall "*") and destination types with a single space
+		// Keys separate #source (or catchall "*") and destination types with a single space
 		converters: {
 
 			// Convert anything to text

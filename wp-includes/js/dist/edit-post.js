@@ -2843,7 +2843,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -2909,7 +2909,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -9726,7 +9726,7 @@ function initializeEditor(id, postType, postId, settings, initialEdits) {
 
   if (documentMode !== 'Standards') {
     // eslint-disable-next-line no-console
-    console.warn("Your browser is using Quirks Mode. \nThis can cause rendering issues such as blocks overlaying meta boxes in the editor. Quirks Mode can be triggered by PHP errors or HTML code appearing before the opening <!DOCTYPE html>. Try checking the raw page source or your site's PHP error log and resolving errors there, removing any HTML before the doctype, or disabling plugins.");
+    console.warn("Your browser is using Quirks Mode. \nThis can cause rendering issues such as blocks overlaying meta boxes in the editor. Quirks Mode can be triggered by PHP errors or HTML code appearing before the opening <!DOCTYPE html>. Try checking the raw page #source or your site's PHP error log and resolving errors there, removing any HTML before the doctype, or disabling plugins.");
   } // This is a temporary fix for a couple of issues specific to Webkit on iOS.
   // Without this hack the browser scrolls the mobile toolbar off-screen.
   // Once supported in Safari we can replace this in favor of preventScroll.

@@ -60,6 +60,7 @@ function wc_get_products( $args ) {
  * @param array $deprecated Previously used to pass arguments to the factory, e.g. to force a type.
  * @return WC_Product|null|false
  */
+
 function wc_get_product( $the_product = false, $deprecated = array() ) {
 	if ( ! did_action( 'woocommerce_init' ) || ! did_action( 'woocommerce_after_register_taxonomy' ) || ! did_action( 'woocommerce_after_register_post_type' ) ) {
 		/* translators: 1: wc_get_product 2: woocommerce_init 3: woocommerce_after_register_taxonomy 4: woocommerce_after_register_post_type */

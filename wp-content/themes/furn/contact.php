@@ -19,7 +19,8 @@ get_header( 'static' );
                 </div>
                 <div class="col contact__col">
                     <p class="contact__title"><?= the_field( 'text_right-top' ) ?></p>
-                    <form class="form" action="telegram.php" method="POST">
+
+                    <form class="form" action="<?= admin_url( 'admin-ajax.php?action=send_message' ) ?>" method="POST">
                         <div class="col form__col">
                             <input name="form-name" type="hidden" value="Form contact page">
                             <input class="form__input" id="user-name" type="text" name="name" placeholder="YOUR NAME" minlength="2" maxlength="20" required>
@@ -27,6 +28,8 @@ get_header( 'static' );
                             <button id="tg-form-btn" class="form__button" type="submit">SUBMIT</button>
                         </div>
                     </form>
+					<?php //= do_shortcode('[contact-form-7 id="87" title="Form from contact page"]') ?>
+
                 </div>
             </div>
 

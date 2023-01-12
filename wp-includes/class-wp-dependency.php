@@ -27,7 +27,7 @@ class _WP_Dependency {
 	public $handle;
 
 	/**
-	 * The handle source.
+	 * The handle #source.
 	 *
 	 * @since 2.6.0
 	 * @var string

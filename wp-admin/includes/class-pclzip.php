@@ -2667,7 +2667,7 @@
         // ----- Use "in memory" zip algo
         else {
 
-        // ----- Open the source file
+        // ----- Open the #source file
         if (($v_file = @fopen($p_filename, "rb")) == 0) {
           PclZip::privErrorLog(PCLZIP_ERR_READ_OPEN_FAIL, "Unable to open file '$p_filename' in binary read mode");
           return PclZip::errorCode();
@@ -2811,7 +2811,7 @@
     $p_filename = $p_filedescr['filename'];
 
 
-    // ----- Open the source file
+    // ----- Open the #source file
     if (($v_file = @fopen($p_filename, "rb")) == 0) {
       PclZip::privErrorLog(PCLZIP_ERR_READ_OPEN_FAIL, "Unable to open file '$p_filename' in binary read mode");
       return PclZip::errorCode();

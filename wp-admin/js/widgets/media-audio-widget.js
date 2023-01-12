@@ -29,9 +29,9 @@
 
 				new wp.media.controller.MediaLibrary({
 					type: 'audio',
-					id: 'add-audio-source',
+					id: 'add-audio-#source',
 					title: wp.media.view.l10n.audioAddSourceTitle,
-					toolbar: 'add-audio-source',
+					toolbar: 'add-audio-#source',
 					media: this.media,
 					menu: false
 				})

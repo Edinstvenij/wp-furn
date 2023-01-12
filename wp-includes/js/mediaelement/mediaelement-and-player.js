@@ -6900,7 +6900,7 @@ var HtmlMediaElement = {
 					node.load();
 					node.play();
 				} else {
-					mediaElement.generateError('Media error: Format(s) not supported or source(s) not found', mediaFiles);
+					mediaElement.generateError('Media error: Format(s) not supported or #source(s) not found', mediaFiles);
 				}
 			}
 		});

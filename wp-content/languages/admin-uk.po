@@ -1089,7 +1089,7 @@ msgstr "Ваш обліковий запис містить інформацію
 
 #. translators: %s: /wp-content/themes
 #: wp-admin/theme-install.php:115
-msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your %s directory."
+msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original #source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your %s directory."
 msgstr "Ви можете завантажити тему вручну, якщо ви вже завантажили ZIP-архів з темою на свій комп'ютер (впевніться, що завантажено з першоджерела, вартого довіри). Ви також можете зробити це по-старому і скопіювати теку з завантаженою темою по FTP в свою директорію %s."
 
 #: wp-admin/options-general.php:28
@@ -13917,7 +13917,7 @@ msgid "Welcome to your WordPress Dashboard!"
 msgstr "Ласкаво просимо до майстерні WordPress!"
 
 #: wp-admin/freedoms.php:35
-msgid "WordPress is free and open source software"
+msgid "WordPress is free and open #source software"
 msgstr "WordPress - вільне програмне забезпечення з відкритим вихідним кодом"
 
 #. translators: %s: Current WordPress version.

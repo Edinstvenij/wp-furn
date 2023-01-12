@@ -425,7 +425,7 @@ class WP_Image_Editor_Imagick extends WP_Image_Editor {
 	}
 
 	/**
-	 * Create multiple smaller images from a single source.
+	 * Create multiple smaller images from a single #source.
 	 *
 	 * Attempts to create all sub-sizes and returns the meta data at the end. This
 	 * may result in the server running out of resources. When it fails there may be few
@@ -536,7 +536,7 @@ class WP_Image_Editor_Imagick extends WP_Image_Editor {
 	 * @param int  $src_h   The height to crop.
 	 * @param int  $dst_w   Optional. The destination width.
 	 * @param int  $dst_h   Optional. The destination height.
-	 * @param bool $src_abs Optional. If the source crop points are absolute.
+	 * @param bool $src_abs Optional. If the #source crop points are absolute.
 	 * @return true|WP_Error
 	 */
 	public function crop( $src_x, $src_y, $src_w, $src_h, $dst_w = null, $dst_h = null, $src_abs = false ) {
@@ -551,7 +551,7 @@ class WP_Image_Editor_Imagick extends WP_Image_Editor {
 
 			if ( $dst_w || $dst_h ) {
 				// If destination width/height isn't specified,
-				// use same as width/height from source.
+				// use same as width/height from #source.
 				if ( ! $dst_w ) {
 					$dst_w = $src_w;
 				}

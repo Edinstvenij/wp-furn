@@ -670,8 +670,8 @@ module.exports = lineHeight;
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -742,8 +742,8 @@ module.exports = function() {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 if (false) { var throwOnDirectAccess, ReactIs; } else {
@@ -762,8 +762,8 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This #source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this #source tree.
  */
 
 
@@ -2488,7 +2488,7 @@ function warning(cond, message) {
       // Welcome to debugging history!
       //
       // This error is thrown as a convenience so you can more easily
-      // find the source for a warning that appears in the console by
+      // find the #source for a warning that appears in the console by
       // enabling "pause on exceptions" in your JavaScript debugger.
       throw new Error(message); // eslint-disable-next-line no-empty
     } catch (e) {}
@@ -4401,7 +4401,7 @@ function isShallowEqual(a, b, fromIndex) {
 	 * @return {*} Selector result.
 	 */
 	/* eslint-enable jsdoc/check-param-names */
-	function callSelector(/* source, ...extraArgs */) {
+	function callSelector(/* #source, ...extraArgs */) {
 		var len = arguments.length,
 			cache,
 			node,
@@ -4467,7 +4467,7 @@ function isShallowEqual(a, b, fromIndex) {
 			val: selector.apply(null, args),
 		});
 
-		// Avoid including the source object in the cache.
+		// Avoid including the #source object in the cache.
 		args[0] = null;
 		node.args = args;
 
@@ -7148,7 +7148,7 @@ function useSetting(path, blockName) {
         break;
 
       default:
-        throw 'Unsupported source';
+        throw 'Unsupported #source';
     }
 
     return result;
@@ -7195,7 +7195,7 @@ function useStyle(path, blockName) {
       break;
 
     default:
-      throw 'Unsupported source';
+      throw 'Unsupported #source';
   }
 
   return [result, setStyle];
@@ -12939,7 +12939,7 @@ function CodeEditor() {
       blocks
     });
   } else if (blocks) {
-    // If we have parsed blocks already, they should be our source of truth.
+    // If we have parsed blocks already, they should be our #source of truth.
     // Parsing applies block deprecations and legacy block conversions that
     // unparsed content will not have.
     content = (0,external_wp_blocks_namespaceObject.__unstableSerializeAndClean)(blocks);
@@ -15829,7 +15829,7 @@ function AddedBy(_ref6) {
     // Template originally provided by a theme, but customized by a user.
     // Templates originally didn't have the 'origin' field so identify
     // older customized templates by checking for no origin and a 'theme'
-    // or 'custom' source.
+    // or 'custom' #source.
     if (template.has_theme_file && (template.origin === 'theme' || !template.origin && ['theme', 'custom'].includes(template.source))) {
       return (0,external_wp_element_namespaceObject.createElement)(AddedByTheme, {
         slug: template.theme,

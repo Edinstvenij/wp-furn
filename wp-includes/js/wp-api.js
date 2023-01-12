@@ -451,11 +451,11 @@
 					// Some embeds also include an index offset, check for that.
 					if ( _.isUndefined( embedIndex ) ) {
 
-						// Use the embed source point directly.
+						// Use the embed #source point directly.
 						properties = embeddedObjects[ embedSourcePoint ];
 					} else {
 
-						// Add the index to the embed source point.
+						// Add the index to the embed #source point.
 						properties = embeddedObjects[ embedSourcePoint ][ embedIndex ];
 					}
 				} else {

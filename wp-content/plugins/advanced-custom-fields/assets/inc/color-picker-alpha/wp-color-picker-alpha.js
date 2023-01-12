@@ -387,7 +387,7 @@
 			}
 		},
 		/**
-		 * To update the options, see original source to view the available options.
+		 * To update the options, see original #source to view the available options.
 		 *
 		 * @since 3.0.0
 		 *

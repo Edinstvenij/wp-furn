@@ -125,7 +125,7 @@
       uint16Tag = '[object Uint16Array]',
       uint32Tag = '[object Uint32Array]';
 
-  /** Used to match empty string literals in compiled template source. */
+  /** Used to match empty string literals in compiled template #source. */
   var reEmptyStringLeading = /\b__p \+= '';/g,
       reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
       reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
@@ -1467,7 +1467,7 @@
     /** Used to detect overreaching core-js shims. */
     var coreJsData = context['__core-js_shared__'];
 
-    /** Used to resolve the decompiled source of functions. */
+    /** Used to resolve the decompiled #source of functions. */
     var funcToString = funcProto.toString;
 
     /** Used to check objects for own properties. */
@@ -2560,7 +2560,7 @@
      *
      * @private
      * @param {Object} object The destination object.
-     * @param {Object} source The source object.
+     * @param {Object} source The #source object.
      * @returns {Object} Returns `object`.
      */
     function baseAssign(object, source) {
@@ -2573,7 +2573,7 @@
      *
      * @private
      * @param {Object} object The destination object.
-     * @param {Object} source The source object.
+     * @param {Object} source The #source object.
      * @returns {Object} Returns `object`.
      */
     function baseAssignIn(object, source) {
@@ -2736,7 +2736,7 @@
     }
 
     /**
-     * The base implementation of `_.conforms` which doesn't clone `source`.
+     * The base implementation of `_.conforms` which doesn't clone `#source`.
      *
      * @private
      * @param {Object} source The object of property predicates to conform to.
@@ -3588,7 +3588,7 @@
     }
 
     /**
-     * The base implementation of `_.matches` which doesn't clone `source`.
+     * The base implementation of `_.matches` which doesn't clone `#source`.
      *
      * @private
      * @param {Object} source The object of property values to match.
@@ -3629,10 +3629,10 @@
      *
      * @private
      * @param {Object} object The destination object.
-     * @param {Object} source The source object.
-     * @param {number} srcIndex The index of `source`.
+     * @param {Object} source The #source object.
+     * @param {number} srcIndex The index of `#source`.
      * @param {Function} [customizer] The function to customize merged values.
-     * @param {Object} [stack] Tracks traversed source values and their merged
+     * @param {Object} [stack] Tracks traversed #source values and their merged
      *  counterparts.
      */
     function baseMerge(object, source, srcIndex, customizer, stack) {
@@ -3664,12 +3664,12 @@
      *
      * @private
      * @param {Object} object The destination object.
-     * @param {Object} source The source object.
+     * @param {Object} source The #source object.
      * @param {string} key The key of the value to merge.
-     * @param {number} srcIndex The index of `source`.
+     * @param {number} srcIndex The index of `#source`.
      * @param {Function} mergeFunc The function to merge values.
      * @param {Function} [customizer] The function to customize assigned values.
-     * @param {Object} [stack] Tracks traversed source values and their merged
+     * @param {Object} [stack] Tracks traversed #source values and their merged
      *  counterparts.
      */
     function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, stack) {
@@ -3794,7 +3794,7 @@
      * property identifiers.
      *
      * @private
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {string[]} paths The property paths to pick.
      * @returns {Object} Returns the new object.
      */
@@ -3808,7 +3808,7 @@
      * The base implementation of  `_.pickBy` without support for iteratee shorthands.
      *
      * @private
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {string[]} paths The property paths to pick.
      * @param {Function} predicate The function invoked per property.
      * @returns {Object} Returns the new object.
@@ -4791,7 +4791,7 @@
     }
 
     /**
-     * Copies the values of `source` to `array`.
+     * Copies the values of `#source` to `array`.
      *
      * @private
      * @param {Array} source The array to copy values from.
@@ -4810,7 +4810,7 @@
     }
 
     /**
-     * Copies properties of `source` to `object`.
+     * Copies properties of `#source` to `object`.
      *
      * @private
      * @param {Object} source The object to copy properties from.
@@ -4846,7 +4846,7 @@
     }
 
     /**
-     * Copies own symbols of `source` to `object`.
+     * Copies own symbols of `#source` to `object`.
      *
      * @private
      * @param {Object} source The object to copy symbols from.
@@ -4858,7 +4858,7 @@
     }
 
     /**
-     * Copies own and inherited symbols of `source` to `object`.
+     * Copies own and inherited symbols of `#source` to `object`.
      *
      * @private
      * @param {Object} source The object to copy symbols from.
@@ -5604,12 +5604,12 @@
 
     /**
      * Used by `_.defaults` to customize its `_.assignIn` use to assign properties
-     * of source objects to the destination object for all destination properties
+     * of #source objects to the destination object for all destination properties
      * that resolve to `undefined`.
      *
      * @private
      * @param {*} objValue The destination value.
-     * @param {*} srcValue The source value.
+     * @param {*} srcValue The #source value.
      * @param {string} key The key of the property to assign.
      * @param {Object} object The parent object of `objValue`.
      * @returns {*} Returns the value to assign.
@@ -5623,16 +5623,16 @@
     }
 
     /**
-     * Used by `_.defaultsDeep` to customize its `_.merge` use to merge source
+     * Used by `_.defaultsDeep` to customize its `_.merge` use to merge #source
      * objects into destination objects that are passed thru.
      *
      * @private
      * @param {*} objValue The destination value.
-     * @param {*} srcValue The source value.
+     * @param {*} srcValue The #source value.
      * @param {string} key The key of the property to merge.
      * @param {Object} object The parent object of `objValue`.
      * @param {Object} source The parent object of `srcValue`.
-     * @param {Object} [stack] Tracks traversed source values and their merged
+     * @param {Object} [stack] Tracks traversed #source values and their merged
      *  counterparts.
      * @returns {*} Returns the value to assign.
      */
@@ -6160,10 +6160,10 @@
     }
 
     /**
-     * Extracts wrapper details from the `source` body comment.
+     * Extracts wrapper details from the `#source` body comment.
      *
      * @private
-     * @param {string} source The source to inspect.
+     * @param {string} source The #source to inspect.
      * @returns {Array} Returns the wrapper details.
      */
     function getWrapDetails(source) {
@@ -6283,12 +6283,12 @@
     }
 
     /**
-     * Inserts wrapper `details` in a comment at the top of the `source` body.
+     * Inserts wrapper `details` in a comment at the top of the `#source` body.
      *
      * @private
-     * @param {string} source The source to modify.
+     * @param {string} source The #source to modify.
      * @returns {Array} details The details to insert.
-     * @returns {string} Returns the modified source.
+     * @returns {string} Returns the modified #source.
      */
     function insertWrapDetails(source, details) {
       var length = details.length;
@@ -6413,7 +6413,7 @@
     }
 
     /**
-     * Checks if `func` has its source masked.
+     * Checks if `func` has its #source masked.
      *
      * @private
      * @param {Function} func The function to check.
@@ -6459,7 +6459,7 @@
     }
 
     /**
-     * A specialized version of `matchesProperty` for source values suitable
+     * A specialized version of `matchesProperty` for #source values suitable
      * for strict equality comparisons, i.e. `===`.
      *
      * @private
@@ -6498,7 +6498,7 @@
     }
 
     /**
-     * Merges the function metadata of `source` into `data`.
+     * Merges the function metadata of `#source` into `data`.
      *
      * Merging metadata reduces the number of wrappers used to invoke a function.
      * This is possible because methods like `_.bind`, `_.curry`, and `_.partial`
@@ -6510,7 +6510,7 @@
      *
      * @private
      * @param {Array} data The destination metadata.
-     * @param {Array} source The source metadata.
+     * @param {Array} source The #source metadata.
      * @returns {Array} Returns `data`.
      */
     function mergeData(data, source) {
@@ -6528,7 +6528,7 @@
       if (!(isCommon || isCombo)) {
         return data;
       }
-      // Use source `thisArg` if available.
+      // Use #source `thisArg` if available.
       if (srcBitmask & WRAP_BIND_FLAG) {
         data[2] = source[2];
         // Set when currying a bound function.
@@ -6548,20 +6548,20 @@
         data[5] = partials ? composeArgsRight(partials, value, source[6]) : value;
         data[6] = partials ? replaceHolders(data[5], PLACEHOLDER) : source[6];
       }
-      // Use source `argPos` if available.
+      // Use #source `argPos` if available.
       value = source[7];
       if (value) {
         data[7] = value;
       }
-      // Use source `ary` if it's smaller.
+      // Use #source `ary` if it's smaller.
       if (srcBitmask & WRAP_ARY_FLAG) {
         data[8] = data[8] == null ? source[8] : nativeMin(data[8], source[8]);
       }
-      // Use source `arity` if one is not provided.
+      // Use #source `arity` if one is not provided.
       if (data[9] == null) {
         data[9] = source[9];
       }
-      // Use source `func` and merge bitmasks.
+      // Use #source `func` and merge bitmasks.
       data[0] = source[0];
       data[1] = newBitmask;
 
@@ -6721,8 +6721,8 @@
     var setToString = shortOut(baseSetToString);
 
     /**
-     * Sets the `toString` method of `wrapper` to mimic the source of `reference`
-     * with wrapper details in a comment at the top of the source body.
+     * Sets the `toString` method of `wrapper` to mimic the #source of `reference`
+     * with wrapper details in a comment at the top of the #source body.
      *
      * @private
      * @param {Function} wrapper The function to modify.
@@ -6823,11 +6823,11 @@
     }
 
     /**
-     * Converts `func` to its source code.
+     * Converts `func` to its #source code.
      *
      * @private
      * @param {Function} func The function to convert.
-     * @returns {string} Returns the source code.
+     * @returns {string} Returns the #source code.
      */
     function toSource(func) {
       if (func != null) {
@@ -10363,8 +10363,8 @@
      *
      * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
      * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
-     * var source = new EventSource('/stream');
-     * jQuery(source).on('message', debounced);
+     * var #source = new EventSource('/stream');
+     * jQuery(#source).on('message', debounced);
      *
      * // Cancel the trailing debounced invocation.
      * jQuery(window).on('popstate', debounced.cancel);
@@ -11190,10 +11190,10 @@
     }
 
     /**
-     * Checks if `object` conforms to `source` by invoking the predicate
-     * properties of `source` with the corresponding property values of `object`.
+     * Checks if `object` conforms to `#source` by invoking the predicate
+     * properties of `#source` with the corresponding property values of `object`.
      *
-     * **Note:** This method is equivalent to `_.conforms` when `source` is
+     * **Note:** This method is equivalent to `_.conforms` when `#source` is
      * partially applied.
      *
      * @static
@@ -11861,13 +11861,13 @@
     var isMap = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
 
     /**
-     * Performs a partial deep comparison between `object` and `source` to
+     * Performs a partial deep comparison between `object` and `#source` to
      * determine if `object` contains equivalent property values.
      *
-     * **Note:** This method is equivalent to `_.matches` when `source` is
+     * **Note:** This method is equivalent to `_.matches` when `#source` is
      * partially applied.
      *
-     * Partial comparisons will match empty array and empty object `source`
+     * Partial comparisons will match empty array and empty object `#source`
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
@@ -11896,7 +11896,7 @@
      * This method is like `_.isMatch` except that it accepts `customizer` which
      * is invoked to compare values. If `customizer` returns `undefined`, comparisons
      * are handled by the method instead. The `customizer` is invoked with five
-     * arguments: (objValue, srcValue, index|key, object, source).
+     * arguments: (objValue, srcValue, index|key, object, #source).
      *
      * @static
      * @memberOf _
@@ -11919,9 +11919,9 @@
      * }
      *
      * var object = { 'greeting': 'hello' };
-     * var source = { 'greeting': 'hi' };
+     * var #source = { 'greeting': 'hi' };
      *
-     * _.isMatchWith(object, source, customizer);
+     * _.isMatchWith(object, #source, customizer);
      * // => true
      */
     function isMatchWith(object, source, customizer) {
@@ -12629,7 +12629,7 @@
     /*------------------------------------------------------------------------*/
 
     /**
-     * Assigns own enumerable string keyed properties of source objects to the
+     * Assigns own enumerable string keyed properties of #source objects to the
      * destination object. Source objects are applied from left to right.
      * Subsequent sources overwrite property assignments of previous sources.
      *
@@ -12641,7 +12641,7 @@
      * @since 0.10.0
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} [sources] The source objects.
+     * @param {...Object} [sources] The #source objects.
      * @returns {Object} Returns `object`.
      * @see _.assignIn
      * @example
@@ -12674,7 +12674,7 @@
 
     /**
      * This method is like `_.assign` except that it iterates over own and
-     * inherited source properties.
+     * inherited #source properties.
      *
      * **Note:** This method mutates `object`.
      *
@@ -12684,7 +12684,7 @@
      * @alias extend
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} [sources] The source objects.
+     * @param {...Object} [sources] The #source objects.
      * @returns {Object} Returns `object`.
      * @see _.assign
      * @example
@@ -12711,7 +12711,7 @@
      * This method is like `_.assignIn` except that it accepts `customizer`
      * which is invoked to produce the assigned values. If `customizer` returns
      * `undefined`, assignment is handled by the method instead. The `customizer`
-     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+     * is invoked with five arguments: (objValue, srcValue, key, object, #source).
      *
      * **Note:** This method mutates `object`.
      *
@@ -12721,7 +12721,7 @@
      * @alias extendWith
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} sources The source objects.
+     * @param {...Object} sources The #source objects.
      * @param {Function} [customizer] The function to customize assigned values.
      * @returns {Object} Returns `object`.
      * @see _.assignWith
@@ -12744,7 +12744,7 @@
      * This method is like `_.assign` except that it accepts `customizer`
      * which is invoked to produce the assigned values. If `customizer` returns
      * `undefined`, assignment is handled by the method instead. The `customizer`
-     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+     * is invoked with five arguments: (objValue, srcValue, key, object, #source).
      *
      * **Note:** This method mutates `object`.
      *
@@ -12753,7 +12753,7 @@
      * @since 4.0.0
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} sources The source objects.
+     * @param {...Object} sources The #source objects.
      * @param {Function} [customizer] The function to customize assigned values.
      * @returns {Object} Returns `object`.
      * @see _.assignInWith
@@ -12831,7 +12831,7 @@
     }
 
     /**
-     * Assigns own and inherited enumerable string keyed properties of source
+     * Assigns own and inherited enumerable string keyed properties of #source
      * objects to the destination object for all destination properties that
      * resolve to `undefined`. Source objects are applied from left to right.
      * Once a property is set, additional values of the same property are ignored.
@@ -12843,7 +12843,7 @@
      * @memberOf _
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} [sources] The source objects.
+     * @param {...Object} [sources] The #source objects.
      * @returns {Object} Returns `object`.
      * @see _.defaultsDeep
      * @example
@@ -12893,7 +12893,7 @@
      * @since 3.10.0
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} [sources] The source objects.
+     * @param {...Object} [sources] The #source objects.
      * @returns {Object} Returns `object`.
      * @see _.defaults
      * @example
@@ -13473,7 +13473,7 @@
 
     /**
      * This method is like `_.assign` except that it recursively merges own and
-     * inherited enumerable string keyed properties of source objects into the
+     * inherited enumerable string keyed properties of #source objects into the
      * destination object. Source properties that resolve to `undefined` are
      * skipped if a destination value exists. Array and plain object properties
      * are merged recursively. Other objects and value types are overridden by
@@ -13487,7 +13487,7 @@
      * @since 0.5.0
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} [sources] The source objects.
+     * @param {...Object} [sources] The #source objects.
      * @returns {Object} Returns `object`.
      * @example
      *
@@ -13508,10 +13508,10 @@
 
     /**
      * This method is like `_.merge` except that it accepts `customizer` which
-     * is invoked to produce the merged values of the destination and source
+     * is invoked to produce the merged values of the destination and #source
      * properties. If `customizer` returns `undefined`, merging is handled by the
      * method instead. The `customizer` is invoked with six arguments:
-     * (objValue, srcValue, key, object, source, stack).
+     * (objValue, srcValue, key, object, #source, stack).
      *
      * **Note:** This method mutates `object`.
      *
@@ -13520,7 +13520,7 @@
      * @since 4.0.0
      * @category Object
      * @param {Object} object The destination object.
-     * @param {...Object} sources The source objects.
+     * @param {...Object} sources The #source objects.
      * @param {Function} customizer The function to customize assigned values.
      * @returns {Object} Returns `object`.
      * @example
@@ -13551,7 +13551,7 @@
      * @since 0.1.0
      * @memberOf _
      * @category Object
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {...(string|string[])} [paths] The property paths to omit.
      * @returns {Object} Returns the new object.
      * @example
@@ -13593,7 +13593,7 @@
      * @memberOf _
      * @since 4.0.0
      * @category Object
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {Function} [predicate=_.identity] The function invoked per property.
      * @returns {Object} Returns the new object.
      * @example
@@ -13614,7 +13614,7 @@
      * @since 0.1.0
      * @memberOf _
      * @category Object
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {...(string|string[])} [paths] The property paths to pick.
      * @returns {Object} Returns the new object.
      * @example
@@ -13636,7 +13636,7 @@
      * @memberOf _
      * @since 4.0.0
      * @category Object
-     * @param {Object} object The source object.
+     * @param {Object} object The #source object.
      * @param {Function} [predicate=_.identity] The function invoked per property.
      * @returns {Object} Returns the new object.
      * @example
@@ -14810,11 +14810,11 @@
      * // Use the `sourceURL` option to specify a custom sourceURL for the template.
      * var compiled = _.template('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
      * compiled(data);
-     * // => Find the source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
+     * // => Find the #source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
      *
      * // Use the `variable` option to ensure a with-statement isn't used in the compiled template.
      * var compiled = _.template('hi <%= data.user %>!', { 'variable': 'data' });
-     * compiled.source;
+     * compiled.#source;
      * // => function(data) {
      * //   var __t, __p = '';
      * //   __p += 'hi ' + ((__t = ( data.user )) == null ? '' : __t) + '!';
@@ -14827,11 +14827,11 @@
      * compiled({ 'user': 'mustache' });
      * // => 'hello mustache!'
      *
-     * // Use the `source` property to inline compiled templates for meaningful
+     * // Use the `#source` property to inline compiled templates for meaningful
      * // line numbers in error messages and stack traces.
      * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
      *   var JST = {\
-     *     "main": ' + _.template(mainText).source + '\
+     *     "main": ' + _.template(mainText).#source + '\
      *   };\
      * ');
      */
@@ -14866,7 +14866,7 @@
       , 'g');
 
       // Use a sourceURL for easier debugging.
-      // The sourceURL gets injected into the source that's eval-ed, so be careful
+      // The sourceURL gets injected into the #source that's eval-ed, so be careful
       // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
       // and escape the comment, thus injecting code that gets evaled.
       var sourceURL = '//# sourceURL=' +
@@ -14943,8 +14943,8 @@
           .apply(undefined, importsValues);
       });
 
-      // Provide the compiled function's source by its `toString` method or
-      // the `source` property as a convenience for inlining compiled templates.
+      // Provide the compiled function's #source by its `toString` method or
+      // the `#source` property as a convenience for inlining compiled templates.
       result.source = source;
       if (isError(result)) {
         throw result;
@@ -15415,12 +15415,12 @@
     }
 
     /**
-     * Creates a function that invokes the predicate properties of `source` with
+     * Creates a function that invokes the predicate properties of `#source` with
      * the corresponding property values of a given object, returning `true` if
      * all predicates return truthy, else `false`.
      *
      * **Note:** The created function is equivalent to `_.conformsTo` with
-     * `source` partially applied.
+     * `#source` partially applied.
      *
      * @static
      * @memberOf _
@@ -15563,7 +15563,7 @@
      * function. If `func` is a property name, the created function returns the
      * property value for a given element. If `func` is an array or object, the
      * created function returns `true` for elements that contain the equivalent
-     * source properties, otherwise it returns `false`.
+     * #source properties, otherwise it returns `false`.
      *
      * @static
      * @since 4.0.0
@@ -15606,13 +15606,13 @@
 
     /**
      * Creates a function that performs a partial deep comparison between a given
-     * object and `source`, returning `true` if the given object has equivalent
+     * object and `#source`, returning `true` if the given object has equivalent
      * property values, else `false`.
      *
-     * **Note:** The created function is equivalent to `_.isMatch` with `source`
+     * **Note:** The created function is equivalent to `_.isMatch` with `#source`
      * partially applied.
      *
-     * Partial comparisons will match empty array and empty object `source`
+     * Partial comparisons will match empty array and empty object `#source`
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
@@ -15740,7 +15740,7 @@
     });
 
     /**
-     * Adds all own enumerable string keyed function properties of a source
+     * Adds all own enumerable string keyed function properties of a #source
      * object to the destination object. If `object` is a function, then methods
      * are added to its prototype as well.
      *

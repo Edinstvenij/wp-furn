@@ -283,7 +283,7 @@ if ( ! class_exists( 'acf_revisions' ) ) :
 		*  @date    11/08/13
 		*
 		*  @param   $parent_id (int) the destination post
-		*  @return  $revision_id (int) the source post
+		*  @return  $revision_id (int) the #source post
 		*/
 
 		function wp_restore_post_revision( $post_id, $revision_id ) {

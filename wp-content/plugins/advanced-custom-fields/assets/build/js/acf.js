@@ -1929,7 +1929,7 @@
    *
    *  @date	9/11/17
    *  @since	5.6.3
-   *  @source	http://locutus.io/php/misc/uniqid/
+   *  @#source	http://locutus.io/php/misc/uniqid/
    *
    *  @param	string prefix Optional prefix.
    *  @return	string

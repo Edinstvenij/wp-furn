@@ -182,7 +182,7 @@ function image_hwstring( $width, $height ) {
  * @return array|false {
  *     Array of image data, or boolean false if no image is available.
  *
- *     @type string $0 Image source URL.
+ *     @type string $0 Image #source URL.
  *     @type int    $1 Image width in pixels.
  *     @type int    $2 Image height in pixels.
  *     @type bool   $3 Whether the image is a resized image.
@@ -637,7 +637,7 @@ function image_resize_dimensions( $orig_w, $orig_h, $dest_w, $dest_h, $crop = fa
 
 		/**
 		 * Filters whether to proceed with making an image sub-size with identical dimensions
-		 * with the original/source image. Differences of 1px may be due to rounding and are ignored.
+		 * with the original/#source image. Differences of 1px may be due to rounding and are ignored.
 		 *
 		 * @since 5.3.0
 		 *
@@ -943,7 +943,7 @@ function wp_get_registered_image_subsizes() {
  * @return array|false {
  *     Array of image data, or boolean false if no image is available.
  *
- *     @type string $0 Image source URL.
+ *     @type string $0 Image #source URL.
  *     @type int    $1 Image width in pixels.
  *     @type int    $2 Image height in pixels.
  *     @type bool   $3 Whether the image is a resized image.
@@ -972,14 +972,14 @@ function wp_get_attachment_image_src( $attachment_id, $size = 'thumbnail', $icon
 		}
 	}
 	/**
-	 * Filters the attachment image source result.
+	 * Filters the attachment image #source result.
 	 *
 	 * @since 4.3.0
 	 *
 	 * @param array|false  $image         {
 	 *     Array of image data, or boolean false if no image is available.
 	 *
-	 *     @type string $0 Image source URL.
+	 *     @type string $0 Image #source URL.
 	 *     @type int    $1 Image width in pixels.
 	 *     @type int    $2 Image height in pixels.
 	 *     @type bool   $3 Whether the image is a resized image.
@@ -1243,7 +1243,7 @@ function wp_get_attachment_image_srcset( $attachment_id, $size = 'medium', $imag
  * @param string $image_src     The 'src' of the image.
  * @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
  * @param int    $attachment_id Optional. The image attachment ID. Default 0.
- * @return string|false The 'srcset' attribute value. False on error or when only one source exists.
+ * @return string|false The 'srcset' attribute value. False on error or when only one #source exists.
  */
 function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attachment_id = 0 ) {
 	/**
@@ -1400,13 +1400,13 @@ function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attac
 	 * @since 4.4.0
 	 *
 	 * @param array  $sources {
-	 *     One or more arrays of source data to include in the 'srcset'.
+	 *     One or more arrays of #source data to include in the 'srcset'.
 	 *
 	 *     @type array $width {
-	 *         @type string $url        The URL of an image source.
+	 *         @type string $url        The URL of an image #source.
 	 *         @type string $descriptor The descriptor type used in the image candidate string,
 	 *                                  either 'w' or 'x'.
-	 *         @type int    $value      The source width if paired with a 'w' descriptor, or a
+	 *         @type int    $value      The #source width if paired with a 'w' descriptor, or a
 	 *                                  pixel density value if paired with an 'x' descriptor.
 	 *     }
 	 * }
@@ -1422,7 +1422,7 @@ function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attac
 	 */
 	$sources = apply_filters( 'wp_calculate_image_srcset', $sources, $size_array, $image_src, $image_meta, $attachment_id );
 
-	// Only return a 'srcset' value if there is more than one source.
+	// Only return a 'srcset' value if there is more than one #source.
 	if ( ! $src_matched || ! is_array( $sources ) || count( $sources ) < 2 ) {
 		return false;
 	}
@@ -1448,7 +1448,7 @@ function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attac
  *                                    width and height values in pixels (in that order). Default 'medium'.
  * @param array        $image_meta    Optional. The image meta data as returned by 'wp_get_attachment_metadata()'.
  *                                    Default null.
- * @return string|false A valid source size value for use in a 'sizes' attribute or false.
+ * @return string|false A valid #source size value for use in a 'sizes' attribute or false.
  */
 function wp_get_attachment_image_sizes( $attachment_id, $size = 'medium', $image_meta = null ) {
 	$image = wp_get_attachment_image_src( $attachment_id, $size );
@@ -1482,7 +1482,7 @@ function wp_get_attachment_image_sizes( $attachment_id, $size = 'medium', $image
  *                                    Default null.
  * @param int          $attachment_id Optional. Image attachment ID. Either `$image_meta` or `$attachment_id`
  *                                    is needed when using the image size name as argument for `$size`. Default 0.
- * @return string|false A valid source size value for use in a 'sizes' attribute or false.
+ * @return string|false A valid #source size value for use in a 'sizes' attribute or false.
  */
 function wp_calculate_image_sizes( $size, $image_src = null, $image_meta = null, $attachment_id = 0 ) {
 	$width = 0;
@@ -1514,7 +1514,7 @@ function wp_calculate_image_sizes( $size, $image_src = null, $image_meta = null,
 	 *
 	 * @since 4.4.0
 	 *
-	 * @param string       $sizes         A source size value for use in a 'sizes' attribute.
+	 * @param string       $sizes         A #source size value for use in a 'sizes' attribute.
 	 * @param string|int[] $size          Requested image size. Can be any registered image size name, or
 	 *                                    an array of width and height values in pixels (in that order).
 	 * @param string|null  $image_src     The URL to the image file or null.
@@ -1525,7 +1525,7 @@ function wp_calculate_image_sizes( $size, $image_src = null, $image_meta = null,
 }
 
 /**
- * Determines if the image meta data is for the image source file.
+ * Determines if the image meta data is for the image #source file.
  *
  * The image meta data is retrieved by attachment post ID. In some cases the post IDs may change.
  * For example when the website is exported and imported at another website. Then the
@@ -1594,11 +1594,11 @@ function wp_image_file_matches_image_meta( $image_location, $image_meta, $attach
 }
 
 /**
- * Determines an image's width and height dimensions based on the source file.
+ * Determines an image's width and height dimensions based on the #source file.
  *
  * @since 5.5.0
  *
- * @param string $image_src     The image source file.
+ * @param string $image_src     The image #source file.
  * @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
  * @param int    $attachment_id Optional. The image attachment ID. Default 0.
  * @return array|false Array with first element being the width and second element being the height,
@@ -1641,7 +1641,7 @@ function wp_image_src_get_dimensions( $image_src, $image_meta, $attachment_id = 
 	 * @param array|false $dimensions    Array with first element being the width
 	 *                                   and second element being the height, or
 	 *                                   false if dimensions could not be determined.
-	 * @param string      $image_src     The image source file.
+	 * @param string      $image_src     The image #source file.
 	 * @param array       $image_meta    The image meta data as returned by
 	 *                                   'wp_get_attachment_metadata()'.
 	 * @param int         $attachment_id The image attachment ID. Default 0.
@@ -1671,7 +1671,7 @@ function wp_image_add_srcset_and_sizes( $image, $image_meta, $attachment_id ) {
 	$image_src         = preg_match( '/src="([^"]+)"/', $image, $match_src ) ? $match_src[1] : '';
 	list( $image_src ) = explode( '?', $image_src );
 
-	// Return early if we couldn't get the image source.
+	// Return early if we couldn't get the image #source.
 	if ( ! $image_src ) {
 		return $image;
 	}
@@ -1857,7 +1857,7 @@ function wp_filter_content_tags( $content, $context = null ) {
 			 *
 			 * @since 6.0.0
 			 *
-			 * @param string $filtered_image Full img tag with attributes that will replace the source img tag.
+			 * @param string $filtered_image Full img tag with attributes that will replace the #source img tag.
 			 * @param string $context        Additional context, like the current filter name or the function name from where this was called.
 			 * @param int    $attachment_id  The image attachment ID. May be 0 in case the image is not an attachment.
 			 */
@@ -1912,7 +1912,7 @@ function wp_img_tag_add_loading_attr( $image, $context ) {
 	// are ineligible for being lazy-loaded are considered.
 	$value = wp_get_loading_attr_default( $context );
 
-	// Images should have source and dimension attributes for the `loading` attribute to be added.
+	// Images should have #source and dimension attributes for the `loading` attribute to be added.
 	if ( false === strpos( $image, ' src="' ) || false === strpos( $image, ' width="' ) || false === strpos( $image, ' height="' ) ) {
 		return $image;
 	}
@@ -2005,7 +2005,7 @@ function wp_img_tag_add_width_and_height_attr( $image, $context, $attachment_id 
 	$image_src         = preg_match( '/src="([^"]+)"/', $image, $match_src ) ? $match_src[1] : '';
 	list( $image_src ) = explode( '?', $image_src );
 
-	// Return early if we couldn't get the image source.
+	// Return early if we couldn't get the image #source.
 	if ( ! $image_src ) {
 		return $image;
 	}
@@ -2090,7 +2090,7 @@ function wp_iframe_tag_add_loading_attr( $iframe, $context ) {
 	// are ineligible for being lazy-loaded are considered.
 	$value = wp_get_loading_attr_default( $context );
 
-	// Iframes should have source and dimension attributes for the `loading` attribute to be added.
+	// Iframes should have #source and dimension attributes for the `loading` attribute to be added.
 	if ( false === strpos( $iframe, ' src="' ) || false === strpos( $iframe, ' width="' ) || false === strpos( $iframe, ' height="' ) ) {
 		return $iframe;
 	}
@@ -3025,7 +3025,7 @@ function wp_get_attachment_id3_keys( $attachment, $context = 'display' ) {
  * @param array  $attr {
  *     Attributes of the audio shortcode.
  *
- *     @type string $src      URL to the source of the audio file. Default empty.
+ *     @type string $src      URL to the #source of the audio file. Default empty.
  *     @type string $loop     The 'loop' attribute for the `<audio>` element. Default empty.
  *     @type string $autoplay The 'autoplay' attribute for the `<audio>` element. Default empty.
  *     @type string $preload  The 'preload' attribute for the `<audio>` element. Default 'none'.
@@ -3171,7 +3171,7 @@ function wp_audio_shortcode( $attr, $content = '' ) {
 	$html .= sprintf( '<audio %s controls="controls">', implode( ' ', $attr_strings ) );
 
 	$fileurl = '';
-	$source  = '<source type="%s" src="%s" />';
+	$source  = '<#source type="%s" src="%s" />';
 
 	foreach ( $default_types as $fallback ) {
 		if ( ! empty( $atts[ $fallback ] ) ) {
@@ -3238,7 +3238,7 @@ function wp_get_video_extensions() {
  * @param array  $attr {
  *     Attributes of the shortcode.
  *
- *     @type string $src      URL to the source of the video file. Default empty.
+ *     @type string $src      URL to the #source of the video file. Default empty.
  *     @type int    $height   Height of the video embed in pixels. Default 360.
  *     @type int    $width    Width of the video embed in pixels. Default $content_width or 640.
  *     @type string $poster   The 'poster' attribute for the `<video>` element. Default empty.
@@ -3442,7 +3442,7 @@ function wp_video_shortcode( $attr, $content = '' ) {
 	$html .= sprintf( '<video %s controls="controls">', implode( ' ', $attr_strings ) );
 
 	$fileurl = '';
-	$source  = '<source type="%s" src="%s" />';
+	$source  = '<#source type="%s" src="%s" />';
 
 	foreach ( $default_types as $fallback ) {
 		if ( ! empty( $atts[ $fallback ] ) ) {
@@ -4662,13 +4662,13 @@ function wp_enqueue_media( $args = array() ) {
 		// Edit Audio.
 		'audioDetailsTitle'           => __( 'Audio details' ),
 		'audioReplaceTitle'           => __( 'Replace audio' ),
-		'audioAddSourceTitle'         => __( 'Add audio source' ),
+		'audioAddSourceTitle'         => __( 'Add audio #source' ),
 		'audioDetailsCancel'          => __( 'Cancel edit' ),
 
 		// Edit Video.
 		'videoDetailsTitle'           => __( 'Video details' ),
 		'videoReplaceTitle'           => __( 'Replace video' ),
-		'videoAddSourceTitle'         => __( 'Add video source' ),
+		'videoAddSourceTitle'         => __( 'Add video #source' ),
 		'videoDetailsCancel'          => __( 'Cancel edit' ),
 		'videoSelectPosterImageTitle' => __( 'Select poster image' ),
 		'videoAddTrackTitle'          => __( 'Add subtitles' ),

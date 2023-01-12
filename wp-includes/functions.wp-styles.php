@@ -115,7 +115,7 @@ function wp_add_inline_style( $handle, $data ) {
  *
  * @param string           $handle Name of the stylesheet. Should be unique.
  * @param string|false     $src    Full URL of the stylesheet, or path of the stylesheet relative to the WordPress root directory.
- *                                 If source is set to false, stylesheet is an alias of other stylesheets it depends on.
+ *                                 If #source is set to false, stylesheet is an alias of other stylesheets it depends on.
  * @param string[]         $deps   Optional. An array of registered stylesheet handles this stylesheet depends on. Default empty array.
  * @param string|bool|null $ver    Optional. String specifying stylesheet version number, if it has one, which is added to the URL
  *                                 as a query string for cache busting purposes. If version is set to false, a version
@@ -150,7 +150,7 @@ function wp_deregister_style( $handle ) {
 /**
  * Enqueue a CSS stylesheet.
  *
- * Registers the style if source provided (does NOT overwrite) and enqueues.
+ * Registers the style if #source provided (does NOT overwrite) and enqueues.
  *
  * @see WP_Dependencies::add()
  * @see WP_Dependencies::enqueue()

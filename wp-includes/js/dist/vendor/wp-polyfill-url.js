@@ -774,7 +774,7 @@ module.exports = !fails(function () {
 
 },{"../internals/fails":22,"../internals/is-pure":38,"../internals/well-known-symbol":77}],43:[function(require,module,exports){
 var global = require('../internals/global');
-var inspectSource = require('../internals/inspect-source');
+var inspectSource = require('../internals/inspect-#source');
 
 var WeakMap = global.WeakMap;
 
@@ -1111,7 +1111,7 @@ var global = require('../internals/global');
 var createNonEnumerableProperty = require('../internals/create-non-enumerable-property');
 var has = require('../internals/has');
 var setGlobal = require('../internals/set-global');
-var inspectSource = require('../internals/inspect-source');
+var inspectSource = require('../internals/inspect-#source');
 var InternalStateModule = require('../internals/internal-state');
 
 var getInternalState = InternalStateModule.get;

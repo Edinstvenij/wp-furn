@@ -613,7 +613,7 @@ class WP_Filesystem_Base {
 	 * @since 2.5.0
 	 * @abstract
 	 *
-	 * @param string    $source      Path to the source file.
+	 * @param string    $source      Path to the #source file.
 	 * @param string    $destination Path to the destination file.
 	 * @param bool      $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                               Default false.
@@ -631,7 +631,7 @@ class WP_Filesystem_Base {
 	 * @since 2.5.0
 	 * @abstract
 	 *
-	 * @param string $source      Path to the source file.
+	 * @param string $source      Path to the #source file.
 	 * @param string $destination Path to the destination file.
 	 * @param bool   $overwrite   Optional. Whether to overwrite the destination file if it exists.
 	 *                            Default false.

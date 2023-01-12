@@ -4071,7 +4071,7 @@ function acf_send_ajax_results( $response ) {
 *
 *  This function will return true if the array contains only numeric keys
 *
-*  @source  http://stackoverflow.com/questions/173400/how-to-check-if-php-array-is-associative-or-sequential
+*  @#source  http://stackoverflow.com/questions/173400/how-to-check-if-php-array-is-associative-or-sequential
 *  @type    function
 *  @date    9/09/2016
 *  @since   5.4.0
@@ -4107,7 +4107,7 @@ function acf_is_sequential_array( $array ) {
 *
 *  This function will return true if the array contains one or more string keys
 *
-*  @source  http://stackoverflow.com/questions/173400/how-to-check-if-php-array-is-associative-or-sequential
+*  @#source  http://stackoverflow.com/questions/173400/how-to-check-if-php-array-is-associative-or-sequential
 *  @type    function
 *  @date    9/09/2016
 *  @since   5.4.0

@@ -3598,8 +3598,8 @@ function wp_preload_resources() {
 	 *         @type string $crossorigin Indicates the CORS policy of the specified resource.
 	 *         @type string $type        Type of the resource (`text/html`, `text/css`, etc).
 	 *         @type string $media       Accepts media types or media queries. Allows responsive preloading.
-	 *         @type string $imagesizes  Responsive source size to the source Set.
-	 *         @type string $imagesrcset Responsive image sources to the source set.
+	 *         @type string $imagesizes  Responsive #source size to the #source Set.
+	 *         @type string $imagesrcset Responsive image sources to the #source set.
 	 *     }
 	 * }
 	 */
